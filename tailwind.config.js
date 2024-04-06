@@ -17,6 +17,7 @@ module.exports = {
       '4xl': '40px',
       '5xl': '48px',
       '6xl': '50px',
+      '7xl': '60px',
     },
     container: {
       padding: {
@@ -29,6 +30,22 @@ module.exports = {
       inter: ['inter', 'sans-serif'],
     },
     extend: {
+      boxShadow: {
+        'gradientRed': '0 0 20px 1px #F800B9',
+      },
+      colors: {
+        'gray': '#646464',
+        'gray-white': '#E4E2EE',
+        'gray-white-200': '#EAECF0',
+        'gray-white-100': '#CAC6DD',
+        'gray-white-700': '#646464',
+        'gray-dark-200': '#57606A',
+        'gray-light-300': '#99A2AF',
+        'blue': '#7F04E2',
+        'orange-red': '#F800B9',
+        'dark-black': '#1B1530',
+        'bodymain': '#040403',
+      },
       animation:
       {
         'moveX': 'translateX 20s linear infinite',
@@ -38,8 +55,11 @@ module.exports = {
           '0%': { transform: 'translateX(50%)' },
           '100%': { transform: 'translateX(-80%)' },
         },
-       
-      }
+
+      },
+      screens: {
+        'slg': '870px',
+      },
     },
   },
   plugins: [],

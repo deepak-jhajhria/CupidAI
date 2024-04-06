@@ -1,3 +1,7 @@
+* {
+    font-family: "inter", "sans-sarif";
+}
+
 .scrolbar::-webkit-scrollbar-track {
     border-radius: 12px;
     box-shadow: inset 0 0 6px white;
@@ -11,7 +15,7 @@
 
 .scrolbar::-webkit-scrollbar {
     width: 2px;
-    height: 8px;
+    height: 4px;
     border-radius: 12px;
     background: #ffff;
 }
