@@ -48,11 +48,11 @@ module.exports = {
       },
       animation:
       {
-        'moveX': 'translateX 20s linear infinite',
+        'moveX': 'translateX 17s linear infinite',
       },
       keyframes: {
         translateX: {
-          '0%': { transform: 'translateX(50%)' },
+          '0%': { transform: 'translateX(80%)' },
           '100%': { transform: 'translateX(-80%)' },
         },
 
