@@ -15,8 +15,8 @@ function App() {
       <Pricing />
       <IdentityHub />
       <Footer />
-      {/* <Crm /> */}
-      {/* <TrustedCompany /> */}
+      <Crm />
+      <TrustedCompany />
     </div>
   )
 

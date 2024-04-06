@@ -44,3 +44,36 @@
 .services:hover svg g .round {
     fill-opacity: 0.26 !important;
 }
+
+.blur_box_border {
+    backdrop-filter: blur(39.5px);
+    padding: 1px;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+    transition: all .3s linear !important;
+}
+
+.blur_box_border::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    padding: inherit;
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(218, 43, 85, 0.2) 100%); */
+    inset: 0;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+    border-radius: 30px;
+    background: linear-gradient(106.78deg, rgba(255, 255, 255, 0.23) 6.02%, rgba(255, 255, 255, 0.0759) 104.65%);
+    transition: all .3s linear !important;
+}
+
+.blur_box_border:hover {
+    padding: 3px;
+}
+
+.blur_box_border:hover::after {
+    background: linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%);
+}
