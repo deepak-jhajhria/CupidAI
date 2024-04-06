@@ -29,12 +29,13 @@ function Ourservices() {
               <p className='leading-[18px] font-inter text-[#E4E4E7]  text-lg  font-semibold pt-4'>Content Utilities</p>
               <p className='leading-[24px] text-sm font-normal font-inter text-[#A1A1AA] pt-4 md:max-w-[425px]'>Consolidate your resources with our comprehensive content utilities. Access everything you need from a single dashboard.</p>
             </div>
+
           </div>
           <div className='md:w-7/12 w-full px-3 pt-5 '>
             <div className='max-w-[5 26px] px-7  h-[259px] p-[40px_0px_40px_0px] rounded-[16px] shadow-[0px 0px 0px 0px #0E0D0D] border border-[#202020] services relative overflow-hidden bg-[#0E0D0D] z-10  '>
               <ServiceSvg4 className='pt-7' />
               <p className='leading-[18px] font-inter text-[#E4E4E7]  text-lg  font-semibold pt-4 z-10'>Image Generation</p>
-              <p className='leading-[24px] text-sm font-normal font-inter text-[#A1A1AA] pt-4 md:max-w-[425px] '>Transform productivity with our sophisticated automation tools. Let technology work tirelessly behind the scenes, so your creativity never has to pause.</p>
+              <p className='leading-[24px] text-sm font-normal font-inter text-[#A1A1AA] pt-4 md:max-w-[425px] hover:text'>Transform productivity with our sophisticated automation tools. Let technology work tirelessly behind the scenes, so your creativity never has to pause.</p>
             </div>
           </div>
         </div>
