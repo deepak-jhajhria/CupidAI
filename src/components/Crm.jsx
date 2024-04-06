@@ -23,7 +23,7 @@ const Crm = () => {
     <div className=" bg-[#040403] pt-11 mt-[-2px] scrolbar-none">
       <div className="max-w-[1320px] mx-auto px-3">
         <h2 className=" font-inter font-bold text-6xl text-white leading-[56px]  tracking-[-1.2px]">
-          A CRM created <span className=" block ">to be your own.</span>
+          A CRM created <span className="block">to be your own.</span>
         </h2>
         <p className=" font-inter font-medium text-2xl text-[#646464] pt-[22px] tracking-[0.2px]">
           Tweak anything and everything to ensure fits

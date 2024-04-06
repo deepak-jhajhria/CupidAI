@@ -1,20 +1,16 @@
+import { linkData } from "../common/Helper"
 import { FacebookIcon, FooterGradientMixup, InstaIcon, Logo, TelegramIcon, TwiterIcon } from "./Icons"
 
 const Footer = () => {
-    const linkData = [
-        { path: "#features", link: "features" },
-        { path: "#Services", link: "Services" },
-        { path: "#pricing", link: "pricing" },
-        { path: "#features", link: "how to use" },
-    ]
+
     const icons = [{ link: "http://www.facebook.com", logo: (<FacebookIcon />) }, { link: "http://www.instagram.com", logo: (<InstaIcon />) }, { link: "http://www.twitter.com", logo: (<TwiterIcon />) }, { link: "http://www.linkden.com", logo: (<TelegramIcon />) }]
     return (
-        <div className=" relative mt-[128px]">
+        <div className=" relative mt-32">
             <div className="container relative z-10">
                 <nav>
-                    <div className="flex items-center justify-between py-6">
+                    <div className="flex flex-col lg:flex-row items-center justify-between py-6">
                         <a className="font-inter font-bold text-3xl text-white flex items-center gap-2" href="/"><span><Logo /></span>CupidAI</a>
-                        <ul className="flex items-center gap-20">
+                        <ul className="flex items-center lg:gap-20">
                             {
                                 linkData.map((item, index) => (
                                     <li key={index}>
