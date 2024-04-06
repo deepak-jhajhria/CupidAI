@@ -784,7 +784,7 @@ export const CircleEllipseSvg = () => {
         </svg>
     );
 };
-export const Logo = () => {
+export const FooterLogo = () => {
   return (
     <svg
       width="39"

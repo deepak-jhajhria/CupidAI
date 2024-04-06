@@ -42,17 +42,19 @@ module.exports = {
     extend: {
       lineHeight: {
         '11': '48.41px',
-        '12': '3rem', 
+        '12': '3rem',
         '13': '72px',
       },
-      padding:{
-        '8.5':'34px',
-        '4.5':'18px'
+      padding: {
+        '8.5': '34px',
+        '4.5': '18px'
       },
       boxShadow: {
         'gradientRed': '0 0 20px 1px #F800B9',
       },
       colors: {
+
+        'white': '#FFF',
         'black-primary': '#040403',
         'gray': '#646464',
         'gray-white': '#E4E2EE',

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FooterLogo } from "./Icons";
-import herobg from "../assets/images/herobg.png";
 import { navLinkData } from "../common/Helper";
+import { Herobg } from "../common/Icons";
 
 const Header = () => {
     const [show, setShow] = useState(true);
@@ -12,8 +12,8 @@ const Header = () => {
     }
     return (
         <>
-            <div className="relative h-[781px]">
-                <img src={herobg} alt="herobg" className="absolute left-0 w-full h-full bottom-0 z-0" />
+            <div className="relative h-[781px] overflow-hidden">
+                <span className="absolute left-0 w-full h-full bottom-0 z-0"><Herobg /></span>
                 <div className="lg:max-w-[1320px] px-3 container mx-auto pt-[31px] bg-[#01020f2e] relative z-[1]">
                     <nav className="flex items-center justify-between rounded-[60px] px-2.5 border border-white border-solid sm:h-[71px] h-[60px]">
                         <a className="font-bold text-3xl text-white flex items-center gap-2" href="/">
