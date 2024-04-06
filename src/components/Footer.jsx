@@ -8,7 +8,7 @@ const Footer = () => {
                 <nav>
                     <div className="flex flex-col lg:flex-row items-center justify-between py-6">
                         <a className="font-bold text-3xl text-white flex items-center gap-2 leading-9" href="/"><span><FooterLogo /></span>CupidAI</a>
-                        <ul className="flex items-center gap-3 md:gap-10 lg:gap-24 mt-3 sm:mt-5 lg:mt-0">
+                        <ul className="flex items-center gap-3 md:gap-10 lg:gap-24 mt-3 sm:mt-5 lg:mt-0 flex-wrap justify-center">
                             {
                                 linkData.map((item, index) => (
                                     <li key={index}>
