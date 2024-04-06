@@ -4,7 +4,7 @@ const Faq = () => {
   return (
     <div>
       <div className='max-w-[700px]'>
-
+            <h2 className=' font-inter font-bold text-'>FAQs</h2>
       </div>
     </div>
   )
