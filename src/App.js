@@ -22,6 +22,8 @@ function App() {
       <Faq />
       <IdentityHub />
       <Footer />
+      <Crm />
+      <TrustedCompany />
     </div>
   )
 
