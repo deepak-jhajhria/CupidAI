@@ -20,8 +20,8 @@ const crmData = [
 ];
 const Crm = () => {
   return (
-    <div className=" bg-[#040403] pt-[45px] mt-[-2px]">
-      <div className=" w-full px-3 md:px-10 lg:px-[72px]">
+    <div className=" bg-[#040403] pt-11 mt-[-2px] scrolbar-none">
+      <div className="max-w-[1320px] mx-auto px-3">
         <h2 className=" font-inter font-bold text-6xl text-white leading-[56px]  tracking-[-1.2px]">
           A CRM created <span className=" block ">to be your own.</span>
         </h2>
