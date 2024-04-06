@@ -29,11 +29,30 @@ module.exports = {
     fontFamily: {
       inter: ['inter', 'sans-serif'],
     },
+    letterSpacing: {
+      tighter: '-1px', //use
+      tightest: '-0.5px', //use
+      tight: '-.025em',
+      normal: '0',
+      wide: '.035em', // use
+      wider: '.05em',
+      widest: '.1em',
+      widest: '.25em',
+    },
     extend: {
+      lineHeight: {
+        '11': '48.41px',
+        '12': '3rem', 
+        '13': '72px',
+      },
+      padding:{
+        '8.5':'34px'
+      },
       boxShadow: {
         'gradientRed': '0 0 20px 1px #F800B9',
       },
       colors: {
+        'black-primary': '#040403',
         'gray': '#646464',
         'gray-white': '#E4E2EE',
         'gray-white-100': '#CAC6DD',
