@@ -20,7 +20,7 @@ const TrustedCompany = () => {
         </p>
         <div className=" flex items-center xl:gap-[47px] gap-6 justify-center mt-8 px-16 max-sm:animate-moveX2 max-md:animate-moveX min-w-[612px]">
           {companies.map((obj, i) => (
-            <img src={obj.img} alt={obj.alt} className=" xl:w-full lg:w-[160px] md:w-[120px] h-12" />
+            <img key={i} src={obj.img} alt={obj.alt} className=" xl:w-full lg:w-[160px] md:w-[120px] h-12" />
           ))}
         </div>
       </div>
