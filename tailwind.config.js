@@ -75,9 +75,18 @@ module.exports = {
           '0%': { transform: 'translateX(183px)' },
           '100%': { transform: ' translateX(calc(-340px))' },
         }
-      }
+      },
+    },
+    colors: {
+      'dark-gray': '#646464',
+    },
+    backgroundImage: {
+      "bg-gradient": "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
+      "bg_gradient": "linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #040403 100%)"
+    },
+    backgroundSize: {
+      "BgSize": "100% 100%"
     },
   },
   plugins: [],
 }
-

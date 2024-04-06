@@ -14,11 +14,14 @@ function App() {
       <Header />
       {/* <Ourservices /> */}
       {/* <Pricing /> */}
+      <div className='bg-[url(./assets/images/servicebg.webp)] bg-black bg-BgSize bg-top  bg-no-repeat'>
+        <ServiceCard />
+      </div>
+      {/* <Crm /> */}
+      {/* <TrustedCompany /> */}
       <Faq />
       <IdentityHub />
       <Footer />
-      {/* <Crm /> */}
-      {/* <TrustedCompany /> */}
     </div>
   )
 
