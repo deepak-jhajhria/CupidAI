@@ -92,6 +92,7 @@ export const YellowMan = () => {
         </svg>
     );
 };
+
 export const ServiceSvg = () => {
     return (
         <svg className="duration-500"

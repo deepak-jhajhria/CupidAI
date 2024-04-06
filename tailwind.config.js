@@ -53,25 +53,29 @@ module.exports = {
         'gradientRed': '0 0 20px 1px #F800B9',
       },
       colors: {
-
         'white': '#FFF',
         'black-primary': '#040403',
         'gray': '#646464',
         'gray-white': '#E4E2EE',
+        'gray-white-200': '#EAECF0',
         'gray-white-100': '#CAC6DD',
+        'gray-white-700': '#646464',
+        'gray-dark-200': '#57606A',
+        'gray-light-300': '#99A2AF',
         'blue': '#7F04E2',
         'orange-red': '#F800B9',
         'dark-black': '#1B1530',
+        'bodymain': '#040403',
+        'dark-gray': '#646464',
       },
       animation:
       {
-        'moveX': 'translateX 5s linear infinite',
-        'moveX2': 'translateX2 8s linear infinite'
+        'moveX': 'translateX 17s linear infinite',
       },
       keyframes: {
         translateX: {
-          '0%': { transform: 'translateX(183px)' },
-          '100%': { transform: ' translateX(calc(-180px))' },
+          '0%': { transform: 'translateX(80%)' },
+          '100%': { transform: 'translateX(-80%)' },
         },
         translateX2: {
           '0%': { transform: 'translateX(183px)' },
@@ -79,16 +83,17 @@ module.exports = {
         }
       },
     },
-    colors: {
-      'dark-gray': '#646464',
-    },
     backgroundImage: {
       "bg-gradient": "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
       "bg_gradient": "linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #040403 100%)"
     },
     backgroundSize: {
       "BgSize": "100% 100%"
+
+    },
+    screens: {
+      'slg': '870px',
     },
   },
-  plugins: [],
+  plugins: []
 }
