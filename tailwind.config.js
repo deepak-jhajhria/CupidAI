@@ -40,6 +40,9 @@ module.exports = {
       widest: '.25em',
     },
     extend: {
+      screens: {
+        'slg': '870px',
+      },
       lineHeight: {
         '11': '48.41px',
         '12': '3rem',
@@ -90,9 +93,6 @@ module.exports = {
     backgroundSize: {
       "BgSize": "100% 100%"
 
-    },
-    screens: {
-      'slg': '870px',
     },
   },
   plugins: []

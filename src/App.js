@@ -12,14 +12,13 @@ function App() {
   return (
     <div className=" bg-black-primary max-w-[1920px] mx-auto">
       <Header />
-      <Ourservices />
+      <TrustedCompany />
+      <Crm />
       <div className='bg-[url(./assets/images/servicebg.webp)] bg-black bg-BgSize bg-top  bg-no-repeat'>
         < ServiceCard />
       </div>
-      <TrustedCompany />
-      <Crm />
       <Ourservices />
-      <Pricing />
+      {/* <Pricing /> */}
       <Faq />
       <IdentityHub />
       <Footer />
