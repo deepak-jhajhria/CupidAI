@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const TrustedCompany = () => {
   return (
-    <div>
-      
+    <div className=" bg-[#040403]">
+      <div className="container"></div>
     </div>
-  )
-}
+  );
+};
 
-export default TrustedCompany
+export default TrustedCompany;
