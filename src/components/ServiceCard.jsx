@@ -38,8 +38,8 @@ const ServiceCard = () => {
         <div className='  bg-bg_grad ient  bg-bl ack py-32'>
             <div className='max-w-[966px] px-3  mx-auto '>
                 <h2 className='font-inter font-bold leading-[56px]  text-white text-5xl text-center'>Our Services</h2>
-                <p className=' font-medium text-dark-gray text-2xl text-center mx-auto leading-[30px] lg:max-w-[476px] pt-5'>Tweak anything and everything to ensure fits your business, not the other way around.</p>
-                <div className='flex flex-row flex-wrap -mx-3 pt-10'>
+                <p className=' font-medium text-dark-gray text-2xl text-center mx-auto leading-[30px] lg:max-w-[500px] pt-5'>Tweak anything and everything to ensure fits your business, not the other way around.</p>
+                <div className='flex flex-row flex-wrap -mx-3 pt-7'>
                     {carding.map((p) => <Ourservice key={p.id} svg={p.svges} head={p.heading} para={p.paragraph} width={p.width} />)}
                 </div>
             </div>

@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="bg-black">
       {/* <Faq /> */}
-      <div className='bg-[url(./assets/images/servicebg.webp)] bg-BgSize bg-top  bg-no-repeat'>
+      <div className='bg-[url(./assets/images/servicebg.webp)] bg-black bg-BgSize bg-top  bg-no-repeat'>
         <ServiceCard />
       </div>
       {/* <IdentityHub /> */}
