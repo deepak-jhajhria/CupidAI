@@ -1,20 +1,20 @@
-import './App.css';
-import TrustedCompany from './components/TrustedCompany';
-import Faq from './components/Faq';
-import Crm from './components/Crm';
-import Ourservices from './components/Ourservices';
-import Pricing from './components/Pricing';
-import IdentityHub from './components/IdentityHub';
-import Footer from './components/Footer';
+// import './App.css';
+// import TrustedCompany from './components/TrustedCompany';
+// import Faq from './components/Faq';
+// import Crm from './components/Crm';
+import ServiceCard from './components/ServiceCard';
+// import IdentityHub from './components/IdentityHub';
+// import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="bg-black">
-      <Faq />
-      <Ourservices />
-      <Pricing />
-      <IdentityHub />
-      <Footer />
+      {/* <Faq /> */}
+      <div className='bg-[url(./assets/images/servicebg.webp)] bg-BgSize bg-top  bg-no-repeat'>
+        <ServiceCard />
+      </div>
+      {/* <IdentityHub /> */}
+      {/* <Footer /> */}
       {/* <Crm /> */}
       {/* <TrustedCompany /> */}
     </div>
