@@ -31,18 +31,14 @@ module.exports = {
     extend: {
       animation:
       {
-        'moveX': 'translateX 5s linear infinite',
-        'moveX2': 'translateX2 8s linear infinite'
+        'moveX': 'translateX 20s linear infinite',
       },
       keyframes: {
         translateX: {
-          '0%': { transform: 'translateX(183px)' },
-          '100%': { transform: ' translateX(calc(-180px))' },
+          '0%': { transform: 'translateX(50%)' },
+          '100%': { transform: 'translateX(-80%)' },
         },
-        translateX2: {
-          '0%': { transform: 'translateX(183px)' },
-          '100%': { transform: ' translateX(calc(-340px))' },
-        }
+       
       }
     },
   },

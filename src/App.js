@@ -10,13 +10,13 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="bg-black">
-      <Faq />
+      {/* <Faq />
       <Ourservices />
       <Pricing />
       <IdentityHub />
-      <Footer />
-      {/* <Crm /> */}
-      {/* <TrustedCompany /> */}
+      <Footer /> */}
+      <TrustedCompany />
+      <Crm />
     </div>
   )
 }
