@@ -20,7 +20,7 @@ const Crm = () => {
             {crmData.map((obj, i) => (
               <div
                 key={i}
-                className="group duration-200 snap-start mb-4 min-w-[324px]  sm:min-w-[400px]  pe-4 h-full "
+                className="group duration-200 snap-start mb-4 min-w-[324px]  sm:min-w-[400px]  sm:pe-4 h-full "
               >
                 <div className="flex items-center gap-[10px]">
                   <span>{obj.svg}</span>
