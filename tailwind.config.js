@@ -12,10 +12,11 @@ module.exports = {
       base: '16px',
       lg: '18px',
       xl: '20px',
-      '2xl': '22px',
+      '2xl': '24px',
       '3xl': '30px',
       '4xl': '40px',
       '5xl': '48px',
+      '6xl': '50px',
     },
     container: {
       padding: {
@@ -27,7 +28,23 @@ module.exports = {
     fontFamily: {
       inter: ['inter', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      animation:
+      {
+        'moveX': 'translateX 5s linear infinite',
+        'moveX2': 'translateX2 8s linear infinite'
+      },
+      keyframes: {
+        translateX: {
+          '0%': { transform: 'translateX(183px)' },
+          '100%': { transform: ' translateX(calc(-180px))' },
+        },
+        translateX2: {
+          '0%': { transform: 'translateX(183px)' },
+          '100%': { transform: ' translateX(calc(-340px))' },
+        }
+      }
+    },
   },
   plugins: [],
 }
