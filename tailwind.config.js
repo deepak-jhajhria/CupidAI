@@ -12,6 +12,7 @@ module.exports = {
       base: '16px',
       lg: '18px',
       xl: '20px',
+      xxl: '22px',
       '2xl': '24px',
       '3xl': '30px',
       '4xl': '40px',
@@ -50,7 +51,7 @@ module.exports = {
       'mid-white': '#E4E4E7',
       'off-white': '#A1A1AA',
       'off-black': '#0E0D0D',
-      'dark-black':'#1F1F1F'
+      'dark-black': '#1F1F1F'
     },
     backgroundImage: {
       "bg-gradient": "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
