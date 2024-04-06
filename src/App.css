@@ -2,27 +2,3 @@
     display: none;
 }
 
-.services:hover p {
-    color: white;
-    z-index: 1;
-}
-
-.sevices-svg g path {
-    transition: .4s;
-}
-
-.services:hover svg g .smile {
-    fill-opacity: 0.6 !important;
-}
-
-.services:hover svg g .round {
-    fill-opacity: 0. !important;
-}
-
-.services:hover svg g .insta {
-    stroke-opacity: 0.5 !important;
-}
-
-.bg-gradient {
-    background: linear-gradient(180deg, #0E0E0E 0%, rgba(14, 14, 14, 0) 100%);
-}
