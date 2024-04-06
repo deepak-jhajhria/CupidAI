@@ -34,7 +34,7 @@ const Crm = () => {
               </div>
             ))}
           </div>
-          <img src={crmai} alt="crmai" className=" rounded-t-[20px]" />
+          <img src={crmai} alt="crmai" height={397} className=" min-h-[184px] w-full h-full rounded-t-[20px]"  />
         </div>
         <sapn className=" rounded-full text-center  flex  justify-center ">
           <YellowMan />
