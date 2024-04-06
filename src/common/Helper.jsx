@@ -6,6 +6,12 @@ export const linkData = [
     { path: "#pricing", link: "pricing" },
     { path: "#features", link: "how to use" },
 ]
+export const navLinkData = [
+    { path: "#features", link: "features" },
+    { path: "#Services", link: "Services" },
+    { path: "#pricing", link: "pricing" },
+    { path: "#features", link: "how to use" },
+]
 export const accordionData = [
     { id: 1, title: "How do you handle my data?", content: "Artificial Intelligence refers to the development of computer systems that can perform tasks that typically require human intelligence." },
     { id: 2, title: "What's the difference between the Pro and Team plan?", content: "Artificial Intelligence refers to the development of computer systems that can perform tasks that typically require human intelligence." },
@@ -20,3 +26,9 @@ export const icons = [
     { link: "http://www.telegram.com", logo: (<TelegramIcon />) },
     { link: "http://www.facebook.com", logo: (<FacebookIcon />) },
 ]
+
+export const CommonBtn = (props) => {
+    return (
+        <button className="py-4.5 px-6 rounded-full bg-gradient-to-r from-orange-red from-70% to-blue font-medium text-xl leading-6">{props.text}</button>
+    )
+}

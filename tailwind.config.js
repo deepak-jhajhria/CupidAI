@@ -46,7 +46,8 @@ module.exports = {
         '13': '72px',
       },
       padding:{
-        '8.5':'34px'
+        '8.5':'34px',
+        '4.5':'18px'
       },
       boxShadow: {
         'gradientRed': '0 0 20px 1px #F800B9',
