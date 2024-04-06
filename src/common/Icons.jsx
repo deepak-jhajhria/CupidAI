@@ -10,7 +10,7 @@ export const Arrow = ({ id, open }) => {
 }
 export const Herobg = () => {
     return (
-        <svg width="1440" height="1440" viewBox="0 0 1440 1440" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="w-full" width="1920" height="1440" viewBox="0 0 1440 1440" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_f_8013_38)">
                 <ellipse opacity="0.3" cx="1227.67" cy="471.599" rx="522.328" ry="400.599" fill="#3840FF" />
                 <ellipse cx="74.3277" cy="638.599" rx="522.328" ry="400.599" fill="#A661FF" />
