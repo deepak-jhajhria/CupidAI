@@ -4,15 +4,21 @@ import Faq from './components/Faq';
 import Crm from './components/Crm';
 import Ourservices from './components/Ourservices';
 import Pricing from './components/Pricing';
-import CustomizedAccordions from './components/FaqNew';
+import IdentityHub from './components/IdentityHub';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
-      <TrustedCompany />
-      <Crm />
-    </>
-  );
+    <div className="bg-black">
+      <Faq />
+      <Ourservices />
+      <Pricing />
+      <IdentityHub />
+      <Footer />
+      {/* <Crm /> */}
+      {/* <TrustedCompany /> */}
+    </div>
+  )
 }
 
 export default App

@@ -1,4 +1,6 @@
+import { Accordion, AccordionHeader, AccordionBody } from '@material-tailwind/react';
 import React, { useState } from 'react'
+import { Arrow } from '../common/Icons';
 
 const Faq = () => {
     const [open, setOpen] = useState(0);
@@ -21,13 +23,13 @@ const Faq = () => {
                 <p className='text-[#646464] font-inter text-xl'>Answers to the most frequently asked questions.</p>
                 <div className='mt-[14px]'>
                     {accordionData.map((item, index) => (
-                        <div className={`${open === index ? "" : ""} overflow-hidden border-b border-[#1D1E1E] mt-8`} key={item.title}>
-                            <div onClick={() => toggleAccordion(index)} className={` ${open === index ? "pb-3" : "pb-6"} cursor-pointer flex items-center justify-between w-full`}>
-                                <p className={` text-white text-base font-semibold font-inter ${open === index ? "" : ""}`}>{item.title}</p>
-                                <span className="">{open === index ? (<span></span>) : (<span ></span>)}</span>
-                            </div>
-                            <p className={`overflow-hidden text-white text-sm font-inter font-normal duration-500 sm:w-[92%] ${open === index ? "max-h-36 pb-2" : "max-h-0"}`}>{item.content}</p>
-                        </div>))
+                        <Accordion key={index} onClick={() => toggleAccordion(index)} className={`cursor-pointer border-b border-white}`} open={open === 1} icon={<Arrow id={1} open={open} />}>
+                            <AccordionHeader className=" font-Outfit text-sm md:text-base font-medium text-[#4D4D4D] w-full justify-between">{item.title}
+                            </AccordionHeader>
+                            <AccordionBody className=""> {item.content}
+                            </AccordionBody>
+                        </Accordion>
+                    ))
                     }
                 </div>
             </div>
