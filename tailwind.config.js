@@ -17,6 +17,7 @@ module.exports = {
       '4xl': '40px',
       '5xl': '48px',
       '6xl': '50px',
+      '7xl': '60px',
     },
     container: {
       padding: {
@@ -29,6 +30,14 @@ module.exports = {
       inter: ['inter', 'sans-serif'],
     },
     extend: {
+      colors: {
+        'gray': '#646464',
+        'gray-white': '#E4E2EE',
+        'gray-white-100': '#CAC6DD',
+        'blue': '#7F04E2',
+        'orange-red': '#7F04E2',
+        'dark-black': '#1B1530',
+      },
       animation:
       {
         'moveX': 'translateX 5s linear infinite',

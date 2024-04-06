@@ -1,11 +1,11 @@
 import './App.css';
 import TrustedCompany from './components/TrustedCompany';
 import Faq from './components/Faq';
-import Footer from './components/Footer';
-import IdentityHub from './components/IdentityHub';
 import Crm from './components/Crm';
 import Ourservices from './components/Ourservices';
 import Pricing from './components/Pricing';
+import IdentityHub from './components/IdentityHub';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
       {/* <TrustedCompany /> */}
     </div>
   )
+
 }
 
 export default App

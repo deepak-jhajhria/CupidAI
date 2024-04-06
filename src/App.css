@@ -1,3 +1,11 @@
+* {
+    font-family: "inter", "sans-sarif";
+}
+
+.scrolbar-none::-webkit-scrollbar {
+    display: none;
+}
+
 .services:hover::before {
     bottom: -81%;
     filter: blur(80px);
@@ -24,6 +32,7 @@
     color: white;
     z-index: 1;
 }
+
 .sevices-svg g path {
     transition: .4s;
 }
