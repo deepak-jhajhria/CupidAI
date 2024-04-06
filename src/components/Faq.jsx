@@ -15,7 +15,7 @@ const Faq = () => {
                 <p className=' text-gray font-inter text-xl'>Answers to the most frequently asked questions.</p>
                 <div className='mt-[14px]'>
                     {accordionData.map((item, index) => (
-                        <Accordion key={index} onClick={() => toggleAccordion(index)} className={`cursor-pointer border-b border-white mt-7 `} open={open === index} icon={<Arrow id={index} open={open} />}>
+                        <Accordion key={index} onClick={() => toggleAccordion(index)} className={`cursor-pointer border-b border-white border-opacity-10 mt-7 `} open={open === index} icon={<Arrow id={index} open={open} />}>
                             <AccordionHeader className={`font-semibold text-white text-sm md:text-base text-start w-full justify-between gap-3 border-0 pb-8 pt-0 ${open === index ? "pb-0":"pb-5 md:pb-8"}`}>{item.title}
                             </AccordionHeader>
                             <AccordionBody className="font-semibold text-white opacity-70 text-sm md:text-sm py-2 sm:py-3"> {item.content}

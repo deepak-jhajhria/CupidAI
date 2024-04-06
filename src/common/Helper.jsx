@@ -15,8 +15,8 @@ export const accordionData = [
     { id: 6, title: "Does Raycast have a Student Program?", content: "Artificial Intelligence refers to the development of computer systems that can perform tasks that typically require human intelligence." },
 ];
 export const icons = [
-    { link: "http://www.facebook.com", logo: (<FacebookIcon />) },
-    { link: "http://www.instagram.com", logo: (<InstaIcon />) },
     { link: "http://www.twitter.com", logo: (<TwiterIcon />) },
-    { link: "http://www.linkden.com", logo: (<TelegramIcon />) }
+    { link: "http://www.instagram.com", logo: (<InstaIcon />) },
+    { link: "http://www.telegram.com", logo: (<TelegramIcon />) },
+    { link: "http://www.facebook.com", logo: (<FacebookIcon />) },
 ]

@@ -30,12 +30,15 @@ module.exports = {
       inter: ['inter', 'sans-serif'],
     },
     extend: {
+      boxShadow: {
+        'gradientRed': '0 0 20px 1px #F800B9',
+      },
       colors: {
         'gray': '#646464',
         'gray-white': '#E4E2EE',
         'gray-white-100': '#CAC6DD',
         'blue': '#7F04E2',
-        'orange-red': '#7F04E2',
+        'orange-red': '#F800B9',
         'dark-black': '#1B1530',
       },
       animation:
