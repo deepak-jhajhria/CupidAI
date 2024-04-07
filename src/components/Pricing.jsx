@@ -287,7 +287,7 @@ const Pricing = () => {
                                     <div className='blur_box_border transition-all ease-linear hover:scale-[1.03] relative hover:z-10 duration-500 cursor-pointer group '>
                                         <div className='p-[33px] bg-[#FFFFFF0D] rounded-3xl'>
                                             <h3 className=' group-hover:text-8xl text-lg font-medium leading-3xl transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
-                                            <p className='text-base font-medium leading-[125%] text-dark-gray my-6'>{item.para}</p>
+                                            <p className='text-base font-medium leading-xl text-dark-gray my-6'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
                                                 <h3 className='font-semibold sm:text-5xl text-3xl  text-white'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
@@ -312,7 +312,7 @@ const Pricing = () => {
                                     <div className='blur_box_border transition-all ease-linear hover:scale-[1.03] relative hover:z-10 duration-500 cursor-pointer group '>
                                         <div className='p-[33px] bg-[#FFFFFF0D] rounded-3xl'>
                                             <h3 className=' group-hover:text-[32px] text-lg font-medium leading-3xl transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
-                                            <p className='text-base font-medium leading-[125%] text-dark-gray my-6'>{item.para}</p>
+                                            <p className='text-base font-medium leading-xl text-dark-gray my-6'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
                                                 <h3 className='font-semibold sm:text-5xl text-3xl text-white'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
@@ -331,7 +331,7 @@ const Pricing = () => {
                         )
                     })) : ""}
                 </div>
-                <button className='bg-[#FFFFFF1A] flex items-center text-white px-[17px] py-[6px] rounded-[41px] gap-2 mt-[48px] mx-auto'><p className='text-2sm font-medium leading-[100%] opacity-60'>Want enterprise features?</p><p className='text-2sm font-bold leading-[100%] flex items-center gap-1'>Tell us more <WhiteArrow /></p></button>
+                <button className='bg-[#FFFFFF1A] flex items-center text-white px-[17px] py-[6px] rounded-[41px] gap-2 mt-[48px] mx-auto'><p className='text-2sm font-medium leading-2xl opacity-60'>Want enterprise features?</p><p className='text-2sm font-bold leading-2xl flex items-center gap-1'>Tell us more <WhiteArrow /></p></button>
             </div>
             <div className='bg-[#2980D6] w-[778px] h-[778px] blur-[1000px] absolute top-[25%] left-[-50%]'></div>
         </div>
