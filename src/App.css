@@ -1,5 +1,6 @@
 * {
     font-family: "inter", "sans-sarif";
+    scroll-behavior: smooth;
 }
 
 .scrolbar::-webkit-scrollbar-track {
