@@ -2,7 +2,7 @@
 // import TrustedCompany from './components/TrustedCompany';
 // import Faq from './components/Faq';
 // import Crm from './components/Crm';
-import ServiceCard from './components/ServiceCard';
+import ServiceCard from './components/ServiceCard.jsx';
 // import IdentityHub from './components/IdentityHub';
 // import Footer from './components/Footer';
 
