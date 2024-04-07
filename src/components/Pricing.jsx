@@ -65,7 +65,7 @@ const pricedata1 = [
                             <div>
                                 <WhiteTick />
                             </div>
-                            <p className='text-2sm font-medium text-[#FFFFFF99] leading-[147%]'>{line.includedata1}</p>
+                            <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>{line.includedata1}</p>
                         </div>
                     )
                 })}
@@ -93,7 +93,7 @@ const pricedata1 = [
                             <div>
                                 <GreenTick />
                             </div>
-                            <p className='text-2sm font-medium text-[#FFFFFF99] leading-[147%]'>{line.includedata1}</p>
+                            <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>{line.includedata1}</p>
                         </div>
                     )
                 })}
@@ -101,7 +101,7 @@ const pricedata1 = [
                     <div>
                         <GreenStar />
                     </div>
-                    <p className='text-2sm font-medium text-[#FFFFFF99] leading-[147%]'>More Coming Soon</p>
+                    <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>More Coming Soon</p>
                 </div>
             </div>
         </>),
@@ -132,7 +132,7 @@ const pricedata1 = [
                                 <div>
                                     <WhiteTick />
                                 </div>
-                                <p className='text-2sm font-medium text-[#FFFFFF99] leading-[147%]'>{line.includedata1}</p>
+                                <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>{line.includedata1}</p>
                             </div>
                         )
                     })}
@@ -141,7 +141,7 @@ const pricedata1 = [
                     <div>
                         <RedStar />
                     </div>
-                    <p className='text-2sm font-medium text-[#FFFFFF99] leading-[147%]'>More Coming Soon</p>
+                    <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>More Coming Soon</p>
                 </div>
             </div>
         </>),
@@ -173,7 +173,7 @@ const pricedata = [
                             <div>
                                 <WhiteTick />
                             </div>
-                            <p className='text-2sm font-medium text-[#FFFFFF99] leading-[147%]'>{line.includedata1}</p>
+                            <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>{line.includedata1}</p>
                         </div>
                     )
                 })}
@@ -201,7 +201,7 @@ const pricedata = [
                             <div>
                                 <GreenTick />
                             </div>
-                            <p className='text-2sm font-medium text-[#FFFFFF99] leading-[147%]'>{line.includedata1}</p>
+                            <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>{line.includedata1}</p>
                         </div>
                     )
                 })}
@@ -209,7 +209,7 @@ const pricedata = [
                     <div>
                         <GreenStar />
                     </div>
-                    <p className='text-2sm font-medium text-[#FFFFFF99] leading-[147%]'>More Coming Soon</p>
+                    <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>More Coming Soon</p>
                 </div>
             </div>
         </>),
@@ -240,7 +240,7 @@ const pricedata = [
                                 <div>
                                     <WhiteTick />
                                 </div>
-                                <p className='text-2sm font-medium text-[#FFFFFF99] leading-[147%]'>{line.includedata1}</p>
+                                <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>{line.includedata1}</p>
                             </div>
                         )
                     })}
@@ -249,7 +249,7 @@ const pricedata = [
                     <div>
                         <RedStar />
                     </div>
-                    <p className='text-2sm font-medium text-[#FFFFFF99] leading-[147%]'>More Coming Soon</p>
+                    <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>More Coming Soon</p>
                 </div>
             </div>
         </>),
@@ -271,10 +271,10 @@ const pricedata = [
 const Pricing = () => {
     const [toggle, setToggle] = useState(1)
     return (
-        <div className='max-w-[1920px] relative'>
-            <div id='pricing' className="xl:max-w-[1200px] mx-auto mt-[88px] container px-3">
+        <div className='relative'>
+            <div id='pricing' className="xl:max-w-[1209px] mt-[88px] container">
                 <h2 className='font-bold text-4xl text-white text-center leading-[140%]'>Pricing</h2>
-                <p className=' text-[#646464] font-inter text-xl text-center sm:mt-[22px] mt-[18px]'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
+                <p className=' text-dark-gray font-inter text-xl text-center sm:mt-[22px] mt-[18px]'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
                 <div className='bg-[#FFFFFF1A] rounded-[41px] p-1 max-w-[192px] mx-auto w-full flex justify-between md:mt-[44.5px] mt-6'>
                     <button onClick={() => setToggle(1)} className={`py-[6px] px-[19px] rounded-[48px] text-base font-medium text-white ${toggle === 1 ? "bg-[#FFFFFF1A]" : ""}`}>Yearly</button>
                     <button onClick={() => setToggle(2)} className={`py-[6px] px-[18px] rounded-[48px] text-base font-medium text-white ${toggle === 2 ? "bg-[#FFFFFF1A]" : ""}`}>Monthly</button>
@@ -286,13 +286,13 @@ const Pricing = () => {
                                 <div key={index} className='lg:w-[33.33%] md:w-[50%] sm:w-[80%] w-[95%] lg:mt-0 md:mt-10 mt-8'>
                                     <div className='blur_box_border transition-all ease-linear hover:scale-[1.03] relative hover:z-10 duration-500 cursor-pointer group '>
                                         <div className='p-[33px] bg-[#FFFFFF0D] rounded-3xl'>
-                                            <h3 className=' group-hover:text-[32px] text-lg font-medium leading-[156%] transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
-                                            <p className='text-base font-medium leading-[125%] text-[#FFFFFF99] my-6'>{item.para}</p>
+                                            <h3 className=' group-hover:text-8xl text-lg font-medium leading-3xl transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
+                                            <p className='text-base font-medium leading-[125%] text-dark-gray my-6'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
                                                 <h3 className='font-semibold sm:text-5xl text-3xl  text-white'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
-                                                    <p className='font-medium text-2sm text-[#FFFFFF99] leading-[147%]'>/ month</p>
-                                                    <p className='font-medium text-2sm text-[#FFFFFF99] leading-[147%]'>{item.user}</p>
+                                                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>/ month</p>
+                                                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>{item.user}</p>
                                                 </div>
                                                 {item.disbtn}
                                             </div>
@@ -308,16 +308,16 @@ const Pricing = () => {
                     {toggle === 1 ? (pricedata1.map((item, index) => {
                         return (
                             <>
-                                <div key={index} className='lg:w-[33.33%] md:w-[50%] sm:w-[80%] w-[95%] lg:mt-0 md:mt-10 mt-8'>
+                                <div key={index} className='lg:w-4/12 md:w-6/12 sm:w-10/12 w-11/12 lg:mt-0 md:mt-10 mt-8'>
                                     <div className='blur_box_border transition-all ease-linear hover:scale-[1.03] relative hover:z-10 duration-500 cursor-pointer group '>
                                         <div className='p-[33px] bg-[#FFFFFF0D] rounded-3xl'>
-                                            <h3 className=' group-hover:text-[32px] text-lg font-medium leading-[156%] transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
-                                            <p className='text-base font-medium leading-[125%] text-[#FFFFFF99] my-6'>{item.para}</p>
+                                            <h3 className=' group-hover:text-[32px] text-lg font-medium leading-3xl transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
+                                            <p className='text-base font-medium leading-[125%] text-dark-gray my-6'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
                                                 <h3 className='font-semibold sm:text-5xl text-3xl text-white'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
-                                                    <p className='font-medium text-2sm text-[#FFFFFF99] leading-[147%]'>/ year</p>
-                                                    <p className='font-medium text-2sm text-[#FFFFFF99] leading-[147%]'>{item.user}</p>
+                                                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>/ year</p>
+                                                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>{item.user}</p>
                                                 </div>
                                                 {item.disbtn}
                                             </div>
@@ -333,7 +333,7 @@ const Pricing = () => {
                 </div>
                 <button className='bg-[#FFFFFF1A] flex items-center text-white px-[17px] py-[6px] rounded-[41px] gap-2 mt-[48px] mx-auto'><p className='text-2sm font-medium leading-[100%] opacity-60'>Want enterprise features?</p><p className='text-2sm font-bold leading-[100%] flex items-center gap-1'>Tell us more <WhiteArrow /></p></button>
             </div>
-            <div className='bg-[#2980D6] w-[778px] h-[778px] blur-[900px] absolute top-[25%] left-[-50%]'></div>
+            <div className='bg-[#2980D6] w-[778px] h-[778px] blur-[1000px] absolute top-[25%] left-[-50%]'></div>
         </div>
     )
 }

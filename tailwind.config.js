@@ -18,6 +18,7 @@ module.exports = {
       '5xl': '48px',
       '6xl': '50px',
       '7xl': '60px',
+      '8xl': '32px',
     },
     container: {
       padding: {
@@ -47,6 +48,8 @@ module.exports = {
         '11': '48.41px',
         '12': '3rem',
         '13': '72px',
+        '2xl': '147%',
+        '3xl': '156%'
       },
       padding: {
         '8.5': '34px',
@@ -69,7 +72,7 @@ module.exports = {
         'orange-red': '#F800B9',
         'dark-black': '#1B1530',
         'bodymain': '#040403',
-        'dark-gray': '#646464',
+        'dark-gray': '#FFFFFF99',
       },
       animation:
       {
@@ -96,6 +99,7 @@ module.exports = {
       backgroundSize: {
         "BgSize": "100% 100%"
       },
+
     },
   },
   plugins: []
