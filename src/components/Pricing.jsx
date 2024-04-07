@@ -110,9 +110,9 @@ const pricedata1 = [
         disbtn: (<button className='py-[4px] px-[8px] bg-[#FF6363] text-[#110E19] font-semibold text-xs leading-[100%] rounded-[24px]' >-20%</button>),
         billed: (
             <>
-                <div className='relative flex items-center justify-center md:mt-[32px] md:mb-[35px] my-5'>
-                    <button className='text-2sm font-medium text-white leading-[100%] text-center mx-auto py-[4px] px-[12px] bg-[#FFFFFF1A] rounded-[10px] top-[-14px] relative z-10'>£408 billed annually</button>
-                    <div className='bg-whitegradient absolute w-full h-[1px] bottom-[25px] left-0 right-0 z-[1]'>
+                <div className='relative flex items-center justify-center md:mt-[32px] md:mb-[35px] my-7'>
+                    <button className='text-2sm font-medium text-white leading-[100%] text-center mx-auto py-[4px] px-[12px] bg-[#FFFFFF1A] rounded-[10px] relative z-10'>£408 billed annually</button>
+                    <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 z-[1]'>
                     </div>
                 </div>
             </>
@@ -150,9 +150,9 @@ const pricedata1 = [
         disbtn: (<button className='py-[4px] px-[8px] bg-[#FF6363] text-[#110E19] font-semibold text-xs leading-[100%] rounded-[24px]' >-20%</button>),
         billed: (
             <>
-                <div className='relative flex items-center justify-center md:mt-[32px] md:mb-[35px] my-5'>
-                    <button className='text-2sm font-medium text-white leading-[100%] text-center mx-auto py-[4px] px-[12px] bg-[#FFFFFF1A] rounded-[10px] top-[-14px] relative z-10'>£1300 billed annually</button>
-                    <div className='bg-whitegradient absolute w-full h-[1px] bottom-[25px] left-0 right-0 z-[1]'>
+                <div className='relative flex items-center justify-center md:mt-[32px] md:mb-[35px] my-7'>
+                    <button className='text-2sm font-medium text-white leading-[100%] text-center mx-auto py-[4px] px-[12px] bg-[#FFFFFF1A] rounded-[10px] relative z-10'>£1300 billed annually</button>
+                    <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 z-[1]'>
                     </div>
                 </div>
             </>
@@ -287,9 +287,9 @@ const Pricing = () => {
                                     <div className='blur_box_border transition-all ease-linear hover:scale-[1.03] relative hover:z-10 duration-500 cursor-pointer group '>
                                         <div className='p-[33px] bg-[#FFFFFF0D] rounded-3xl'>
                                             <h3 className=' group-hover:text-[32px] text-lg font-medium leading-[156%] transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
-                                            <p className='text-base font-medium leading-125%[] text-[#FFFFFF99] sm:my-6 my-4'>{item.para}</p>
+                                            <p className='text-base font-medium leading-[125%] text-[#FFFFFF99] my-6'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
-                                                <h3 className='font-semibold text-5xl text-white'>{item.price}</h3>
+                                                <h3 className='font-semibold sm:text-5xl text-3xl  text-white'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
                                                     <p className='font-medium text-2sm text-[#FFFFFF99] leading-[147%]'>/ month</p>
                                                     <p className='font-medium text-2sm text-[#FFFFFF99] leading-[147%]'>{item.user}</p>
@@ -312,9 +312,9 @@ const Pricing = () => {
                                     <div className='blur_box_border transition-all ease-linear hover:scale-[1.03] relative hover:z-10 duration-500 cursor-pointer group '>
                                         <div className='p-[33px] bg-[#FFFFFF0D] rounded-3xl'>
                                             <h3 className=' group-hover:text-[32px] text-lg font-medium leading-[156%] transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
-                                            <p className='text-base font-medium leading-125%[] text-[#FFFFFF99] sm:my-6 my-4'>{item.para}</p>
+                                            <p className='text-base font-medium leading-[125%] text-[#FFFFFF99] my-6'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
-                                                <h3 className='font-semibold text-5xl text-white'>{item.price}</h3>
+                                                <h3 className='font-semibold sm:text-5xl text-3xl text-white'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
                                                     <p className='font-medium text-2sm text-[#FFFFFF99] leading-[147%]'>/ year</p>
                                                     <p className='font-medium text-2sm text-[#FFFFFF99] leading-[147%]'>{item.user}</p>
