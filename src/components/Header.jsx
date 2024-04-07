@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FooterLogo } from "./Icons";
 import { CommonBtn, navLinkData } from "../common/Helper";
 import { Herobg } from "../common/Icons";
+import dashboardimg from '../assets/images/dashboardimage.webp'
 
 const Header = () => {
     const [show, setShow] = useState(true);
@@ -12,10 +13,10 @@ const Header = () => {
     }
     return (
         <>
-            <div className="relative h-[781px] overflow-hidden">
+            <div className="relative lg:h-[810px] sm:h-[700px] h-[610px] overflow-hidden">
                 <span className="absolute bottom-0 left-0 z-0 w-full h-full"><Herobg /></span>
-                <div className="lg:max-w-[1320px] px-3 container mx-auto pt-8  relative z-[1]">
-                    <nav className="flex items-center justify-between bg-[#01020f2e] rounded-full p-2.5 border border-white border-solid sm:h-[71px] h-[60px]">
+                <div className="lg:max-w-[1320px] px-3 container mx-auto pt-8 bg-[#01020f2e] relative z-[1]">
+                    <nav className="flex items-center justify-between rounded-[60px] p-2.5 border border-white border-solid sm:h-[71px] h-[60px]">
                         <a className="flex items-center gap-2 text-3xl font-bold text-white" href="/">
                             <span> <FooterLogo /> </span> CupidAI</a>
                         <ul className={`${show ? "left-[-100%]" : "left-0"} flex max-lg:fixed max-lg:top-0 max-lg:bg-black md:bg-full bg-cover max-lg:h-full max-lg:w-full max-lg:z-[7] max-lg:transition-all max-lg:duration-300 max-lg:ease-linear max-lg:min-h-screen max-lg:flex-col gap-7 items-center justify-center`}>
@@ -61,11 +62,16 @@ const Header = () => {
                     </nav>
                 </div>
                 <div className="flex flex-col w-full justify-center items-center max-w-[691px] px-3 mx-auto relative z-10 mt-16 pt-1.5">
-                    <h2 className="text-4xl font-semibold text-center text-white sm:text-5xl md:text-6xl lg:text-7xl md:leading-13">Unleash <span className="bg-gradient-to-r to-orange-red from-15% from-blue text-transparent bg-clip-text">Creativity</span>, Effortlessly</h2>
+                    <h2 className="text-3xl font-semibold text-center text-white sm:text-5xl md:text-6xl lg:text-7xl md:leading-13">Unleash <span className="bg-gradient-to-r to-orange-red from-15% from-blue text-transparent bg-clip-text">Creativity</span>, Effortlessly</h2>
                     <p className="mt-3 text-base font-normal leading-8 text-center sm:text-lg md:text-xl text-gray-white-100 md:mt-4">Elevate your agency's output with state-of-the-art AI, engineered to innovate at the speed of thought.</p>
-                    <CommonBtn cstm="mt-5" name="Try Now"/>
+                    <CommonBtn cstm="mt-5" name="Try Now" />
+
                 </div>
             </div>
+            <div className="container xl:max-w-[1320px] lg:h-[400px] sm-[260px] h-[250px]">
+                <img src={dashboardimg} alt="dashboardimg" className="mx-auto -translate-y-[42%] lg:w-[915px] md:w-[600px] max-h-[400px] md:max-h-[687px] relative z-10" />
+            </div>
+
         </>
     );
 };
