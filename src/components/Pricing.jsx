@@ -219,8 +219,8 @@ const pricedata = [
         billed: (
             <>
                 <div className='relative flex items-center justify-center mt-[32px] mb-[35px]'>
-                    <button className='text-2sm font-medium text-white leading-[100%] text-center mx-auto py-[4px] px-[12px] bg-[#FFFFFF1A] rounded-[10px] top-[-14px] relative z-10'>£408 billed annually</button>
-                    <div className='bg-whitegradient absolute w-full h-[1px] bottom-[25px] left-0 right-0 z-[1]'>
+                    <button className='text-2sm font-medium text-white leading-[100%] text-center mx-auto py-[4px] px-[12px] bg-[#FFFFFF1A] rounded-[10px] relative z-10'>£408 billed annually</button>
+                    <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 z-[1]'>
                     </div>
                 </div>
             </>
@@ -259,8 +259,8 @@ const pricedata = [
         billed: (
             <>
                 <div className='relative flex items-center justify-center mt-[32px] mb-[35px]'>
-                    <button className='text-2sm font-medium text-white leading-[100%] text-center mx-auto py-[4px] px-[12px] bg-[#FFFFFF1A] rounded-[10px] top-[-14px] relative z-10'>£1300 billed annually</button>
-                    <div className='bg-whitegradient absolute w-full h-[1px] bottom-[25px] left-0 right-0 z-[1]'>
+                    <button className='text-2sm font-medium text-white leading-[100%] text-center mx-auto py-[4px] px-[12px] bg-[#FFFFFF1A] rounded-[10px] relative z-10'>£1300 billed annually</button>
+                    <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 z-[1]'>
                     </div>
                 </div>
             </>
