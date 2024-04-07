@@ -15,12 +15,12 @@ const Crm = () => {
           <br />
           your business, not the other way around.
         </p>
-        <div className=" overflow-hidden my-10 md:mb-20 md:mt-24  pt-9 px-3 sm:px-6 lg:px-10 border-[#3C3C3C] border  rounded-[20px] bg-[#0A0A0A] ">
+        <div className=" overflow-hidden my-10 md:mb-20 md:mt-[92px]  pt-9 px-3 sm:px-6 lg:px-10 border-[#3C3C3C] border  rounded-[20px] bg-[#0A0A0A] ">
           <div className=" flex flex-row justify-between max-xl:overflow-x-scroll snap-mandatory snap-x scrolbar flex-nowrap mb-5 sm:mb-11  md:mb-16 ">
             {crmData.map((obj, i) => (
               <div
                 key={i}
-                className="group duration-200 snap-start mb-4 min-w-[324px]  sm:min-w-[400px]  sm:pe-4 h-full "
+                className="group duration-200 snap-start mb-4 min-w-[324px]  sm:min-w-[401px]  sm:pe-4 h-full "
               >
                 <div className="flex items-center gap-[10px]">
                   <span>{obj.svg}</span>
@@ -34,12 +34,17 @@ const Crm = () => {
               </div>
             ))}
           </div>
-          <img src={crmai} alt="crmai" height={397} className=" min-h-[184px] w-full h-full rounded-t-[20px]"  />
+          <img
+            src={crmai}
+            alt="crmai"
+            height={397}
+            className=" min-h-[184px] w-full h-full rounded-t-[20px]"
+          />
         </div>
         <sapn className=" rounded-full text-center  flex  justify-center ">
           <YellowMan />
         </sapn>
-        <p className="  font-normal pt-6 text-2xl leading-[30px] tracking-[-0.5px] text-center max-w-[590px] mx-auto text-gray-light-300">
+        <p className="  font-normal pt-6 text-2xl leading-[30px] tracking-wide text-center max-w-[590px] mx-auto text-gray-light-300">
           “My team loves cupid reporting system because it’s so dynamic. We can
           splice our data in so many different ways and combinations.”
         </p>

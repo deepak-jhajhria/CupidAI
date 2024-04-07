@@ -12,6 +12,7 @@ module.exports = {
       base: '16px',
       lg: '18px',
       xl: '20px',
+      xxl: '22px',
       '2xl': '24px',
       '9xl':'22px',
       '3xl': '30px',
@@ -47,7 +48,7 @@ module.exports = {
       },
       lineHeight: {
         '11': '48.41px',
-        '12': '3rem',
+        '12': '56px',
         '13': '72px',
         'sm': '81%',
         'xl': '125%',
@@ -69,6 +70,8 @@ module.exports = {
         'black-primary': '#040403',
         'gray': '#646464',
         'gray-white': '#E4E2EE',
+        'gray-white2': '#E4E4E7',
+        'gray-white3': '#A1A1AA',
         'gray-white-200': '#EAECF0',
         'gray-white-100': '#CAC6DD',
         'gray-white-700': '#646464',
@@ -87,7 +90,7 @@ module.exports = {
       },
       animation:
       {
-        'moveX': 'translateX 17s linear infinite',
+        'moveX': 'translateX 19s linear infinite forwards',
       },
       keyframes: {
         translateX: {
@@ -102,7 +105,7 @@ module.exports = {
       backgroundImage: {
         "bg-gradient": "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
         "bg_gradient": "linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #040403 100%)",
-        'whitegradient': "linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%)",
+        'whitegradient':"linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%)",
         'whiteborder': "linear-gradient(106.78deg, rgba(255, 255, 255, 0.23) 6.02 %, rgba(255, 255, 255, 0.0759) 104.65 %)",
         'textgradient': "linear-gradient(97.84deg, #FF4141 0.52%, #FFA6B0 23.61%, #FFB6E6 50%, #FFD8D8 75%, #BF8DFF 100%)",
         'btngradient': "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
@@ -110,10 +113,21 @@ module.exports = {
       backgroundSize: {
         "BgSize": "100% 100%"
       },
-      borderRadius: {
-        '2md': '41px',
-        '3md': '48px',
-      }
+    },
+    colors: {
+      'dark-gray': '#646464',
+      'mid-white': '#E4E4E7',
+      'off-white': '#A1A1AA',
+      'off-black': '#0E0D0D',
+      'dark-black': '#1F1F1F',
+
+    },
+    backgroundImage: {
+      "bg-gradient": "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
+      "bg_gradient": "linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #040403 100%)"
+    },
+    backgroundSize: {
+      "BgSize": "100% 100%"
     },
   },
   plugins: []

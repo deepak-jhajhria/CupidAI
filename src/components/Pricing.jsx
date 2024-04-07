@@ -58,14 +58,14 @@ const pricedata1 = [
         heading: "Indivisual",
         para: "Everything you need to supercharge your productivity.",
         includedata: (<>
-            <div className='flex gap-4 flex-col lg:mb-20 mb-14'>
+            <div className='flex flex-col gap-4 lg:mb-20 mb-14'>
                 {includedata.map((line) => {
                     return (
                         <div className='flex gap-3 '>
                             <div>
                                 <WhiteTick />
                             </div>
-                            <p className='text-2sm font-medium text-dark-gray leading-2xl'>{line.includedata1}</p>
+                            <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
                         </div>
                     )
                 })}
@@ -86,14 +86,14 @@ const pricedata1 = [
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
         includedata: (<>
-            <div className='flex gap-4 flex-col lg:mb-36 mb-14'>
+            <div className='flex flex-col gap-4 lg:mb-36 mb-14'>
                 {enterpreneurdata.map((line) => {
                     return (
                         <div className='flex gap-3'>
                             <div>
                                 <GreenTick />
                             </div>
-                            <p className='text-2sm font-medium text-dark-gray leading-2xl'>{line.includedata1}</p>
+                            <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
                         </div>
                     )
                 })}
@@ -101,13 +101,13 @@ const pricedata1 = [
                     <div>
                         <GreenStar />
                     </div>
-                    <p className='text-2sm font-medium text-dark-gray leading-2xl'>More Coming Soon</p>
+                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>More Coming Soon</p>
                 </div>
             </div>
         </>),
         price: "£360",
         user: "",
-        disbtn: (<button className='py-1 px-2 bg-light-red text-dark-black-300 font-semibold text-xs rounded-3xl' >-20%</button>),
+        disbtn: (<button className='px-2 py-1 text-xs font-semibold bg-light-red text-dark-black-300 rounded-3xl' >-20%</button>),
         billed: (
             <>
                 <div className='relative flex items-center justify-center md:mt-8 md:mb-9 my-7'>
@@ -124,15 +124,15 @@ const pricedata1 = [
         heading: "Business",
         para: "Supercharge your team and maximize productivity.",
         includedata: (<>
-            <div className='flex gap-4 flex-col lg:mb-24 mb-14'>
-                <div className='flex gap-4 flex-col'>
+            <div className='flex flex-col gap-4 lg:mb-24 mb-14'>
+                <div className='flex flex-col gap-4'>
                     {business.map((line) => {
                         return (
                             <div className='flex gap-3 '>
                                 <div>
                                     <WhiteTick />
                                 </div>
-                                <p className='text-2sm font-medium text-dark-gray leading-2xl'>{line.includedata1}</p>
+                                <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
                             </div>
                         )
                     })}
@@ -141,7 +141,7 @@ const pricedata1 = [
                     <div>
                         <RedStar />
                     </div>
-                    <p className='text-2sm font-medium text-dark-gray leading-2xl'>More Coming Soon</p>
+                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>More Coming Soon</p>
                 </div>
             </div>
         </>),
@@ -166,14 +166,14 @@ const pricedata = [
         heading: "Indivisual",
         para: "Everything you need to supercharge your productivity.",
         includedata: (<>
-            <div className='flex gap-4 flex-col mb-20'>
+            <div className='flex flex-col gap-4 mb-20'>
                 {includedata.map((line) => {
                     return (
                         <div className='flex gap-3 '>
                             <div>
                                 <WhiteTick />
                             </div>
-                            <p className='text-2sm font-medium text-dark-gray leading-2xl'>{line.includedata1}</p>
+                            <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
                         </div>
                     )
                 })}
@@ -194,14 +194,14 @@ const pricedata = [
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
         includedata: (<>
-            <div className='flex gap-4 flex-col lg:mb-36 mb-14'>
+            <div className='flex flex-col gap-4 lg:mb-36 mb-14'>
                 {enterpreneurdata.map((line) => {
                     return (
                         <div className='flex gap-3'>
                             <div>
                                 <GreenTick />
                             </div>
-                            <p className='text-2sm font-medium text-dark-gray leading-2xl'>{line.includedata1}</p>
+                            <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
                         </div>
                     )
                 })}
@@ -209,7 +209,7 @@ const pricedata = [
                     <div>
                         <GreenStar />
                     </div>
-                    <p className='text-2sm font-medium text-dark-gray leading-2xl'>More Coming Soon</p>
+                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>More Coming Soon</p>
                 </div>
             </div>
         </>),
@@ -232,15 +232,15 @@ const pricedata = [
         heading: "Business",
         para: "Supercharge your team and maximize productivity.",
         includedata: (<>
-            <div className='flex gap-4 flex-col lg:mb-24 mb-14'>
-                <div className='flex gap-4 flex-col'>
+            <div className='flex flex-col gap-4 lg:mb-24 mb-14'>
+                <div className='flex flex-col gap-4'>
                     {business.map((line) => {
                         return (
                             <div className='flex gap-3 '>
                                 <div>
                                     <WhiteTick />
                                 </div>
-                                <p className='text-2sm font-medium text-dark-gray leading-2xl'>{line.includedata1}</p>
+                                <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
                             </div>
                         )
                     })}
@@ -249,13 +249,13 @@ const pricedata = [
                     <div>
                         <RedStar />
                     </div>
-                    <p className='text-2sm font-medium text-dark-gray leading-2xl'>More Coming Soon</p>
+                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>More Coming Soon</p>
                 </div>
             </div>
         </>),
         price: "£120",
         user: "/ user",
-        disbtn: (<button className='py-1 px-2 bg-light-red text-dark-black-300 font-semibold text-xs rounded-3xl' >-20%</button>),
+        disbtn: (<button className='px-2 py-1 text-xs font-semibold bg-light-red text-dark-black-300 rounded-3xl' >-20%</button>),
         billed: (
             <>
                 <div className='relative flex items-center justify-center mt-[32px] mb-[35px]'>
@@ -283,13 +283,13 @@ const Pricing = () => {
                     {toggle === 2 ? (pricedata.map((item, index) => {
                         return (
                             <>
-                                <div key={index} className='lg:w-4/12 md:w-6/12 sm:w-10/12 w-11/12 lg:mt-0 md:mt-10 mt-8'>
-                                    <div className='blur_box_border transition-all ease-linear hover:scale-105 relative hover:z-10 duration-500 cursor-pointer group '>
+                                <div key={index} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
+                                    <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-105 hover:z-10 group '>
                                         <div className='p-8 bg-gray-white-600 rounded-3xl'>
-                                            <h3 className=' group-hover:text-8xl text-lg font-medium leading-3xl transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
-                                            <p className='text-base font-medium leading-xl text-dark-gray my-6'>{item.para}</p>
+                                            <h3 className='inline-block text-lg font-medium text-white transition-all duration-500 ease-linear group-hover:text-8xl leading-3xl group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent'>{item.heading}</h3>
+                                            <p className='my-6 text-base font-medium leading-xl text-dark-gray'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
-                                                <h3 className='font-semibold sm:text-5xl text-3xl  text-white leading-sm'>{item.price}</h3>
+                                                <h3 className='text-3xl font-semibold text-white sm:text-5xl leading-sm'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
                                                     <p className='font-medium text-2sm text-dark-gray leading-2xl'>/ month</p>
                                                     <p className='font-medium text-2sm text-dark-gray leading-2xl'>{item.user}</p>
@@ -297,7 +297,7 @@ const Pricing = () => {
                                                 {item.disbtn}
                                             </div>
                                             {item.billed}
-                                            <p className='text-2sm font-medium text-dark-gray leading-2xl mb-4'>What’s included</p>
+                                            <p className='mb-4 font-medium text-2sm text-dark-gray leading-2xl'>What’s included</p>
                                             {item.includedata}
                                             <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-transparent transition-all duration-500 ease-linear text-white text-base  font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
                                         </div>
@@ -309,13 +309,13 @@ const Pricing = () => {
                     {toggle === 1 ? (pricedata1.map((item, index) => {
                         return (
                             <>
-                                <div key={index} className='lg:w-4/12 md:w-6/12 sm:w-10/12 w-11/12 lg:mt-0 md:mt-10 mt-8'>
-                                    <div className='blur_box_border transition-all ease-linear hover:scale-105 relative hover:z-10 duration-500 cursor-pointer group '>
+                                <div key={index} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
+                                    <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-105 hover:z-10 group '>
                                         <div className='p-8 bg-gray-white-600 rounded-3xl'>
                                             <h3 className=' group-hover:text-[32px] text-lg font-medium leading-3xl transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
-                                            <p className='text-base font-medium leading-xl text-dark-gray my-6'>{item.para}</p>
+                                            <p className='my-6 text-base font-medium leading-xl text-dark-gray'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
-                                                <h3 className='font-semibold sm:text-5xl text-3xl text-white leading-sm'>{item.price}</h3>
+                                                <h3 className='text-3xl font-semibold text-white sm:text-5xl leading-sm'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
                                                     <p className='font-medium text-2sm text-dark-gray leading-2xl'>/ year</p>
                                                     <p className='font-medium text-2sm text-dark-gray leading-2xl'>{item.user}</p>
@@ -323,7 +323,7 @@ const Pricing = () => {
                                                 {item.disbtn}
                                             </div>
                                             {item.billed}
-                                            <p className='text-2sm font-medium text-dark-gray leading-2xl mb-4'>What’s included</p>
+                                            <p className='mb-4 font-medium text-2sm text-dark-gray leading-2xl'>What’s included</p>
                                             {item.includedata}
                                             <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-transparent transition-all duration-500 ease-linear text-white text-base  font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
                                         </div>
@@ -333,7 +333,7 @@ const Pricing = () => {
                         )
                     })) : ""}
                 </div>
-                <button className='bg-gray-white-500 flex items-center text-white px-4 py-1.5 rounded-2md gap-2 mt-12 mx-auto'><p className='text-2sm font-medium leading-2xl opacity-60'>Want enterprise features?</p><p className='text-2sm font-bold leading-2xl flex items-center gap-1'>Tell us more <WhiteArrow /></p></button>
+                <button className='bg-gray-white-500 flex items-center text-white px-4 py-1.5 rounded-2md gap-2 mt-12 mx-auto'><p className='font-medium text-2sm leading-2xl opacity-60'>Want enterprise features?</p><p className='flex items-center gap-1 font-bold text-2sm leading-2xl'>Tell us more <WhiteArrow /></p></button>
             </div>
             <div className='bg-[#2980D6] w-[778px] h-[778px] blur-[1000px] absolute top-[25%] left-[-50%]'></div>
         </div>
