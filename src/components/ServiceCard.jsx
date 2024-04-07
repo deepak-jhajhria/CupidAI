@@ -10,28 +10,28 @@ const ServiceCard = () => {
             svges: <ServiceSvg />,
             heading: "Content Deepfakes",
             paragraph: "Seize control and elevate your business with our hyper-realistic AI content creation. Immerse in a blend of artistry and technology that promises unparalleled authenticity.",
-            width: "md:w-7/12",
+            width: "md:w-7/12 px-2 w-full",
         },
         {
             id: 2,
             svges: <ServiceSvg2 />,
             heading: "AI Verifications",
             paragraph: "Streamline your workflow with our AI verification system that boasts a stellar 80% first-time success rate.",
-            width: "md:w-5/12",
+            width: "md:w-5/12 px-2 w-full",
         },
         {
             id: 3,
             svges: <ServiceSvg3 />,
             heading: "Content Utilities",
             paragraph: "Consolidate your resources with our comprehensive content utilities. Access everything you need from a single dashboard.",
-            width: "md:w-5/12",
+            width: "md:w-5/12 px-2 w-full",
         },
         {
             id: 4,
             svges: <ServiceSvg4 />,
             heading: "Image Generation",
             paragraph: "Transform productivity with our sophisticated automation tools. Let technology work tirelessly behind the scenes, so your creativity never has to pause.",
-            width: "md:w-7/12",
+            width: "md:w-7/12 px-2 w-full",
         },
     ]
     return (
