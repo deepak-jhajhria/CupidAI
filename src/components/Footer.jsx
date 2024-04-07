@@ -1,38 +1,36 @@
-import { linkData } from "../common/Helper"
-import { FacebookIcon, FooterGradientMixup, InstaIcon, Logo, TelegramIcon, TwiterIcon } from "./Icons"
+import { icons, linkData } from "../common/Helper"
+import { FooterGradientMixup, FooterLogo } from "./Icons"
 
 const Footer = () => {
-
-    const icons = [{ link: "http://www.facebook.com", logo: (<FacebookIcon />) }, { link: "http://www.instagram.com", logo: (<InstaIcon />) }, { link: "http://www.twitter.com", logo: (<TwiterIcon />) }, { link: "http://www.linkden.com", logo: (<TelegramIcon />) }]
     return (
-        <div className=" relative mt-32">
-            <div className="container relative z-10">
+        <div className="relative mt-10 sm:mt-16 md:mt-24 lg:mt-32">
+            <div className="container relative z-10 max-w-[1300px]">
                 <nav>
                     <div className="flex flex-col lg:flex-row items-center justify-between py-6">
-                        <a className="font-inter font-bold text-3xl text-white flex items-center gap-2" href="/"><span><Logo /></span>CupidAI</a>
-                        <ul className="flex items-center lg:gap-20">
+                        <a className="font-bold text-3xl text-white flex items-center gap-2 leading-9" href="/"><span><FooterLogo /></span>CupidAI</a>
+                        <ul className="flex items-center gap-3 md:gap-10 lg:gap-24 mt-3 sm:mt-5 lg:mt-0 flex-wrap justify-center">
                             {
                                 linkData.map((item, index) => (
                                     <li key={index}>
-                                        <a className="font-inter text-[#CAC6DD] text-xs uppercase" href={item.path}>{item.link}</a>
+                                        <a className="text-gray-white-100 text-xs uppercase navLinks tracking-wide leading-5" href={item.path}>{item.link}</a>
                                     </li>
                                 ))
                             }
                         </ul>
                     </div>
                 </nav>
-                <div className="flex justify-between items-center w-full relative before:absolute before:top-0 before:w-full before:bg-[#3B2A4E] before:h-[1px] py-6">
-                    <p className=" font-inter font-sm font-normal text-[#CAC6DD]">©{(new Date().getFullYear())}. All rights reserved </p>
-                    <div className="flex items-center gap-8">
+                <div className="flex justify-between items-center flex-col-reverse sm:flex-row w-full border-t border-white py-3 sm:py-5 md:py-6">
+                    <p className=" font-inter font-sm font-normal text-gray-white-100 mt-4 sm:mt-0">©{(new Date().getFullYear())}. All rights reserved </p>
+                    <div className="flex items-center gap-4 sm:gap-5 md:gap-8">
                         {
                             icons.map((items, index) => (
-                                <a className="mt-2" key={index} href={items.link} target="_blank"><span className="w-8 h-8 sm:w-[44px] sm:h-[44px] rounded-full bg-[#1B1530] duration-300  group hover:-translate-y-2 flex justify-center items-center">{items.logo}</span></a>
+                                <a key={index} href={items.link} target="_blank"><span className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-dark-black group hover:bg-white duration-300  group hover:-translate-y-2 flex justify-center items-center">{items.logo}</span></a>
                             ))
                         }
                     </div>
                 </div>
             </div>
-            <span className=" absolute bottom-0 z-0"><FooterGradientMixup /></span>
+            <span className="absolute bottom-0 z-0"><FooterGradientMixup /></span>
         </div>
     )
 }
