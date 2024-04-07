@@ -119,7 +119,7 @@ module.exports = {
       'mid-white': '#E4E4E7',
       'off-white': '#A1A1AA',
       'off-black': '#0E0D0D',
-      'dark-black': '#1F1F1F',
+      'dark-black': '#1e1e1e',
 
     },
     backgroundImage: {
