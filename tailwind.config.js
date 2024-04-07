@@ -22,34 +22,63 @@ module.exports = {
     container: {
       padding: {
         DEFAULT: '14px',
-        'xl': '12px',
+        'xl': '14px',
       },
       center: true,
     },
     fontFamily: {
       inter: ['inter', 'sans-serif'],
     },
+    letterSpacing: {
+      tighter: '-1px', //use
+      tightest: '-0.5px', //use
+      tight: '-.025em',
+      normal: '0',
+      wide: '.035em', // use
+      wider: '.05em',
+      widest: '.1em',
+      widest: '.25em',
+    },
     extend: {
+      screens: {
+        'slg': '870px',
+      },
+      lineHeight: {
+        '11': '48.41px',
+        '12': '3rem',
+        '13': '72px',
+      },
+      padding: {
+        '8.5': '34px',
+        '4.5': '18px'
+      },
       boxShadow: {
         'gradientRed': '0 0 20px 1px #F800B9',
       },
       colors: {
+        'white': '#FFF',
+        'black-primary': '#040403',
         'gray': '#646464',
         'gray-white': '#E4E2EE',
+        'gray-white-200': '#EAECF0',
         'gray-white-100': '#CAC6DD',
+        'gray-white-700': '#646464',
+        'gray-dark-200': '#57606A',
+        'gray-light-300': '#99A2AF',
         'blue': '#7F04E2',
         'orange-red': '#F800B9',
         'dark-black': '#1B1530',
+        'bodymain': '#040403',
+        'dark-gray': '#646464',
       },
       animation:
       {
-        'moveX': 'translateX 5s linear infinite',
-        'moveX2': 'translateX2 8s linear infinite'
+        'moveX': 'translateX 17s linear infinite',
       },
       keyframes: {
         translateX: {
-          '0%': { transform: 'translateX(183px)' },
-          '100%': { transform: ' translateX(calc(-180px))' },
+          '0%': { transform: 'translateX(80%)' },
+          '100%': { transform: 'translateX(-80%)' },
         },
         translateX2: {
           '0%': { transform: 'translateX(183px)' },
@@ -57,12 +86,18 @@ module.exports = {
         }
       },
       backgroundImage: {
+        "bg-gradient": "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
+        "bg_gradient": "linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #040403 100%)",
         'whitegradient': "linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%)",
         'whiteborder': "linear-gradient(106.78deg, rgba(255, 255, 255, 0.23) 6.02 %, rgba(255, 255, 255, 0.0759) 104.65 %)",
         'textgradient': "linear-gradient(97.84deg, #FF4141 0.52%, #FFA6B0 23.61%, #FFB6E6 50%, #FFD8D8 75%, #BF8DFF 100%)",
         'btngradient': "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
-      }
+      },
+      backgroundSize: {
+        "BgSize": "100% 100%"
+      },
     },
   },
-  plugins: [],
+  plugins: []
 }
+

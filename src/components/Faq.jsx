@@ -4,26 +4,25 @@ import { Arrow } from '../common/Icons';
 import { accordionData } from '../common/Helper';
 
 const Faq = () => {
-    const [open, setOpen] = useState(0);
+    const [open, setOpen] = useState();
     const toggleAccordion = (index) => {
         setOpen(open === index ? true : index);
     };
+    console.log(accordionData.slice(-1));
     return (
         <div className='container max-w-[1300px]'>
-            <div className='max-w-[700px] mx-auto pt-[293px]'>
-                <h2 className='font-bold text-4xl text-white'>FAQs</h2>
-                <p className=' text-gray font-inter text-xl'>Answers to the most frequently asked questions.</p>
-                <div className='mt-[14px]'>
-                    {accordionData.map((item, index) => (
-                        <Accordion key={index} onClick={() => toggleAccordion(index)} className={`cursor-pointer border-b border-white border-opacity-10 mt-7 `} open={open === index} icon={<Arrow id={index} open={open} />}>
-                            <AccordionHeader className={`font-semibold text-white text-sm md:text-base text-start w-full justify-between gap-3 border-0 pb-8 pt-0 ${open === index ? "pb-0":"pb-5 md:pb-8"}`}>{item.title}
-                            </AccordionHeader>
-                            <AccordionBody className="font-semibold text-white opacity-70 text-sm md:text-sm py-2 sm:py-3"> {item.content}
-                            </AccordionBody>
-                        </Accordion>
-                    ))
-                    }
-                </div>
+            <div className='max-w-[700px] mx-auto pt-24 sm:pt-32 md:pt-52 lg:pt-72'>
+                <h2 className='font-bold text-4xl text-white leading-11 tracking-tighter'>FAQs</h2>
+                <p className=' text-gray font-inter text-lg md:text-xl md:leading-7 tracking-tightest mt-5 md:mt-6 pb-2'>Answers to the most frequently asked questions.</p>
+                {accordionData.map((item, index) => (
+                    <Accordion key={index} onClick={() => toggleAccordion(index)} className={`cursor-pointer border-b border-white border-opacity-10 mt-5 sm:mt-6 md:mt-8 ${item.id === 6 ? "border-0" : ""}`} open={open === index} icon={<Arrow id={index} open={open} />}>
+                        <AccordionHeader className={`font-semibold text-white text-2sm md:text-base text-start w-full justify-between gap-3 border-0 pb-8 pt-0 leading-6 ${open === index ? "pb-0" : "pb-5 md:pb-8.5"}`}>{item.title}
+                        </AccordionHeader>
+                        <AccordionBody className="font-semibold text-white opacity-70 text-sm md:text-sm py-2 sm:py-3"> {item.content}
+                        </AccordionBody>
+                    </Accordion>
+                ))
+                }
             </div>
         </div>
     )
