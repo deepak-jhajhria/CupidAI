@@ -73,7 +73,7 @@ module.exports = {
       },
       animation:
       {
-        'moveX': 'translateX 17s linear infinite',
+        'moveX': 'translateX 19s linear infinite forwards',
       },
       keyframes: {
         translateX: {

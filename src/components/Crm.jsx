@@ -34,12 +34,17 @@ const Crm = () => {
               </div>
             ))}
           </div>
-          <img src={crmai} alt="crmai" height={397} className=" min-h-[184px] w-full h-full rounded-t-[20px]"  />
+          <img
+            src={crmai}
+            alt="crmai"
+            height={397}
+            className=" min-h-[184px] w-full h-full rounded-t-[20px]"
+          />
         </div>
         <sapn className=" rounded-full text-center  flex  justify-center ">
           <YellowMan />
         </sapn>
-        <p className="  font-normal pt-6 text-2xl leading-[30px] tracking-[-0.5px] text-center max-w-[590px] mx-auto text-gray-light-300">
+        <p className="  font-normal pt-6 text-2xl leading-[30px] tracking-wide text-center max-w-[590px] mx-auto text-gray-light-300">
           “My team loves cupid reporting system because it’s so dynamic. We can
           splice our data in so many different ways and combinations.”
         </p>
