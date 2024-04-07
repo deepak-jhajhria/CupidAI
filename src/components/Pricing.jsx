@@ -272,7 +272,7 @@ const Pricing = () => {
     const [toggle, setToggle] = useState(1)
     return (
         <>
-            <div className="max-w-[1200px] mx-auto mt-[88px] container px-3">
+            <div id='pricing' className="xl:max-w-[1200px] mx-auto mt-[88px] container px-3">
                 <h2 className='font-bold text-4xl text-white text-center leading-[140%]'>Pricing</h2>
                 <p className=' text-[#646464] font-inter text-xl text-center sm:mt-[22px] mt-[18px]'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
                 <div className='bg-[#FFFFFF1A] rounded-[41px] p-1 max-w-[192px] mx-auto w-full flex justify-between md:mt-[44.5px] mt-6'>
