@@ -271,7 +271,7 @@ const pricedata = [
 const Pricing = () => {
     const [toggle, setToggle] = useState(1)
     return (
-        <>
+        <div className='max-w-[1920px] relative'>
             <div id='pricing' className="xl:max-w-[1200px] mx-auto mt-[88px] container px-3">
                 <h2 className='font-bold text-4xl text-white text-center leading-[140%]'>Pricing</h2>
                 <p className=' text-[#646464] font-inter text-xl text-center sm:mt-[22px] mt-[18px]'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
@@ -332,8 +332,9 @@ const Pricing = () => {
                     })) : ""}
                 </div>
                 <button className='bg-[#FFFFFF1A] flex items-center text-white px-[17px] py-[6px] rounded-[41px] gap-2 mt-[48px] mx-auto'><p className='text-2sm font-medium leading-[100%] opacity-60'>Want enterprise features?</p><p className='text-2sm font-bold leading-[100%] flex items-center gap-1'>Tell us more <WhiteArrow /></p></button>
-            </div >
-        </>
+            </div>
+            <div className='bg-[#2980D6] w-[778px] h-[778px] blur-[900px] absolute top-[25%] left-[-50%]'></div>
+        </div>
     )
 }
 
