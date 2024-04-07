@@ -45,7 +45,7 @@ module.exports = {
       },
       lineHeight: {
         '11': '48.41px',
-        '12': '3rem',
+        '12': '56px',
         '13': '72px',
       },
       padding: {
@@ -60,6 +60,8 @@ module.exports = {
         'black-primary': '#040403',
         'gray': '#646464',
         'gray-white': '#E4E2EE',
+        'gray-white2': '#E4E4E7',
+        'gray-white3': '#A1A1AA',
         'gray-white-200': '#EAECF0',
         'gray-white-100': '#CAC6DD',
         'gray-white-700': '#646464',

@@ -1,4 +1,4 @@
-import { FacebookIcon, InstaIcon, TelegramIcon, TwiterIcon } from "../components/Icons";
+import { FacebookIcon, InstaIcon, ServiceSvg, ServiceSvg2, ServiceSvg3, ServiceSvg4, TelegramIcon, TwiterIcon } from "../components/Icons";
 
 export const linkData = [
     { path: "#features", link: "features" },
@@ -32,3 +32,33 @@ export const CommonBtn = (props) => {
         <button className={`py-4.5 px-[25px] rounded-full text-white bg-gradient-to-tr from-orange-red from-30% to-blue font-medium text-xl leading-6 flex ${props.cstm}`}>{props.name}</button>
     )
 }
+export const serviceCardItems = [
+    {
+        id: 1,
+        svges: <ServiceSvg />,
+        heading: "Content Deepfakes",
+        paragraph: "Seize control and elevate your business with our hyper-realistic AI content creation. Immerse in a blend of artistry and technology that promises unparalleled authenticity.",
+        width: "md:w-7/12",
+    },
+    {
+        id: 2,
+        svges: <ServiceSvg2 />,
+        heading: "AI Verifications",
+        paragraph: "Streamline your workflow with our AI verification system that boasts a stellar 80% first-time success rate.",
+        width: "md:w-5/12",
+    },
+    {
+        id: 3,
+        svges: <ServiceSvg3 />,
+        heading: "Content Utilities",
+        paragraph: "Consolidate your resources with our comprehensive content utilities. Access everything you need from a single dashboard.",
+        width: "md:w-5/12",
+    },
+    {
+        id: 4,
+        svges: <ServiceSvg4 />,
+        heading: "Image Generation",
+        paragraph: "Transform productivity with our sophisticated automation tools. Let technology work tirelessly behind the scenes, so your creativity never has to pause.",
+        width: "md:w-7/12",
+    },
+]

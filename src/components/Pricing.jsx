@@ -125,7 +125,7 @@ const pricedata1 = [
         para: "Supercharge your team and maximize productivity.",
         includedata: (<>
             <div className='flex gap-4 flex-col lg:mb-[103px] mb-[60px]'>
-                <div className='flex gap-4 flex-col'>
+                <div className='flex flex-col gap-4'>
                     {business.map((line) => {
                         return (
                             <div className='flex gap-3 '>
@@ -233,7 +233,7 @@ const pricedata = [
         para: "Supercharge your team and maximize productivity.",
         includedata: (<>
             <div className='flex gap-4 flex-col mb-[103px]'>
-                <div className='flex gap-4 flex-col'>
+                <div className='flex flex-col gap-4'>
                     {business.map((line) => {
                         return (
                             <div className='flex gap-3 '>
@@ -289,7 +289,7 @@ const Pricing = () => {
                                             <h3 className=' group-hover:text-[32px] text-lg font-medium leading-[156%] transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
                                             <p className='text-base font-medium leading-[125%] text-[#FFFFFF99] my-6'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
-                                                <h3 className='font-semibold sm:text-5xl text-3xl  text-white'>{item.price}</h3>
+                                                <h3 className='text-3xl font-semibold text-white sm:text-5xl'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
                                                     <p className='font-medium text-2sm text-[#FFFFFF99] leading-[147%]'>/ month</p>
                                                     <p className='font-medium text-2sm text-[#FFFFFF99] leading-[147%]'>{item.user}</p>
@@ -314,7 +314,7 @@ const Pricing = () => {
                                             <h3 className=' group-hover:text-[32px] text-lg font-medium leading-[156%] transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
                                             <p className='text-base font-medium leading-[125%] text-[#FFFFFF99] my-6'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
-                                                <h3 className='font-semibold sm:text-5xl text-3xl text-white'>{item.price}</h3>
+                                                <h3 className='text-3xl font-semibold text-white sm:text-5xl'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
                                                     <p className='font-medium text-2sm text-[#FFFFFF99] leading-[147%]'>/ year</p>
                                                     <p className='font-medium text-2sm text-[#FFFFFF99] leading-[147%]'>{item.user}</p>

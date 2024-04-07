@@ -13,21 +13,21 @@ const Header = () => {
     return (
         <>
             <div className="relative h-[781px] overflow-hidden">
-                <span className="absolute left-0 w-full h-full bottom-0 z-0"><Herobg /></span>
+                <span className="absolute bottom-0 left-0 z-0 w-full h-full"><Herobg /></span>
                 <div className="lg:max-w-[1320px] px-3 container mx-auto pt-8 bg-[#01020f2e] relative z-[1]">
-                    <nav className="flex items-center justify-between rounded-[60px] p-2.5 border border-white border-solid sm:h-[71px] h-[60px]">
-                        <a className="font-bold text-3xl text-white flex items-center gap-2" href="/">
+                    <nav className="flex items-center justify-between rounded-full p-2.5 border border-white border-solid sm:h-[71px] h-[60px]">
+                        <a className="flex items-center gap-2 text-3xl font-bold text-white" href="/">
                             <span> <FooterLogo /> </span> CupidAI</a>
                         <ul className={`${show ? "left-[-100%]" : "left-0"} flex max-lg:fixed max-lg:top-0 max-lg:bg-black md:bg-full bg-cover max-lg:h-full max-lg:w-full max-lg:z-[7] max-lg:transition-all max-lg:duration-300 max-lg:ease-linear max-lg:min-h-screen max-lg:flex-col gap-7 items-center justify-center`}>
                             {
                                 navLinkData.map((item, index) => (
                                     <li key={index}>
-                                        <a className="text-white text-xl uppercase navLinks tracking-wide leading-6 font-semibold" href={item.path}>{item.link}</a>
+                                        <a className="text-xl font-semibold leading-6 tracking-wide text-white uppercase navLinks" href={item.path}>{item.link}</a>
                                     </li>
                                 ))
                             }
                         </ul>
-                        <div className="gap-5 items-center lg:flex hidden">
+                        <div className="items-center hidden gap-5 lg:flex">
                             <a
                                 href="#"
                                 className="font-normal text-xl leading-[15px] text-white"
@@ -36,7 +36,7 @@ const Header = () => {
                             </a>
                             <CommonBtn name="Sing up" />
                         </div>
-                        <div className="flex items-center sm:gap-5 gap-3 lg:hidden">
+                        <div className="flex items-center gap-3 sm:gap-5 lg:hidden">
                             <div onClick={() => setShow(!show)} className="lg:hidden w-[28px] h-[20px] relative z-[10] flex justify-between flex-col">
                                 <span
                                     className={`${show
@@ -61,8 +61,8 @@ const Header = () => {
                     </nav>
                 </div>
                 <div className="flex flex-col w-full justify-center items-center max-w-[691px] px-3 mx-auto relative z-10 mt-16 pt-1.5">
-                    <h2 className=" text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-semibold text-center md:leading-13">Unleash <span className="bg-gradient-to-r to-orange-red from-15% from-blue text-transparent bg-clip-text">Creativity</span>, Effortlessly</h2>
-                    <p className="text-base sm:text-lg md:text-xl font-normal text-gray-white-100 mt-3 md:mt-4 text-center leading-8">Elevate your agency's output with state-of-the-art AI, engineered to innovate at the speed of thought.</p>
+                    <h2 className="text-4xl font-semibold text-center text-white  sm:text-5xl md:text-6xl lg:text-7xl md:leading-13">Unleash <span className="bg-gradient-to-r to-orange-red from-15% from-blue text-transparent bg-clip-text">Creativity</span>, Effortlessly</h2>
+                    <p className="mt-3 text-base font-normal leading-8 text-center sm:text-lg md:text-xl text-gray-white-100 md:mt-4">Elevate your agency's output with state-of-the-art AI, engineered to innovate at the speed of thought.</p>
                     <CommonBtn cstm="mt-5" name="Try Now"/>
                 </div>
             </div>
