@@ -13,6 +13,7 @@ module.exports = {
       lg: '18px',
       xl: '20px',
       '2xl': '24px',
+      '9xl':'22px',
       '3xl': '30px',
       '4xl': '40px',
       '5xl': '48px',
@@ -48,13 +49,17 @@ module.exports = {
         '11': '48.41px',
         '12': '3rem',
         '13': '72px',
+        'sm': '81%',
         'xl': '125%',
+        '2.5xl': '140%',
         '2xl': '147%',
         '3xl': '156%'
       },
       padding: {
         '8.5': '34px',
-        '4.5': '18px'
+        '4.5': '18px',
+        '1.5': '6px',
+        '2.5': '10px'
       },
       boxShadow: {
         'gradientRed': '0 0 20px 1px #F800B9',
@@ -74,6 +79,11 @@ module.exports = {
         'dark-black': '#1B1530',
         'bodymain': '#040403',
         'dark-gray': '#FFFFFF99',
+        'light-red': '#FF6363',
+        'dark-black-300': '#110E19',
+        'gray-white-500': '#FFFFFF1A',
+        'gray-white-600': '#FFFFFF0D',
+        'gray-black-200': '#858585',
       },
       animation:
       {
@@ -100,7 +110,10 @@ module.exports = {
       backgroundSize: {
         "BgSize": "100% 100%"
       },
-
+      borderRadius: {
+        '2md': '41px',
+        '3md': '48px',
+      }
     },
   },
   plugins: []

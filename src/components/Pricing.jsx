@@ -58,14 +58,14 @@ const pricedata1 = [
         heading: "Indivisual",
         para: "Everything you need to supercharge your productivity.",
         includedata: (<>
-            <div className='flex gap-4 flex-col lg:mb-[85px] mb-[60px]'>
+            <div className='flex gap-4 flex-col lg:mb-20 mb-14'>
                 {includedata.map((line) => {
                     return (
                         <div className='flex gap-3 '>
                             <div>
                                 <WhiteTick />
                             </div>
-                            <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>{line.includedata1}</p>
+                            <p className='text-2sm font-medium text-dark-gray leading-2xl'>{line.includedata1}</p>
                         </div>
                     )
                 })}
@@ -76,7 +76,7 @@ const pricedata1 = [
         disbtn: (<></>),
         billed: (
             <>
-                <div className='bg-whitegradient w-full h-[1px] md:my-[48px] my-7'>
+                <div className='bg-whitegradient w-full h-[1px] md:my-12 my-7'>
                 </div>
             </>
         )
@@ -86,14 +86,14 @@ const pricedata1 = [
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
         includedata: (<>
-            <div className='flex gap-4 flex-col lg:mb-[147px] mb-[60px]'>
+            <div className='flex gap-4 flex-col lg:mb-36 mb-14'>
                 {enterpreneurdata.map((line) => {
                     return (
                         <div className='flex gap-3'>
                             <div>
                                 <GreenTick />
                             </div>
-                            <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>{line.includedata1}</p>
+                            <p className='text-2sm font-medium text-dark-gray leading-2xl'>{line.includedata1}</p>
                         </div>
                     )
                 })}
@@ -101,17 +101,17 @@ const pricedata1 = [
                     <div>
                         <GreenStar />
                     </div>
-                    <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>More Coming Soon</p>
+                    <p className='text-2sm font-medium text-dark-gray leading-2xl'>More Coming Soon</p>
                 </div>
             </div>
         </>),
         price: "£360",
         user: "",
-        disbtn: (<button className='py-[4px] px-[8px] bg-[#FF6363] text-[#110E19] font-semibold text-xs leading-[100%] rounded-[24px]' >-20%</button>),
+        disbtn: (<button className='py-1 px-2 bg-light-red text-dark-black-300 font-semibold text-xs rounded-3xl' >-20%</button>),
         billed: (
             <>
-                <div className='relative flex items-center justify-center md:mt-[32px] md:mb-[35px] my-7'>
-                    <button className='text-2sm font-medium text-white leading-[100%] text-center mx-auto py-[4px] px-[12px] bg-[#FFFFFF1A] rounded-[10px] relative z-10'>£408 billed annually</button>
+                <div className='relative flex items-center justify-center md:mt-8 md:mb-9 my-7'>
+                    <button className='text-2sm font-medium text-white leading-2xl text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£408 billed annually</button>
                     <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 z-[1]'>
                     </div>
                 </div>
@@ -124,7 +124,7 @@ const pricedata1 = [
         heading: "Business",
         para: "Supercharge your team and maximize productivity.",
         includedata: (<>
-            <div className='flex gap-4 flex-col lg:mb-[103px] mb-[60px]'>
+            <div className='flex gap-4 flex-col lg:mb-24 mb-14'>
                 <div className='flex gap-4 flex-col'>
                     {business.map((line) => {
                         return (
@@ -132,7 +132,7 @@ const pricedata1 = [
                                 <div>
                                     <WhiteTick />
                                 </div>
-                                <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>{line.includedata1}</p>
+                                <p className='text-2sm font-medium text-dark-gray leading-2xl'>{line.includedata1}</p>
                             </div>
                         )
                     })}
@@ -141,17 +141,17 @@ const pricedata1 = [
                     <div>
                         <RedStar />
                     </div>
-                    <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>More Coming Soon</p>
+                    <p className='text-2sm font-medium text-dark-gray leading-2xl'>More Coming Soon</p>
                 </div>
             </div>
         </>),
         price: "£1200",
         user: "/ user",
-        disbtn: (<button className='py-[4px] px-[8px] bg-[#FF6363] text-[#110E19] font-semibold text-xs leading-[100%] rounded-[24px]' >-20%</button>),
+        disbtn: (<button className='py-[4px] px-[8px] bg-light-red text-dark-black-300 font-semibold text-xs rounded-3xl' >-20%</button>),
         billed: (
             <>
-                <div className='relative flex items-center justify-center md:mt-[32px] md:mb-[35px] my-7'>
-                    <button className='text-2sm font-medium text-white leading-[100%] text-center mx-auto py-[4px] px-[12px] bg-[#FFFFFF1A] rounded-[10px] relative z-10'>£1300 billed annually</button>
+                <div className='relative flex items-center justify-center md:mt-8 md:mb-9 my-7'>
+                    <button className='text-2sm font-medium text-white leading-2xl text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£1300 billed annually</button>
                     <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 z-[1]'>
                     </div>
                 </div>
@@ -166,14 +166,14 @@ const pricedata = [
         heading: "Indivisual",
         para: "Everything you need to supercharge your productivity.",
         includedata: (<>
-            <div className='flex gap-4 flex-col mb-[85px]'>
+            <div className='flex gap-4 flex-col mb-20'>
                 {includedata.map((line) => {
                     return (
                         <div className='flex gap-3 '>
                             <div>
                                 <WhiteTick />
                             </div>
-                            <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>{line.includedata1}</p>
+                            <p className='text-2sm font-medium text-dark-gray leading-2xl'>{line.includedata1}</p>
                         </div>
                     )
                 })}
@@ -184,7 +184,7 @@ const pricedata = [
         disbtn: (<></>),
         billed: (
             <>
-                <div className='bg-whitegradient w-full h-[1px] my-[48px]'>
+                <div className='bg-whitegradient w-full h-[1px] my-12'>
                 </div>
             </>
         )
@@ -194,14 +194,14 @@ const pricedata = [
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
         includedata: (<>
-            <div className='flex gap-4 flex-col mb-[147px]'>
+            <div className='flex gap-4 flex-col lg:mb-36 mb-14'>
                 {enterpreneurdata.map((line) => {
                     return (
                         <div className='flex gap-3'>
                             <div>
                                 <GreenTick />
                             </div>
-                            <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>{line.includedata1}</p>
+                            <p className='text-2sm font-medium text-dark-gray leading-2xl'>{line.includedata1}</p>
                         </div>
                     )
                 })}
@@ -209,17 +209,17 @@ const pricedata = [
                     <div>
                         <GreenStar />
                     </div>
-                    <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>More Coming Soon</p>
+                    <p className='text-2sm font-medium text-dark-gray leading-2xl'>More Coming Soon</p>
                 </div>
             </div>
         </>),
         price: "£34",
         user: "",
-        disbtn: (<button className='py-[4px] px-[8px] bg-[#FF6363] text-[#110E19] font-semibold text-xs leading-[100%] rounded-[24px]' >-20%</button>),
+        disbtn: (<button className='py-[4px] px-[8px] bg-light-red text-dark-black-300 font-semibold text-xs rounded-3xl' >-20%</button>),
         billed: (
             <>
                 <div className='relative flex items-center justify-center mt-[32px] mb-[35px]'>
-                    <button className='text-2sm font-medium text-white leading-[100%] text-center mx-auto py-[4px] px-[12px] bg-[#FFFFFF1A] rounded-[10px] relative z-10'>£408 billed annually</button>
+                    <button className='text-2sm font-medium text-white leading-2xl text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£408 billed annually</button>
                     <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 z-[1]'>
                     </div>
                 </div>
@@ -232,7 +232,7 @@ const pricedata = [
         heading: "Business",
         para: "Supercharge your team and maximize productivity.",
         includedata: (<>
-            <div className='flex gap-4 flex-col mb-[103px]'>
+            <div className='flex gap-4 flex-col lg:mb-24 mb-14'>
                 <div className='flex gap-4 flex-col'>
                     {business.map((line) => {
                         return (
@@ -240,7 +240,7 @@ const pricedata = [
                                 <div>
                                     <WhiteTick />
                                 </div>
-                                <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>{line.includedata1}</p>
+                                <p className='text-2sm font-medium text-dark-gray leading-2xl'>{line.includedata1}</p>
                             </div>
                         )
                     })}
@@ -249,17 +249,17 @@ const pricedata = [
                     <div>
                         <RedStar />
                     </div>
-                    <p className='text-2sm font-medium text-[#FFFFFF99] leading-2xl'>More Coming Soon</p>
+                    <p className='text-2sm font-medium text-dark-gray leading-2xl'>More Coming Soon</p>
                 </div>
             </div>
         </>),
         price: "£120",
         user: "/ user",
-        disbtn: (<button className='py-[4px] px-[8px] bg-[#FF6363] text-[#110E19] font-semibold text-xs leading-[100%] rounded-[24px]' >-20%</button>),
+        disbtn: (<button className='py-1 px-2 bg-light-red text-dark-black-300 font-semibold text-xs rounded-3xl' >-20%</button>),
         billed: (
             <>
                 <div className='relative flex items-center justify-center mt-[32px] mb-[35px]'>
-                    <button className='text-2sm font-medium text-white leading-[100%] text-center mx-auto py-[4px] px-[12px] bg-[#FFFFFF1A] rounded-[10px] relative z-10'>£1300 billed annually</button>
+                    <button className='text-2sm font-medium text-white leading-2xl text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£1300 billed annually</button>
                     <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 z-[1]'>
                     </div>
                 </div>
@@ -272,24 +272,24 @@ const Pricing = () => {
     const [toggle, setToggle] = useState(1)
     return (
         <div className='relative'>
-            <div id='pricing' className="xl:max-w-[1209px] mt-[88px] container">
-                <h2 className='font-bold text-4xl text-white text-center leading-[140%]'>Pricing</h2>
-                <p className=' text-dark-gray font-inter text-xl text-center sm:mt-[22px] mt-[18px]'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
-                <div className='bg-[#FFFFFF1A] rounded-[41px] p-1 max-w-[192px] mx-auto w-full flex justify-between md:mt-[44.5px] mt-6'>
-                    <button onClick={() => setToggle(1)} className={`py-[6px] px-[19px] rounded-[48px] text-base font-medium text-white ${toggle === 1 ? "bg-[#FFFFFF1A]" : ""}`}>Yearly</button>
-                    <button onClick={() => setToggle(2)} className={`py-[6px] px-[18px] rounded-[48px] text-base font-medium text-white ${toggle === 2 ? "bg-[#FFFFFF1A]" : ""}`}>Monthly</button>
+            <div id='pricing' className="xl:max-w-[1209px] mt-20 container">
+                <h2 className='font-bold text-4xl text-white text-center leading-2.5xl'>Pricing</h2>
+                <p className=' text-dark-gray font-inter text-9xl text-center sm:pt-6 pt-4.5'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
+                <div className='bg-gray-white-500 rounded-2md p-1 max-w-[192px] mx-auto w-full flex justify-between md:mt-[44.5px] mt-6'>
+                    <button onClick={() => setToggle(1)} className={`py-1.5 px-4.5 rounded-3md text-base font-medium text-white ${toggle === 1 ? "bg-gray-white-500" : ""}`}>Yearly</button>
+                    <button onClick={() => setToggle(2)} className={`py-1.5 px-4.5 rounded-3md text-base font-medium text-white ${toggle === 2 ? "bg-gray-white-500" : ""}`}>Monthly</button>
                 </div>
-                <div className='flex items-center flex-wrap justify-center w-full md:pt-[67px] sm:pt-10 pt-6 lg:min-h-[860px]'>
+                <div className='flex items-center flex-wrap justify-center w-full md:pt-16 sm:pt-10 pt-6 lg:min-h-[870px]'>
                     {toggle === 2 ? (pricedata.map((item, index) => {
                         return (
                             <>
-                                <div key={index} className='lg:w-[33.33%] md:w-[50%] sm:w-[80%] w-[95%] lg:mt-0 md:mt-10 mt-8'>
-                                    <div className='blur_box_border transition-all ease-linear hover:scale-[1.03] relative hover:z-10 duration-500 cursor-pointer group '>
-                                        <div className='p-[33px] bg-[#FFFFFF0D] rounded-3xl'>
+                                <div key={index} className='lg:w-4/12 md:w-6/12 sm:w-10/12 w-11/12 lg:mt-0 md:mt-10 mt-8'>
+                                    <div className='blur_box_border transition-all ease-linear hover:scale-105 relative hover:z-10 duration-500 cursor-pointer group '>
+                                        <div className='p-8 bg-gray-white-600 rounded-3xl'>
                                             <h3 className=' group-hover:text-8xl text-lg font-medium leading-3xl transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
                                             <p className='text-base font-medium leading-xl text-dark-gray my-6'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
-                                                <h3 className='font-semibold sm:text-5xl text-3xl  text-white'>{item.price}</h3>
+                                                <h3 className='font-semibold sm:text-5xl text-3xl  text-white leading-sm'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
                                                     <p className='font-medium text-2sm text-dark-gray leading-2xl'>/ month</p>
                                                     <p className='font-medium text-2sm text-dark-gray leading-2xl'>{item.user}</p>
@@ -297,8 +297,9 @@ const Pricing = () => {
                                                 {item.disbtn}
                                             </div>
                                             {item.billed}
+                                            <p className='text-2sm font-medium text-dark-gray leading-2xl mb-4'>What’s included</p>
                                             {item.includedata}
-                                            <button className='py-[10px] px-[12px] border border-solid border-[#858585] group-hover:bg-btngradient group-hover:border-transparent transition-all duration-500 ease-linear text-white text-base  font-medium text-nowrap rounded-[13px] w-full'>Select Plan</button>
+                                            <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-transparent transition-all duration-500 ease-linear text-white text-base  font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
                                         </div>
                                     </div>
                                 </div >
@@ -309,12 +310,12 @@ const Pricing = () => {
                         return (
                             <>
                                 <div key={index} className='lg:w-4/12 md:w-6/12 sm:w-10/12 w-11/12 lg:mt-0 md:mt-10 mt-8'>
-                                    <div className='blur_box_border transition-all ease-linear hover:scale-[1.03] relative hover:z-10 duration-500 cursor-pointer group '>
-                                        <div className='p-[33px] bg-[#FFFFFF0D] rounded-3xl'>
+                                    <div className='blur_box_border transition-all ease-linear hover:scale-105 relative hover:z-10 duration-500 cursor-pointer group '>
+                                        <div className='p-8 bg-gray-white-600 rounded-3xl'>
                                             <h3 className=' group-hover:text-[32px] text-lg font-medium leading-3xl transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
                                             <p className='text-base font-medium leading-xl text-dark-gray my-6'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
-                                                <h3 className='font-semibold sm:text-5xl text-3xl text-white'>{item.price}</h3>
+                                                <h3 className='font-semibold sm:text-5xl text-3xl text-white leading-sm'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
                                                     <p className='font-medium text-2sm text-dark-gray leading-2xl'>/ year</p>
                                                     <p className='font-medium text-2sm text-dark-gray leading-2xl'>{item.user}</p>
@@ -322,8 +323,9 @@ const Pricing = () => {
                                                 {item.disbtn}
                                             </div>
                                             {item.billed}
+                                            <p className='text-2sm font-medium text-dark-gray leading-2xl mb-4'>What’s included</p>
                                             {item.includedata}
-                                            <button className='py-[10px] px-[12px] border border-solid border-[#858585] group-hover:bg-btngradient group-hover:border-transparent transition-all duration-500 ease-linear text-white text-base  font-medium text-nowrap rounded-[13px] w-full'>Select Plan</button>
+                                            <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-transparent transition-all duration-500 ease-linear text-white text-base  font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
                                         </div>
                                     </div>
                                 </div >
@@ -331,7 +333,7 @@ const Pricing = () => {
                         )
                     })) : ""}
                 </div>
-                <button className='bg-[#FFFFFF1A] flex items-center text-white px-[17px] py-[6px] rounded-[41px] gap-2 mt-[48px] mx-auto'><p className='text-2sm font-medium leading-2xl opacity-60'>Want enterprise features?</p><p className='text-2sm font-bold leading-2xl flex items-center gap-1'>Tell us more <WhiteArrow /></p></button>
+                <button className='bg-gray-white-500 flex items-center text-white px-4 py-1.5 rounded-2md gap-2 mt-12 mx-auto'><p className='text-2sm font-medium leading-2xl opacity-60'>Want enterprise features?</p><p className='text-2sm font-bold leading-2xl flex items-center gap-1'>Tell us more <WhiteArrow /></p></button>
             </div>
             <div className='bg-[#2980D6] w-[778px] h-[778px] blur-[1000px] absolute top-[25%] left-[-50%]'></div>
         </div>
