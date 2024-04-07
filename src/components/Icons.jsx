@@ -1079,3 +1079,11 @@ export const RedStar = () => {
 
   )
 }
+
+export const WhiteArrow = () => {
+  return (
+    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.6055 4.75L14.1055 8M14.1055 8L10.6055 11.25M14.1055 8H3.60547" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  )
+}
