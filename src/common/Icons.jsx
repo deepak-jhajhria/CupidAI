@@ -18,14 +18,14 @@ export const Herobg = () => {
                 <ellipse cx="525.93" cy="575.842" rx="406.576" ry="311.637" fill="#EAAFFF" />
                 <ellipse cx="174.336" cy="872.197" rx="370.404" ry="283.803" fill="#FFD873" />
                 <ellipse cx="421.754" cy="755.402" rx="370.404" ry="283.803" fill="#FFD873" />
-                <ellipse cx="1179.2" cy="607.497" rx="450.707" ry="345.475" fill="#8960FF" fill-opacity="0.94" />
-                <ellipse cx="1380" cy="703" rx="299" ry="260" fill="#AF7EFF" fill-opacity="0.94" />
+                <ellipse cx="1179.2" cy="607.497" rx="450.707" ry="345.475" fill="#8960FF" fillOpacity="0.94" />
+                <ellipse cx="1380" cy="703" rx="299" ry="260" fill="#AF7EFF" fillOpacity="0.94" />
                 <ellipse cx="18.0706" cy="607.497" rx="134.561" ry="69.3134" fill="#0029FF" />
                 <ellipse cx="48" cy="574.5" rx="164" ry="102.5" fill="#711AFF" />
             </g>
             <defs>
-                <filter id="filter0_f_8013_38" x="-731.591" y="-212.591" width="2765.18" height="1652.18" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <filter id="filter0_f_8013_38" x="-731.591" y="-212.591" width="2765.18" height="1652.18" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                     <feGaussianBlur stdDeviation="141.795" result="effect1_foregroundBlur_8013_38" />
                 </filter>
