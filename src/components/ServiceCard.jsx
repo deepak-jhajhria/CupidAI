@@ -3,7 +3,6 @@ import { serviceCardItems } from '../common/Helper'
 
 
 const ServiceCard = () => {
-
     return (
         <div className='py-32 bg-black bg-bg_gradient'>
             <div className='max-w-[966px] px-3  mx-auto '>
