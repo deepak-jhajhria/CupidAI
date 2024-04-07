@@ -80,10 +80,8 @@ const pricedata = [
         ),
         billed: (
             <>
-
                 <div className='bg-whitegradient w-full h-[1px] my-[48px]'>
                 </div>
-
             </>
         )
     },
@@ -183,26 +181,26 @@ const Pricing = () => {
     const [toggle, setToggle] = useState(1)
     return (
         <>
-            <div className="min-h-screen max-w-[1200px] mx-auto">
+            <div className="max-w-[1200px] mx-auto mt-[88px] container">
                 <h2 className='font-bold text-4xl text-white text-center leading-[140%]'>Pricing</h2>
                 <p className=' text-gray font-inter text-xl text-center mt-[22px]'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
                 <div className='bg-[#FFFFFF1A] rounded-[41px] p-1 max-w-[192px] mx-auto w-full flex justify-between mt-[44.5px]'>
                     <button onClick={() => setToggle(1)} className={`py-[6px] px-[19px] rounded-[48px] text-base font-medium text-white ${toggle === 1 ? "bg-[#FFFFFF1A]" : ""}`}>Yearly</button>
                     <button onClick={() => setToggle(2)} className={`py-[6px] px-[18px] rounded-[48px] text-base font-medium text-white ${toggle === 2 ? "bg-[#FFFFFF1A]" : ""}`}>Monthly</button>
                 </div>
-                <div className='flex items-center justify-between w-full mt-[67px]'>
+                <div className='flex items-center flex-wrap justify-center w-full mt-[67px] min-h-[1080px]'>
                     {pricedata.map((item) => {
                         return (
                             <>
-                                <div className='w-[33.33%]'>
-                                    <div className='blur_box_border transition-all ease-linear duration-300 cursor-pointer group '>
+                                <div className='lg:w-[33.33%] md:w-[50%] sm:w-[80%] w-full lg:mt-0 md:mt-10 mt-8'>
+                                    <div className='blur_box_border transition-all ease-linear hover:scale-[1.02] relative hover:z-10 duration-500 cursor-pointer group '>
                                         <div className='p-[33px] bg-[#FFFFFF0D] rounded-3xl'>
-                                            <h3 className=' group-hover:text-[32px] text-lg font-medium leading-[156%] transition-all ease-linear duration-300 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
+                                            <h3 className=' group-hover:text-[32px] text-lg font-medium leading-[156%] transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
                                             <p className='text-base font-medium leading-125%[] text-[#FFFFFF99] my-6'>{item.para}</p>
                                             {item.monthdata}
                                             {item.billed}
                                             {item.includedata}
-                                            <button className='py-[10px] px-[128px] border border-solid border-[#858585] group-hover:bg-btngradient group-hover:border-transparent transition-all duration-300 ease-linear text-white text-base  font-medium text-nowrap rounded-[13px]'>Select Plan</button>
+                                            <button className='py-[10px] px-[12px] border border-solid border-[#858585] group-hover:bg-btngradient group-hover:border-transparent transition-all duration-500 ease-linear text-white text-base  font-medium text-nowrap rounded-[13px] w-full'>Select Plan</button>
                                         </div>
                                     </div>
                                 </div >
