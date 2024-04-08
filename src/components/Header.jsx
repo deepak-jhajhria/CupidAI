@@ -11,8 +11,8 @@ const Header = () => {
         <>
             <div className="relative overflow-hidden min-h-[667px] md:min-h-[810px]">
                 <span className="absolute bottom-0 left-0 z-0 w-full h-full"><HeroBg /></span>
-                <div className="lg:max-w-[1320px] px-3 container mx-auto pt-4 sm:pt-5 md:pt-8 bg-[#01020f2e] relative">
-                    <div className="rounded-full p-[1px] bg-gradient-to-l from-[#FBF0F02E] to-[#FFFFFF0A]">
+                <div className="lg:max-w-[1320px] px-3 container mx-auto pt-4 sm:pt-5 md:pt-8 bg-black-primary-100 relative">
+                    <div className="rounded-full p-[1px] bg-gradient-to-l from-black-primary-200 to-gray-white-500">
                         <nav className="flex items-center justify-between bg-[#080806] rounded-full p-3 lg:p-2.5">
                             <a className="flex items-center gap-2 text-3xl font-bold text-white" href="/">
                                 <span> <FooterLogo /> </span> CupidAI</a>
@@ -40,7 +40,11 @@ const Header = () => {
                         </nav>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <div className="flex flex-col w-full justify-center items-center max-w-[691px] px-3 mx-auto relative z-10 mt-16 pt-1.5">
+=======
+                <div id="home" className="flex flex-col w-full justify-center items-center max-w-[691px] px-3 mx-auto relative z-10 mt-16 pt-2">
+>>>>>>> 6c1d270e6ec9662469663018a87f9f71df19cc5f
                     <h2 className="text-4xl font-semibold text-center text-white sm:text-5xl md:text-6xl lg:text-7xl md:leading-13">Unleash <span className="text-transparent bg-headerTextgradient bg-clip-text">Creativity</span>, Effortlessly</h2>
                     <p className="mt-3 text-base font-normal leading-8 text-center sm:text-lg md:text-xl text-gray-white-100 md:mt-4">Elevate your agency's output with state-of-the-art AI, engineered to innovate at the speed of thought.</p>
                     <CommonBtn className="mt-5" name="Try Now" />
