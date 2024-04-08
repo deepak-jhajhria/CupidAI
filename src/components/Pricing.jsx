@@ -86,7 +86,7 @@ const pricedata1 = [
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
         includedata: (<>
-            <div className='flex flex-col gap-4 lg:mb-28 mb-14'>
+            <div className='flex flex-col gap-4 lg:mb-24 pb-1 mb-14'>
                 {enterpreneurdata.map((line) => {
                     return (
                         <div className='flex gap-3'>
@@ -147,7 +147,7 @@ const pricedata1 = [
         </>),
         price: "£1200",
         user: "/ user",
-        disbtn: (<button className='py-[4px] px-[8px] bg-light-red text-dark-black-300 font-semibold text-xs rounded-3xl' >-20%</button>),
+        disbtn: (<button className='py-1 px-2 bg-light-red text-dark-black-300 font-semibold text-xs rounded-3xl' >-20%</button>),
         billed: (
             <>
                 <div className='relative flex items-center justify-center md:mt-8 md:mb-9 my-7'>
@@ -194,7 +194,7 @@ const pricedata = [
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
         includedata: (<>
-            <div className='flex flex-col gap-4 lg:mb-24 mb-14'>
+            <div className='flex flex-col gap-4 lg:mb-24 pb-1 mb-14'>
                 {enterpreneurdata.map((line) => {
                     return (
                         <div className='flex gap-3'>
@@ -271,20 +271,19 @@ const pricedata = [
 const Pricing = () => {
     const [toggle, setToggle] = useState(1)
     return (
-        <div className='relative lg:mt-20 sm:mt-10'>
+        <div className='relative lg:mt-40 sm:mt-20 mt-10'>
             <div id='pricing' className="xl:max-w-[1219px] lg:mt-20 md:mt-14 mt-10 container">
                 <h2 className='font-bold lg:text-4xl sm:text-3xl2 tracking-tighter text-3xl1 text-white text-center leading-2.5xl'>Pricing</h2>
-                <p className=' text-dark-gray font-medium text-xxl text-center sm:pt-6 pt-4.5'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
-
+                <p className=' text-dark-gray font-medium text-xxl text-center sm:pt-5 pt-4.5'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
                 <div className='bg-gray-white-500 rounded-2md p-1 max-w-[192px] mx-auto w-full flex justify-between md:mt-[44.5px] mt-6'>
                     <button onClick={() => setToggle(1)} className={`py-1.5 px-4.5 rounded-3md text-base font-medium text-white ${toggle === 1 ? "bg-gray-white-500" : ""}`}>Yearly</button>
                     <button onClick={() => setToggle(2)} className={`py-1.5 px-4.5 rounded-3md text-base font-medium text-white ${toggle === 2 ? "bg-gray-white-500" : ""}`}>Monthly</button>
                 </div>
-                <div className='flex items-center flex-wrap justify-center w-full md:pt-16 sm:pt-10 pt-6 lg:min-h-[870px]'>
-                    {toggle === 2 ? (pricedata.map((item, id) => {
+                <div className='flex items-center flex-wrap justify-center w-full md:pt-16 sm:pt-10 pt-6 lg:min-h-[826px]'>
+                    {toggle === 2 ? (pricedata.map((item, index) => {
                         return (
                             <>
-                                <div key={item.id} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
+                                <div key={index.toString()} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
                                     <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-105 hover:z-10 group '>
                                         <div className='p-8 bg-gray-white-600 rounded-3xl'>
                                             <h3 className='inline-block text-lg font-medium text-white transition-all duration-500 ease-linear group-hover:text-3xl1 leading-3xl group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent'>{item.heading}</h3>
@@ -307,10 +306,10 @@ const Pricing = () => {
                             </>
                         )
                     })) : ""}
-                    {toggle === 1 ? (pricedata1.map((item, id) => {
+                    {toggle === 1 ? (pricedata1.map((item, index) => {
                         return (
                             <>
-                                <div key={item.id} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
+                                <div key={index.toString()} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
                                     <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-[1.02] hover:z-10 group '>
                                         <div className='p-8 bg-gray-white-600 rounded-3xl'>
                                             <h3 className=' group-hover:text-[32px] text-lg font-medium leading-3xl transition-all ease-linear duration-500 bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
@@ -335,7 +334,7 @@ const Pricing = () => {
                     })) : ""}
                 </div>
                 <div className='flex items-center justify-center'>
-                    <a href='#' className='bg-gray-white-500 inline-flex items-center justify-center sm:flex-row flex-col text-white px-4 py-1.5 rounded-2md sm:gap-2 gap-1 mt-12'><p className='font-medium text-2sm leading-2xl opacity-60 tracking-tightest'>Want enterprise features?</p><p className='flex items-center gap-1 font-bold text-2sm tracking-tightest leading-2xl'>Tell us more <WhiteArrow /></p></a>
+                    <a href='#' className='bg-gray-white-500 inline-flex items-center justify-center sm:flex-row flex-col text-white px-4 py-1.5 sm:rounded-2md rounded-3xl sm:gap-2 gap-1 mt-12'><p className='font-medium text-2sm leading-2xl opacity-60 tracking-tightest'>Want enterprise features?</p><p className='flex items-center gap-1 font-bold text-2sm tracking-tightest leading-2xl'>Tell us more <WhiteArrow /></p></a>
                 </div>
             </div>
             <div className='bg-[#2980D6] w-[778px] h-[778px] blur-[1000px] absolute top-[25%] left-[-50%]'></div>
