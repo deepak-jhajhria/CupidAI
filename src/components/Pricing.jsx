@@ -271,7 +271,7 @@ const pricedata = [
 const Pricing = () => {
     const [toggle, setToggle] = useState(1)
     return (
-        <div className='relative lg:mt-20 sm:mt-10'>
+        <div className='relative lg:mt-40 sm:mt-20 mt-10'>
             <div id='pricing' className="xl:max-w-[1219px] lg:mt-20 md:mt-14 mt-10 container">
                 <h2 className='font-bold lg:text-4xl sm:text-3xl2 tracking-tighter text-3xl1 text-white text-center leading-2.5xl'>Pricing</h2>
                 <p className=' text-dark-gray font-medium text-xxl text-center sm:pt-6 pt-4.5'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
