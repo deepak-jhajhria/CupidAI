@@ -272,9 +272,9 @@ const Pricing = () => {
     const [toggle, setToggle] = useState(1)
     return (
         <div className='relative'>
-            <div id='pricing' className="xl:max-w-[1209px] mt-20 container">
-                <h2 className='font-bold text-4xl text-white text-center leading-2.5xl'>Pricing</h2>
-                <p className=' text-dark-gray font-inter text-9xl text-center sm:pt-6 pt-4.5'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
+            <div id='pricing' className="xl:max-w-[1219px] mt-20 container">
+                <h2 className='font-bold lg:text-4xl sm:text-3xl2 tracking-tighter text-3xl1 text-white text-center leading-2.5xl'>Pricing</h2>
+                <p className=' text-dark-gray font-inter text-xxl text-center sm:pt-6 pt-4.5'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
                 <div className='bg-gray-white-500 rounded-2md p-1 max-w-[192px] mx-auto w-full flex justify-between md:mt-[44.5px] mt-6'>
                     <button onClick={() => setToggle(1)} className={`py-1.5 px-4.5 rounded-3md text-base font-medium text-white ${toggle === 1 ? "bg-gray-white-500" : ""}`}>Yearly</button>
                     <button onClick={() => setToggle(2)} className={`py-1.5 px-4.5 rounded-3md text-base font-medium text-white ${toggle === 2 ? "bg-gray-white-500" : ""}`}>Monthly</button>
@@ -286,7 +286,7 @@ const Pricing = () => {
                                 <div key={item.id} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
                                     <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-105 hover:z-10 group '>
                                         <div className='p-8 bg-gray-white-600 rounded-3xl'>
-                                            <h3 className='inline-block text-lg font-medium text-white transition-all duration-500 ease-linear group-hover:text-8xl leading-3xl group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent'>{item.heading}</h3>
+                                            <h3 className='inline-block text-lg font-medium text-white transition-all duration-500 ease-linear group-hover:text-3xl1 leading-3xl group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent'>{item.heading}</h3>
                                             <p className='my-6 text-base font-medium leading-xl text-dark-gray'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
                                                 <h3 className='text-3xl font-semibold text-white sm:text-5xl leading-sm'>{item.price}</h3>
@@ -299,7 +299,7 @@ const Pricing = () => {
                                             {item.billed}
                                             <p className='mb-4 font-medium text-2sm text-dark-gray leading-2xl'>What’s included</p>
                                             {item.includedata}
-                                            <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-transparent transition-all duration-500 ease-linear text-white text-base  font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
+                                            <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-transparent transition-all duration-500 ease-linear text-white text-base font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
                                         </div>
                                     </div>
                                 </div >
@@ -315,7 +315,7 @@ const Pricing = () => {
                                             <h3 className=' group-hover:text-[32px] text-lg font-medium leading-3xl transition-all ease-linear duration-500 bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
                                             <p className='my-6 text-base font-medium leading-xl text-dark-gray'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
-                                                <h3 className='text-3xl font-semibold text-white sm:text-5xl leading-sm'>{item.price}</h3>
+                                                <h3 className='sm:text-4xl2 text-3xl2 font-semibold text-white lg:text-5xl leading-sm'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
                                                     <p className='font-medium text-2sm text-dark-gray leading-2xl'>/ year</p>
                                                     <p className='font-medium text-2sm text-dark-gray leading-2xl'>{item.user}</p>
@@ -333,7 +333,7 @@ const Pricing = () => {
                         )
                     })) : ""}
                 </div>
-                <a href='#' className='bg-gray-white-500 flex items-center text-white px-4 py-1.5 rounded-2md gap-2 mt-12 mx-auto'><p className='font-medium text-2sm leading-2xl opacity-60'>Want enterprise features?</p><p className='flex items-center gap-1 font-bold text-2sm leading-2xl'>Tell us more <WhiteArrow /></p></a>
+                <a href='#' className='bg-gray-white-500 flex items-center text-white px-4 py-1.5 rounded-2md gap-2 mt-12 mx-auto'><p className='font-medium text-2sm leading-2xl opacity-60 tracking-tightest'>Want enterprise features?</p><p className='flex items-center gap-1 font-bold text-2sm tracking-tightest leading-2xl'>Tell us more <WhiteArrow /></p></a>
             </div>
             <div className='bg-[#2980D6] w-[778px] h-[778px] blur-[1000px] absolute top-[25%] left-[-50%]'></div>
         </div>
