@@ -128,7 +128,7 @@ export const pricedata1 = [
                             <div>
                                 <WhiteTick />
                             </div>
-                            <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
+                            <p className='font-medium text-2sm text-dark-gray leading-17'>{line.includedata1}</p>
                         </div>
                     )
                 })}
@@ -156,7 +156,7 @@ export const pricedata1 = [
                             <div>
                                 <GreenTick />
                             </div>
-                            <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
+                            <p className='font-medium text-2sm text-dark-gray leading-17'>{line.includedata1}</p>
                         </div>
                     )
                 })}
@@ -164,7 +164,7 @@ export const pricedata1 = [
                     <div>
                         <GreenStar />
                     </div>
-                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>More Coming Soon</p>
+                    <p className='font-medium text-2sm text-dark-gray leading-17'>More Coming Soon</p>
                 </div>
             </div>
         </>),
@@ -174,7 +174,7 @@ export const pricedata1 = [
         billed: (
             <>
                 <div className='relative flex items-center justify-center md:mt-8 md:mb-9 my-7'>
-                    <button className='text-2sm font-medium text-white leading-2xl text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£408 billed annually</button>
+                    <button className='text-2sm font-medium text-white leading-17 text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£408 billed annually</button>
                     <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 z-[1]'>
                     </div>
                 </div>
@@ -195,7 +195,7 @@ export const pricedata1 = [
                                 <div>
                                     <WhiteTick />
                                 </div>
-                                <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
+                                <p className='font-medium text-2sm text-dark-gray leading-17'>{line.includedata1}</p>
                             </div>
                         )
                     })}
@@ -204,7 +204,7 @@ export const pricedata1 = [
                     <div>
                         <RedStar />
                     </div>
-                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>More Coming Soon</p>
+                    <p className='font-medium text-2sm text-dark-gray leading-17'>More Coming Soon</p>
                 </div>
             </div>
         </>),
@@ -214,7 +214,7 @@ export const pricedata1 = [
         billed: (
             <>
                 <div className='relative flex items-center justify-center md:mt-8 md:mb-9 my-7'>
-                    <button className='text-2sm font-medium text-white leading-2xl text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£1300 billed annually</button>
+                    <button className='text-2sm font-medium text-white leading-17 text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£1300 billed annually</button>
                     <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 z-[1]'>
                     </div>
                 </div>
@@ -236,7 +236,7 @@ export const pricedata = [
                             <div>
                                 <WhiteTick />
                             </div>
-                            <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
+                            <p className='font-medium text-2sm text-dark-gray leading-17'>{line.includedata1}</p>
                         </div>
                     )
                 })}
@@ -264,7 +264,7 @@ export const pricedata = [
                             <div>
                                 <GreenTick />
                             </div>
-                            <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
+                            <p className='font-medium text-2sm text-dark-gray leading-17'>{line.includedata1}</p>
                         </div>
                     )
                 })}
@@ -272,7 +272,7 @@ export const pricedata = [
                     <div>
                         <GreenStar />
                     </div>
-                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>More Coming Soon</p>
+                    <p className='font-medium text-2sm text-dark-gray leading-17'>More Coming Soon</p>
                 </div>
             </div>
         </>),
@@ -282,7 +282,7 @@ export const pricedata = [
         billed: (
             <>
                 <div className='relative flex items-center justify-center md:mt-8 md:mb-9 my-7'>
-                    <button className='text-2sm font-medium text-white leading-2xl text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£408 billed annually</button>
+                    <button className='text-2sm font-medium text-white leading-17 text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£408 billed annually</button>
                     <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 z-[1]'>
                     </div>
                 </div>
@@ -303,7 +303,7 @@ export const pricedata = [
                                 <div>
                                     <WhiteTick />
                                 </div>
-                                <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
+                                <p className='font-medium text-2sm text-dark-gray leading-17'>{line.includedata1}</p>
                             </div>
                         )
                     })}
@@ -312,7 +312,7 @@ export const pricedata = [
                     <div>
                         <RedStar />
                     </div>
-                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>More Coming Soon</p>
+                    <p className='font-medium text-2sm text-dark-gray leading-17'>More Coming Soon</p>
                 </div>
             </div>
         </>),
@@ -322,7 +322,7 @@ export const pricedata = [
         billed: (
             <>
                 <div className='relative flex items-center justify-center md:mt-8 md:mb-9 my-7'>
-                    <button className='text-2sm font-medium text-white leading-2xl text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£1300 billed annually</button>
+                    <button className='text-2sm font-medium text-white leading-17 text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£1300 billed annually</button>
                     <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 z-[1]'>
                     </div>
                 </div>
