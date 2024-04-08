@@ -38,7 +38,7 @@ const Crm = () => {
             src={crmai}
             alt="crmai"
             height={397}
-            className=" min-h-[184px] w-full h-full rounded-t-[20px]"
+            className=" min-h-[184px] w-full object-cover h-full rounded-t-[20px]"
           />
         </div>
         <sapn className=" rounded-full text-center  flex  justify-center ">
