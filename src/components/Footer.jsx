@@ -3,7 +3,7 @@ import { FooterGradientMixup, FooterLogo } from "./common/Icons"
 
 const Footer = () => {
     return (
-        <div className="relative mt-10 sm:mt-16 md:mt-24 lg:mt-32">
+        <div className="relative mt-10 overflow-x-clip sm:mt-16 md:mt-24 lg:mt-32">
             <div className="container relative z-10 max-w-[1300px]">
                 <nav>
                     <div className="flex flex-col items-center justify-between py-6 lg:flex-row">

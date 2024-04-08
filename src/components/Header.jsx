@@ -11,7 +11,7 @@ const Header = () => {
         <>
             <div className="relative overflow-hidden min-h-[667px] md:min-h-[810px]">
                 <span className="absolute bottom-0 left-0 z-0 w-full h-full"><HeroBg /></span>
-                <div className="lg:max-w-[1320px] px-3 container mx-auto pt-4 sm:pt-5 md:pt-8 bg-black-primary-100 relative">
+                <div className="lg:max-w-[1320px] px-3 container mx-auto pt-4 sm:pt-5 md:pt-10 relative">
                     <div className="rounded-full p-[1px] bg-gradient-to-l from-black-primary-200 to-gray-white-500">
                         <nav className="flex items-center justify-between bg-[#080806] rounded-full p-3 lg:p-2.5">
                             <a className="flex items-center gap-2 text-3xl font-bold text-white" href="/">
