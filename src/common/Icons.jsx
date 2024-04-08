@@ -8,7 +8,7 @@ export const Arrow = ({ id, open }) => {
         </div>
     );
 }
-export const Herobg = () => {
+export const HeroBg = () => {
     return (
         <svg className="w-full" width="1920" height="1440" viewBox="0 0 1440 1440" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_f_8013_38)">
@@ -34,7 +34,7 @@ export const Herobg = () => {
 
     )
 }
-export const BackToTop = () => {
+export const BackToTopIcon = () => {
     return (
         <svg className="w-3 duration-300 fill-white" viewBox="0 0 384 512">
             <path

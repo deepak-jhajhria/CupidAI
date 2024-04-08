@@ -6,35 +6,35 @@ import globalbank from "../assets/images/globalbank.webp";
 import { GridlineBox } from "./TrustedIcons";
 export const crmData = [
   {
-    svg: <GridlineBox />,
+    icon: <GridlineBox />,
     title: "Hyper Realistic AI Content",
     para: "Advanced generation techniques helps us generate the best AI generation within the industry",
   },
   {
-    svg: <GridlineBox />,
+    icon: <GridlineBox />,
     title: "Streamlined Workflow",
     para: "Enjoy a seamless and swift workflow pipeline with CUPID AI, simplifying your content creation and management processes.",
   },
   {
-    svg: <GridlineBox />,
+    icon: <GridlineBox />,
     title: "Universal verification",
     para: "Verify your model anywhere, anytime with our AI content generation methods.",
   },
 ];
 
 export const companiesData = [
-  { img: blotshift, alt: "blotshift" },
-  { img: lighbox, alt: "lighbox" },
-  { img: featherdev, alt: "featherdev" },
-  { img: spherule, alt: "spherule" },
-  { img: globalbank, alt: "globalbank" },
-  { img: blotshift, alt: "blotshift", none: "slg:hidden" },
-  { img: lighbox, alt: "lighbox", none: "slg:hidden" },
-  { img: featherdev, alt: "featherdev", none: "slg:hidden" },
-  { img: spherule, alt: "spherule", none: "slg:hidden" },
-  { img: globalbank, alt: "globalbank", none: "slg:hidden" },
-  { img: lighbox, alt: "lighbox", none: "slg:hidden" },
-  { img: featherdev, alt: "featherdev", none: "slg:hidden" },
-  { img: spherule, alt: "spherule", none: "slg:hidden" },
-  { img: globalbank, alt: "globalbank", none: "slg:hidden" },
+  { companyLogo: blotshift, alt: "blotshift" },
+  { companyLogo: lighbox, alt: "lighbox" },
+  { companyLogo: featherdev, alt: "featherdev" },
+  { companyLogo: spherule, alt: "spherule" },
+  { companyLogo: globalbank, alt: "globalbank" },
+  { companyLogo: blotshift, alt: "blotshift", none: "slg:hidden" },
+  { companyLogo: lighbox, alt: "lighbox", none: "slg:hidden" },
+  { companyLogo: featherdev, alt: "featherdev", none: "slg:hidden" },
+  { companyLogo: spherule, alt: "spherule", none: "slg:hidden" },
+  { companyLogo: globalbank, alt: "globalbank", none: "slg:hidden" },
+  { companyLogo: lighbox, alt: "lighbox", none: "slg:hidden" },
+  { companyLogo: featherdev, alt: "featherdev", none: "slg:hidden" },
+  { companyLogo: spherule, alt: "spherule", none: "slg:hidden" },
+  { companyLogo: globalbank, alt: "globalbank", none: "slg:hidden" },
 ];

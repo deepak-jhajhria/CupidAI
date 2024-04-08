@@ -1,4 +1,4 @@
-import crmai from "../assets/images/clupiai.webp";
+import clupiAiImage from "../assets/images/clupiai.webp";
 import { crmData } from "../common/TrustedHelper";
 import { YellowMan } from "../common/TrustedIcons";
 const Crm = () => {
@@ -22,7 +22,7 @@ const Crm = () => {
                 className="group duration-200 snap-start mb-4 min-w-[324px]  sm:min-w-[401px]  sm:pe-4 h-full "
               >
                 <div className="flex items-center gap-[10px]">
-                  <span>{obj.svg}</span>
+                  <span>{obj.icon}</span>
                   <h2 className=" group-hover:text-gray-dark-200 duration-200  font-semibold text-lg leading-[21px] text-gray-light-300">
                     {obj.title}
                   </h2>
@@ -34,7 +34,7 @@ const Crm = () => {
             ))}
           </div>
           <img
-            src={crmai}
+            src={clupiAiImage}
             alt="crmai"
             height={387}
             className=" min-h-[184px] h-full lg:h-96 w-full object-cover rounded-t-[20px]"

@@ -1,6 +1,6 @@
 import { FooterLogo } from "../common/Icons";
 import { CommonBtn, navLinkData } from "../common/Helper";
-import { Herobg } from "../common/Icons";
+import { HeroBg } from "../common/Icons";
 import dashboardimg from '../assets/images/dashboardimage.webp'
 import { useOverflowHidden } from "../common/Hooks";
 import { Twirl as Hamburger } from 'hamburger-react';
@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <>
             <div className="relative overflow-hidden min-h-[667px] md:min-h-[810px]">
-                <span className="absolute bottom-0 left-0 z-0 w-full h-full"><Herobg /></span>
+                <span className="absolute bottom-0 left-0 z-0 w-full h-full"><HeroBg /></span>
                 <div className="lg:max-w-[1320px] px-3 container mx-auto pt-4 sm:pt-5 md:pt-8 bg-[#01020f2e] relative">
                     <div className="rounded-full p-[1px] bg-gradient-to-l from-[#FBF0F02E] to-[#FFFFFF0A]">
                         <nav className="flex items-center justify-between bg-[#080806] rounded-full p-3 lg:p-2.5">
