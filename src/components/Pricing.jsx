@@ -86,7 +86,7 @@ const pricedata1 = [
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
         includedata: (<>
-            <div className='flex flex-col gap-4 lg:mb-24 pb-[2px] mb-14'>
+            <div className='flex flex-col gap-4 lg:mb-24 pb-1 mb-14'>
                 {enterpreneurdata.map((line) => {
                     return (
                         <div className='flex gap-3'>
@@ -147,7 +147,7 @@ const pricedata1 = [
         </>),
         price: "£1200",
         user: "/ user",
-        disbtn: (<button className='py-[4px] px-[8px] bg-light-red text-dark-black-300 font-semibold text-xs rounded-3xl' >-20%</button>),
+        disbtn: (<button className='py-1 px-2 bg-light-red text-dark-black-300 font-semibold text-xs rounded-3xl' >-20%</button>),
         billed: (
             <>
                 <div className='relative flex items-center justify-center md:mt-8 md:mb-9 my-7'>
@@ -194,7 +194,7 @@ const pricedata = [
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
         includedata: (<>
-            <div className='flex flex-col gap-4 lg:mb-24 pb-[2px] mb-14'>
+            <div className='flex flex-col gap-4 lg:mb-24 pb-1 mb-14'>
                 {enterpreneurdata.map((line) => {
                     return (
                         <div className='flex gap-3'>
