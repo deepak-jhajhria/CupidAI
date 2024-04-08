@@ -35,7 +35,10 @@ module.exports = {
     },
     letterSpacing: {
       tighter: '-1px', //use
+      midtighter: '0.3px',
       tightest: '-0.5px', //use
+      tight: '-.025em',
+      normal: '0',
       wide: '.035em', // use
     },
     extend: {
@@ -78,7 +81,6 @@ module.exports = {
         'orange-red': '#F800B9',
         'dark-black': '#1B1530',
         'bodymain': '#040403',
-        'dark-gray': '#FFFFFF99',
         'light-red': '#FF6363',
         'dark-black-300': '#110E19',
         'gray-white-500': '#FFFFFF1A',
