@@ -63,80 +63,135 @@ export const serviceCardItems = [
     },
 ]
 
-export const includeData = [
+export const Includedata = [
     {
-        includedata1: "Calculator, Quicklinks, Snippets, Window Management, and many more core features",
+        description: "Calculator, Quicklinks, Snippets, Window Management, and many more core features",
     },
     {
-        includedata1: "More than 1000 Extensions",
+        description: "More than 1000 Extensions",
     },
     {
-        includedata1: "Custom Extensions",
+        description: "Custom Extensions",
     },
     {
-        includedata1: "Developer Tools",
-    },
-]
-
-export const enterpreneurData = [
-    {
-        includedata1: "Everything in Free"
-    },
-    {
-        includedata1: "Raycast AI"
-    },
-    {
-        includedata1: "Cloud Sync"
-    },
-    {
-        includedata1: "Custom Themes"
-    },
-    {
-        includedata1: "Unlimited Clipboard History"
+        description: "Developer Tools",
     },
 ]
 
-export const businessData = [
+export const Enterpreneurdata = [
     {
-        includedata1: "Everything in Pro"
+        description: "Everything in Free"
     },
     {
-        includedata1: "Unlimited Shared Commands"
+        description: "Raycast AI"
     },
     {
-        includedata1: "Unlimited Shared Quicklinks"
+        description: "Cloud Sync"
     },
     {
-        includedata1: "Unlimited Shared Snippets"
+        description: "Custom Themes"
     },
     {
-        includedata1: "Unlimited Team Members"
+        description: "Unlimited Clipboard History"
     },
 ]
 
-
-export const pricedata1 = [
+export const Business = [
     {
-        id: 1,
-        heading: "Indivisual",
-        para: "Everything you need to supercharge your productivity.",
-        includedata: (<>
+        description: "Everything in Pro"
+    },
+    {
+        description: "Unlimited Shared Commands"
+    },
+    {
+        description: "Unlimited Shared Quicklinks"
+    },
+    {
+        description: "Unlimited Shared Snippets"
+    },
+    {
+        description: "Unlimited Team Members"
+    },
+]
+
+export const IndividualData = () => {
+    return (
+        (<>
             <div className='flex flex-col gap-4 lg:mb-20 mb-14'>
-                {includeData.map((line, index) => {
+                {Includedata.map((line, index) => {
                     return (
                         <div key={index} className='flex gap-3 '>
                             <div>
                                 <WhiteTick />
                             </div>
-                            <p className='font-medium text-2sm text-dark-gray leading-17'>{line.includedata1}</p>
+                            <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.description}</p>
                         </div>
                     )
                 })}
             </div>
-        </>),
+        </>)
+    )
+}
+
+export const Entrepreneurcontent = () => {
+    return (<>
+        <div className='flex flex-col gap-4 pb-1 lg:mb-24 mb-14'>
+            {Enterpreneurdata.map((line, index) => {
+                return (
+                    <div key={index} className='flex gap-3'>
+                        <div>
+                            <WhiteTick />
+                        </div>
+                        <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.description}</p>
+                    </div>
+                )
+            })}
+            <div className='flex gap-3'>
+                <div>
+                    <GreenStar />
+                </div>
+                <p className='font-medium text-2sm text-dark-gray leading-2xl'>More Coming Soon</p>
+            </div>
+        </div>
+    </>)
+}
+
+export const BusinessData = () => {
+    return (
+        <>
+            <div className='flex flex-col gap-4 lg:mb-24 mb-14'>
+                <div className='flex flex-col gap-4'>
+                    {Business.map((line, index) => {
+                        return (
+                            <div key={index} className='flex gap-3 '>
+                                <div>
+                                    <WhiteTick />
+                                </div>
+                                <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.description}</p>
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className='flex gap-3'>
+                    <div>
+                        <RedStar />
+                    </div>
+                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>More Coming Soon</p>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export const PricedataYear = [
+    {
+        id: 1,
+        heading: "Indivisual",
+        para: "Everything you need to supercharge your productivity.",
+        includedata: (<IndividualData />),
         price: "£240",
         user: "",
-        disbtn: (<></>),
+        disbtn: '',
         billed: (
             <>
                 <div className='bg-whitegradient w-full h-[1px] md:my-12 my-7'>
@@ -148,33 +203,14 @@ export const pricedata1 = [
         id: 2,
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
-        includedata: (<>
-            <div className='flex flex-col gap-4 pb-1 lg:mb-24 mb-14'>
-                {enterpreneurData.map((line, index) => {
-                    return (
-                        <div key={index} className='flex gap-3'>
-                            <div>
-                                <GreenTick />
-                            </div>
-                            <p className='font-medium text-2sm text-dark-gray leading-17'>{line.includedata1}</p>
-                        </div>
-                    )
-                })}
-                <div className='flex gap-3'>
-                    <div>
-                        <GreenStar />
-                    </div>
-                    <p className='font-medium text-2sm text-dark-gray leading-17'>More Coming Soon</p>
-                </div>
-            </div>
-        </>),
+        includedata: (<Entrepreneurcontent />),
         price: "£360",
         user: "",
         disbtn: (<button className='px-2 py-1 text-xs font-semibold bg-light-red text-dark-black-300 rounded-3xl' >-20%</button>),
         billed: (
             <>
                 <div className='relative flex items-center justify-center md:mt-8 md:mb-9 my-7'>
-                    <button className='text-2sm font-medium text-white leading-17 text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£408 billed annually</button>
+                    <button className='text-2sm font-medium text-white leading-2xl text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£408 billed annually</button>
                     <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 z-[1]'>
                     </div>
                 </div>
@@ -186,35 +222,14 @@ export const pricedata1 = [
         id: 3,
         heading: "Business",
         para: "Supercharge your team and maximize productivity.",
-        includedata: (<>
-            <div className='flex flex-col gap-4 lg:mb-24 mb-14'>
-                <div className='flex flex-col gap-4'>
-                    {businessData.map((line, index) => {
-                        return (
-                            <div key={index} className='flex gap-3 '>
-                                <div>
-                                    <WhiteTick />
-                                </div>
-                                <p className='font-medium text-2sm text-dark-gray leading-17'>{line.includedata1}</p>
-                            </div>
-                        )
-                    })}
-                </div>
-                <div className='flex gap-3'>
-                    <div>
-                        <RedStar />
-                    </div>
-                    <p className='font-medium text-2sm text-dark-gray leading-17'>More Coming Soon</p>
-                </div>
-            </div>
-        </>),
+        includedata: (<BusinessData />),
         price: "£1200",
         user: "/ user",
         disbtn: (<button className='px-2 py-1 text-xs font-semibold bg-light-red text-dark-black-300 rounded-3xl' >-20%</button>),
         billed: (
             <>
                 <div className='relative flex items-center justify-center md:mt-8 md:mb-9 my-7'>
-                    <button className='text-2sm font-medium text-white leading-17 text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£1300 billed annually</button>
+                    <button className='text-2sm font-medium text-white leading-2xl text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£1300 billed annually</button>
                     <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 z-[1]'>
                     </div>
                 </div>
@@ -223,25 +238,12 @@ export const pricedata1 = [
     }
 ]
 
-export const pricedata = [
+export const PricedataMonth = [
     {
         id: 1,
         heading: "Indivisual",
         para: "Everything you need to supercharge your productivity.",
-        includedata: (<>
-            <div className='flex flex-col gap-4 lg:mb-20 mb-14'>
-                {includeData.map((line, index) => {
-                    return (
-                        <div key={index} className='flex gap-3 '>
-                            <div>
-                                <WhiteTick />
-                            </div>
-                            <p className='font-medium text-2sm text-dark-gray leading-17'>{line.includedata1}</p>
-                        </div>
-                    )
-                })}
-            </div>
-        </>),
+        includedata: (<IndividualData />),
         price: "£24",
         user: "",
         disbtn: (<></>),
@@ -256,33 +258,14 @@ export const pricedata = [
         id: 2,
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
-        includedata: (<>
-            <div className='flex flex-col gap-4 pb-1 lg:mb-24 mb-14'>
-                {enterpreneurData.map((line, index) => {
-                    return (
-                        <div key={index} className='flex gap-3'>
-                            <div>
-                                <GreenTick />
-                            </div>
-                            <p className='font-medium text-2sm text-dark-gray leading-17'>{line.includedata1}</p>
-                        </div>
-                    )
-                })}
-                <div className='flex gap-3'>
-                    <div>
-                        <GreenStar />
-                    </div>
-                    <p className='font-medium text-2sm text-dark-gray leading-17'>More Coming Soon</p>
-                </div>
-            </div>
-        </>),
+        includedata: (<Entrepreneurcontent />),
         price: "£34",
         user: "",
         disbtn: (<button className='py-[4px] px-[8px] bg-light-red text-dark-black-300 font-semibold text-xs rounded-3xl' >-20%</button>),
         billed: (
             <>
                 <div className='relative flex items-center justify-center md:mt-8 md:mb-9 my-7'>
-                    <button className='text-2sm font-medium text-white leading-17 text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£408 billed annually</button>
+                    <button className='text-2sm font-medium text-white leading-2xl text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£408 billed annually</button>
                     <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 z-[1]'>
                     </div>
                 </div>
@@ -294,35 +277,14 @@ export const pricedata = [
         id: 3,
         heading: "Business",
         para: "Supercharge your team and maximize productivity.",
-        includeData: (<>
-            <div className='flex flex-col gap-4 lg:mb-24 mb-14'>
-                <div className='flex flex-col gap-4'>
-                    {businessData.map((line, index) => {
-                        return (
-                            <div key={index} className='flex gap-3 '>
-                                <div>
-                                    <WhiteTick />
-                                </div>
-                                <p className='font-medium text-2sm text-dark-gray leading-17'>{line.includedata1}</p>
-                            </div>
-                        )
-                    })}
-                </div>
-                <div className='flex gap-3'>
-                    <div>
-                        <RedStar />
-                    </div>
-                    <p className='font-medium text-2sm text-dark-gray leading-17'>More Coming Soon</p>
-                </div>
-            </div>
-        </>),
+        includedata: (<BusinessData />),
         price: "£120",
         user: "/ user",
         disbtn: (<button className='px-2 py-1 text-xs font-semibold bg-light-red text-dark-black-300 rounded-3xl' >-20%</button>),
         billed: (
             <>
                 <div className='relative flex items-center justify-center md:mt-8 md:mb-9 my-7'>
-                    <button className='text-2sm font-medium text-white leading-17 text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£1300 billed annually</button>
+                    <button className='text-2sm font-medium text-white leading-2xl text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-10'>£1300 billed annually</button>
                     <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 z-[1]'>
                     </div>
                 </div>
