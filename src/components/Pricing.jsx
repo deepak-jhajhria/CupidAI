@@ -333,7 +333,7 @@ const Pricing = () => {
                         )
                     })) : ""}
                 </div>
-                <button className='bg-gray-white-500 flex items-center text-white px-4 py-1.5 rounded-2md gap-2 mt-12 mx-auto'><p className='font-medium text-2sm leading-2xl opacity-60'>Want enterprise features?</p><p className='flex items-center gap-1 font-bold text-2sm leading-2xl'>Tell us more <WhiteArrow /></p></button>
+                <a href='#' className='bg-gray-white-500 flex items-center text-white px-4 py-1.5 rounded-2md gap-2 mt-12 mx-auto'><p className='font-medium text-2sm leading-2xl opacity-60'>Want enterprise features?</p><p className='flex items-center gap-1 font-bold text-2sm leading-2xl'>Tell us more <WhiteArrow /></p></a>
             </div>
             <div className='bg-[#2980D6] w-[778px] h-[778px] blur-[1000px] absolute top-[25%] left-[-50%]'></div>
         </div>
