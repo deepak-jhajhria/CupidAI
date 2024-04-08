@@ -12,6 +12,7 @@ import dashboardimage from './assets/images/dashboardimage.webp'
 import Preloader from './components/Preloader';
 import BackTop from './components/BackTop';
 document.body.classList.add("overflow-hidden")
+
 function App() {
   const [preloder, setpreloder] = React.useState(true)
   setTimeout(() => {

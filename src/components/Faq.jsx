@@ -9,10 +9,10 @@ const Faq = () => {
         setOpen(open === index ? true : index);
     };
     return (
-        <div className='container max-w-[1300px]'>
-            <div className='max-w-[700px] mx-auto pt-24 sm:pt-32 md:pt-52 lg:pt-72'>
+        <div id='faq' className='container max-w-[1300px]'>
+            <div className='max-w-[700px] mx-auto pt-16 sm:pt-32 md:pt-52 lg:pt-72'>
                 <h2 className='text-4xl font-bold tracking-tighter text-white leading-11'>FAQs</h2>
-                <p className='pb-2 mt-5 text-lg  text-gray font-inter md:text-xl md:leading-7 tracking-tightest md:mt-6'>Answers to the most frequently asked questions.</p>
+                <p className='pb-2 mt-5 text-lg text-gray font-inter md:text-xl md:leading-7 tracking-tightest md:mt-6'>Answers to the most frequently asked questions.</p>
                 {accordionData.map((item, index) => (
                     <Accordion key={index} onClick={() => toggleAccordion(index)} className={`cursor-pointer border-b border-white border-opacity-10 mt-5 sm:mt-6 md:mt-8 ${item.id === 6 ? "border-0" : ""}`} open={open === index} icon={<Arrow id={index} open={open} />}>
                         <AccordionHeader className={`font-semibold text-white text-2sm md:text-base text-start w-full justify-between gap-3 border-0 pb-8 pt-0 leading-6 ${open === index ? "pb-0" : "pb-5 md:pb-8.5"}`}>{item.title}
