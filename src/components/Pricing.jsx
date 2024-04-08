@@ -86,7 +86,7 @@ const pricedata1 = [
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
         includedata: (<>
-            <div className='flex flex-col gap-4 lg:mb-36 mb-14'>
+            <div className='flex flex-col gap-4 lg:mb-28 mb-14'>
                 {enterpreneurdata.map((line) => {
                     return (
                         <div className='flex gap-3'>
@@ -334,7 +334,9 @@ const Pricing = () => {
                         )
                     })) : ""}
                 </div>
-                <a href='#' className='bg-gray-white-500 flex items-center sm:flex-row flex-col text-white px-4 py-1.5 rounded-2md sm:gap-2 gap-1 mt-12 mx-auto'><p className='font-medium text-2sm leading-2xl opacity-60 tracking-tightest'>Want enterprise features?</p><p className='flex items-center gap-1 font-bold text-2sm tracking-tightest leading-2xl'>Tell us more <WhiteArrow /></p></a>
+                <div className='flex items-center justify-center'>
+                    <a href='#' className='bg-gray-white-500 inline-flex items-center justify-center sm:flex-row flex-col text-white px-4 py-1.5 rounded-2md sm:gap-2 gap-1 mt-12'><p className='font-medium text-2sm leading-2xl opacity-60 tracking-tightest'>Want enterprise features?</p><p className='flex items-center gap-1 font-bold text-2sm tracking-tightest leading-2xl'>Tell us more <WhiteArrow /></p></a>
+                </div>
             </div>
             <div className='bg-[#2980D6] w-[778px] h-[778px] blur-[1000px] absolute top-[25%] left-[-50%]'></div>
         </div>
