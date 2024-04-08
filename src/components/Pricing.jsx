@@ -72,7 +72,7 @@ const Pricing = () => {
                     </>}
                 </div>
                 <div className='flex items-center justify-center'>
-                    <a href='#' className='bg-gray-white-500 inline-flex items-center justify-center sm:flex-row flex-col text-white px-4 py-1.5 sm:rounded-2md rounded-3xl sm:gap-2 gap-1 mt-12 group'><p className='font-medium text-2sm leading-17 opacity-60 tracking-tightest'>Want enterprise features?</p><p className='flex items-center gap-1 font-bold text-2sm tracking-tightest leading-17'>Tell us more <WhiteArrow /></p></a>
+                    <a href='#' className='bg-gray-white-500 inline-flex items-center justify-center sm:flex-row flex-col text-white sm:px-4 px-8 py-1.5 sm:rounded-2md rounded-3xl sm:gap-2 gap-1 mt-12 group'><p className='font-medium text-2sm leading-17 opacity-60 tracking-tightest'>Want enterprise features?</p><p className='flex items-center gap-1 font-bold text-2sm tracking-tightest leading-17'>Tell us more <WhiteArrow /></p></a>
                 </div>
             </div>
             <div className='bg-[#2980D6] w-[778px] h-[778px] blur-[1000px] absolute top-[25%] left-[-50%] lg:z-20 z-[9]'></div>
