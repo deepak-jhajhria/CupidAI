@@ -5,7 +5,7 @@ import { PricedataMonth, PricedataYear } from '../common/Helper'
 const Pricing = () => {
     const [toggle, setToggle] = useState(1)
     return (
-        <div className='relative mt-10 lg:mt-40 sm:mt-20'>
+        <div className='relative mt-10 lg:mt-20 sm:mt-20'>
             <div id='pricing' className="xl:max-w-[1219px] lg:pt-24 md:pt-14 pt-10 container">
                 <h2 className='font-bold tracking-tighter text-center text-white lg:text-4xl sm:text-3xl2 text-3xl1 leading-16'>Pricing</h2>
                 <p className='pt-4 font-medium text-center text-dark-gray text-xxl sm:pt-5'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
@@ -17,11 +17,12 @@ const Pricing = () => {
                     {toggle === 2 && <>
                         {
                             PricedataMonth.map((item, index) => (
-                                <div key={index} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
-                                    <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-[1.02] hover:z-10 group '>
+                                <div key={index} className='w-full mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
+                                    <div className='relative transition-all duration-300 ease-linear cursor-pointer blur_box_border hover:scale-[1.02] hover:z-10 group'>
                                         <div className='p-8 bg-gray-white-600 rounded-3xl'>
                                             <h3 className='inline-block text-lg font-medium text-white transition-all duration-500 ease-linear group-hover:text-3xl1 leading-18 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent'>{item.heading}</h3>
                                             <p className='my-6 text-base font-medium leading-15 text-dark-gray'>{item.para}</p>
+                                            {/* background: #FFFFFF99;*/}
                                             <div className='flex items-center gap-2'>
                                                 <h3 className='font-semibold text-white sm:text-4xl2 text-3xl2 lg:text-5xl leading-14'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
@@ -43,7 +44,7 @@ const Pricing = () => {
                     {toggle === 1 && (PricedataYear.map((item, index) => {
                         return (
                             <div key={index} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
-                                <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-[1.02] hover:z-10 group '>
+                                <div className='relative transition-all duration-300 ease-linear cursor-pointer blur_box_border hover:scale-[1.02] hover:z-10 group '>
                                     <div className='p-8 bg-gray-white-600 rounded-3xl'>
                                         <h3 className=' group-hover:text-[32px] text-lg font-medium leading-18 transition-all ease-linear duration-500 bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
                                         <p className='my-6 text-base font-medium leading-15 text-dark-gray'>{item.para}</p>

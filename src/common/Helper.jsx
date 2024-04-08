@@ -98,19 +98,19 @@ export const Enterpreneurdata = [
 
 export const Business = [
     {
-        Description: "Everything in Pro"
+        description: "Everything in Pro"
     },
     {
-        Description: "Unlimited Shared Commands"
+        description: "Unlimited Shared Commands"
     },
     {
-        Description: "Unlimited Shared Quicklinks"
+        description: "Unlimited Shared Quicklinks"
     },
     {
-        Description: "Unlimited Shared Snippets"
+        description: "Unlimited Shared Snippets"
     },
     {
-        Description: "Unlimited Team Members"
+        description: "Unlimited Team Members"
     },
 ]
 
@@ -142,7 +142,7 @@ export const Entrepreneurcontent = () => {
                         <div>
                             <GreenTick />
                         </div>
-                        <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
+                        <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.description}</p>
                     </div>
                 )
             })}
@@ -167,7 +167,7 @@ export const BusinessData = () => {
                                 <div>
                                     <WhiteTick />
                                 </div>
-                                <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
+                                <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.description}</p>
                             </div>
                         )
                     })}
