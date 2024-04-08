@@ -86,7 +86,7 @@ const pricedata1 = [
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
         includedata: (<>
-            <div className='flex flex-col gap-4 lg:mb-36 mb-14'>
+            <div className='flex flex-col gap-4 lg:mb-28 mb-14'>
                 {enterpreneurdata.map((line) => {
                     return (
                         <div className='flex gap-3'>
@@ -271,10 +271,10 @@ const pricedata = [
 const Pricing = () => {
     const [toggle, setToggle] = useState(1)
     return (
-        <div className='relative'>
+        <div className='relative lg:mt-20 sm:mt-10'>
             <div id='pricing' className="xl:max-w-[1219px] lg:mt-20 md:mt-14 mt-10 container">
                 <h2 className='font-bold lg:text-4xl sm:text-3xl2 tracking-tighter text-3xl1 text-white text-center leading-2.5xl'>Pricing</h2>
-                <p className=' text-dark-gray font-inter text-xxl text-center sm:pt-6 pt-4.5'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
+                <p className=' text-dark-gray font-medium text-xxl text-center sm:pt-6 pt-4.5'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
 
                 <div className='bg-gray-white-500 rounded-2md p-1 max-w-[192px] mx-auto w-full flex justify-between md:mt-[44.5px] mt-6'>
                     <button onClick={() => setToggle(1)} className={`py-1.5 px-4.5 rounded-3md text-base font-medium text-white ${toggle === 1 ? "bg-gray-white-500" : ""}`}>Yearly</button>
@@ -334,7 +334,9 @@ const Pricing = () => {
                         )
                     })) : ""}
                 </div>
-                <a href='#' className='bg-gray-white-500 flex items-center sm:flex-row flex-col text-white px-4 py-1.5 rounded-2md sm:gap-2 gap-1 mt-12 mx-auto'><p className='font-medium text-2sm leading-2xl opacity-60 tracking-tightest'>Want enterprise features?</p><p className='flex items-center gap-1 font-bold text-2sm tracking-tightest leading-2xl'>Tell us more <WhiteArrow /></p></a>
+                <div className='flex items-center justify-center'>
+                    <a href='#' className='bg-gray-white-500 inline-flex items-center justify-center sm:flex-row flex-col text-white px-4 py-1.5 rounded-2md sm:gap-2 gap-1 mt-12'><p className='font-medium text-2sm leading-2xl opacity-60 tracking-tightest'>Want enterprise features?</p><p className='flex items-center gap-1 font-bold text-2sm tracking-tightest leading-2xl'>Tell us more <WhiteArrow /></p></a>
+                </div>
             </div>
             <div className='bg-[#2980D6] w-[778px] h-[778px] blur-[1000px] absolute top-[25%] left-[-50%]'></div>
         </div>
