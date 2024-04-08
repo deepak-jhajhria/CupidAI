@@ -35,7 +35,10 @@ module.exports = {
     },
     letterSpacing: {
       tighter: '-1px', //use
+      midtighter: '0.3px',
       tightest: '-0.5px', //use
+      tight: '-.025em',
+      normal: '0',
       wide: '.035em', // use
     },
     extend: {
@@ -78,35 +81,39 @@ module.exports = {
         'orange-red': '#F800B9',
         'dark-black': '#1B1530',
         'bodymain': '#040403',
-        'dark-gray': '#FFFFFF99',
         'light-red': '#FF6363',
         'dark-black-300': '#110E19',
         'gray-white-500': '#FFFFFF1A',
         'gray-white-600': '#FFFFFF0D',
         'gray-black-200': '#858585',
       },
-      animation:{
+      animation: {
         'moveX': 'translateX 19s linear infinite forwards',
+        'movelinner': 'move_ellipes 2s linear infinite alternate',
       },
       keyframes: {
         translateX: {
           '0%': { transform: 'translateX(80%)' },
           '100%': { transform: 'translateX(-80%)' },
         },
-        translateX2: {
-          '0%': { transform: 'translateX(183px)' },
-          '100%': { transform: ' translateX(calc(-340px))' },
-        }
+        move_ellipes: {
+          '0%': {
+            transform: 'scale(1)'
+          },
+          '100%': {
+            transform: 'scale(1.5)'
+          },
+        },
       },
       backgroundImage: {
         "bg-gradient": "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
-        "bg_gradient": "linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #040403 100%)",
+        "bg_gradient": "linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #040403 100%);",
         'whitegradient': "linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%)",
         'whiteborder': "linear-gradient(106.78deg, rgba(255, 255, 255, 0.23) 6.02 %, rgba(255, 255, 255, 0.0759) 104.65 %)",
         'textgradient': "linear-gradient(97.84deg, #FF4141 0.52%, #FFA6B0 23.61%, #FFB6E6 50%, #FFD8D8 75%, #BF8DFF 100%)",
         'headerTextgradient': "linear-gradient(88.36deg, #7F04E3 45.88%, #FF006B 76.63%)",
         'btngradient': "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
-        'gradientTrailBtn':"linear-gradient(96.17deg, #7F04E3 6%, #FF006B 98.41%)",
+        'gradientTrailBtn': "linear-gradient(96.17deg, #7F04E3 6%, #FF006B 98.41%)",
       },
       backgroundSize: {
         "BgSize": "100% 100%"

@@ -10,7 +10,7 @@ const Faq = () => {
     };
     return (
         <div id='faq' className='container max-w-[1300px]'>
-            <div className='max-w-[700px] mx-auto pt-16 sm:pt-32 md:pt-52 lg:pt-72'>
+            <div className='max-w-[700px] mx-auto pt-16 sm:pt-32 md:pt-52 lg:pt-64'>
                 <h2 className='text-4xl font-bold tracking-tighter text-white leading-11'>FAQs</h2>
                 <p className='pb-2 mt-5 text-lg text-gray font-inter md:text-xl md:leading-7 tracking-tightest md:mt-6'>Answers to the most frequently asked questions.</p>
                 {accordionData.map((item, index) => (
