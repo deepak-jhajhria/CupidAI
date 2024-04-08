@@ -19,8 +19,6 @@ export const IndividualData = () => {
         </>)
     )
 }
-
-
 export const Entrepreneurcontent = () => {
     return (<>
         <div className='flex flex-col gap-4'>

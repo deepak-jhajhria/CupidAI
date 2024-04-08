@@ -34,8 +34,6 @@ body::-webkit-scrollbar-thumb {
 
 
 .blur_box_border {
-    /* backdrop-filter: blur(39.5px); */
-    /* padding: 1px; */
     border-radius: 24px;
     position: relative;
     z-index: 3;
