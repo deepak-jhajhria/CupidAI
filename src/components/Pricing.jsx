@@ -86,7 +86,7 @@ const pricedata1 = [
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
         includedata: (<>
-            <div className='flex flex-col gap-4 lg:mb-28 mb-14'>
+            <div className='flex flex-col gap-4 lg:mb-24 mb-14'>
                 {enterpreneurdata.map((line) => {
                     return (
                         <div className='flex gap-3'>
