@@ -310,9 +310,9 @@ const Pricing = () => {
                         return (
                             <>
                                 <div key={item.id} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
-                                    <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-105 hover:z-10 group '>
+                                    <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-[1.02] hover:z-10 group '>
                                         <div className='p-8 bg-gray-white-600 rounded-3xl'>
-                                            <h3 className=' group-hover:text-[32px] text-lg font-medium leading-3xl transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
+                                            <h3 className=' group-hover:text-[32px] text-lg font-medium leading-3xl transition-all ease-linear duration-500 bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
                                             <p className='my-6 text-base font-medium leading-xl text-dark-gray'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
                                                 <h3 className='text-3xl font-semibold text-white sm:text-5xl leading-sm'>{item.price}</h3>
