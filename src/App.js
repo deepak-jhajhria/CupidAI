@@ -5,9 +5,9 @@ import Crm from './components/Crm';
 import IdentityHub from './components/IdentityHub';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import ServiceCard from './components/ServiceCard';
 import Pricing from './components/Pricing';
 import BackTop from './components/BackTop';
+import ServiceCardNew from './components/ServiceCardNew';
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
       <Header />
       <TrustedCompany />
       <Crm />
-      <div className='bg-[url(./assets/images/servicebg.webp)] bg-black bg-BgSize bg-center bg-no-repeat'>
-        < ServiceCard />
+      <div className='bg-[url(./assets/images/servicebg.webp)] bg-BgSize bg-center bg-no-repeat'>
+        <ServiceCardNew/>
       </div>
       <Pricing />
       <Faq />
