@@ -140,7 +140,7 @@ export const Entrepreneurcontent = () => {
                 return (
                     <div key={index} className='flex gap-3'>
                         <div>
-                            <GreenTick />
+                            <WhiteTick />
                         </div>
                         <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.description}</p>
                     </div>
