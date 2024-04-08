@@ -279,7 +279,7 @@ const Pricing = () => {
                     <button onClick={() => setToggle(1)} className={`py-1.5 px-4.5 rounded-3md text-base font-medium text-white ${toggle === 1 ? "bg-gray-white-500" : ""}`}>Yearly</button>
                     <button onClick={() => setToggle(2)} className={`py-1.5 px-4.5 rounded-3md text-base font-medium text-white ${toggle === 2 ? "bg-gray-white-500" : ""}`}>Monthly</button>
                 </div>
-                <div className='flex items-center flex-wrap justify-center w-full md:pt-16 sm:pt-10 pt-6 lg:min-h-[820px]'>
+                <div className='flex items-center flex-wrap justify-center w-full md:pt-16 sm:pt-10 pt-6 lg:min-h-[826px]'>
                     {toggle === 2 ? (pricedata.map((item, index) => {
                         return (
                             <>
