@@ -43,7 +43,7 @@ module.exports = {
     },
     extend: {
       screens: {
-        'slg': '870px',
+        'slg': '940px',
       },
       lineHeight: {
         '11': '48.41px',
@@ -84,8 +84,8 @@ module.exports = {
         'gray-black-200': '#858585',
       },
       animation: {
-        'moveX': 'translateX 19s linear infinite forwards',
-        'moveSmX': 'translateSmX 39s linear infinite forwards',
+        'moveX': 'translateX 39s linear infinite forwards',
+        'moveSmX': 'translateSmX 49s linear infinite forwards',
         'movelinner': 'move_ellipes 2s linear infinite alternate',
       },
       keyframes: {
