@@ -12,7 +12,7 @@ const Header = () => {
             <div id="home" className="relative overflow-hidden min-h-[667px] md:min-h-[810px]">
                 <span className="absolute bottom-0 left-0 z-0 w-full h-full"><Herobg /></span>
                 <div className="lg:max-w-[1320px] px-3 container mx-auto pt-4 sm:pt-5 md:pt-8 bg-[#01020f2e] relative">
-                    <nav className="flex items-center justify-between rounded-full p-3 lg:p-2.5 border border-white border-solid">
+                    <nav className="flex items-center justify-between rounded-full p-3 lg:p-2.5 border border-[#fbf0f063] border-solid">
                         <a className="flex items-center gap-2 text-3xl font-bold text-white" href="/">
                             <span> <FooterLogo /> </span> CupidAI</a>
                         <ul className={`${isOpen ? "right-0" : "-right-full"} flex max-lg:fixed max-lg:top-0 max-lg:bg-black md:bg-full bg-cover max-lg:h-full max-lg:w-full max-md:max-w-full max-lg:max-w-[400px] max-lg:z-30 max-lg:duration-300 max-lg:flex-col gap-7 items-center justify-center`}>
