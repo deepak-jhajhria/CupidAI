@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { WhiteArrow } from '../common/Icons'
-import { PricedataMonth, PricedataYear } from '../common/Helper'
+import { WhiteArrow } from './common/Icons'
+import { PricedataMonth, PricedataYear } from './common/Helper'
 
 const Pricing = () => {
     const [toggle, setToggle] = useState(1)
