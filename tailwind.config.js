@@ -14,7 +14,6 @@ module.exports = {
       xl: '20px',
       xxl: '22px',
       '2xl': '24px',
-      '9xl': '22px',
       '3xl': '30px',
       '3xl1': '32px',
       '3xl2': '36px',
@@ -38,13 +37,9 @@ module.exports = {
       tighter: '-1px', //use
       midtighter: '0.3px',
       tightest: '-0.5px', //use
-      extratightest: '-1.2px',
       tight: '-.025em',
       normal: '0',
       wide: '.035em', // use
-      wider: '.05em',
-      widest: '.1em',
-      widest: '.25em',
     },
     extend: {
       screens: {
@@ -70,15 +65,11 @@ module.exports = {
         'gradientRed': '0 0 20px 1px #F800B9',
       },
       colors: {
-        'white': '#FFF',
         'black-primary': '#040403',
         'gray': '#646464',
         'gray-white': '#E4E2EE',
-        'gray-white2': '#E4E4E7',
-        'gray-white3': '#A1A1AA',
         'gray-white-200': '#EAECF0',
         'gray-white-100': '#CAC6DD',
-        'gray-white-700': '#646464',
         'gray-dark-200': '#57606A',
         'gray-light-300': '#99A2AF',
         'dark-gray': '#646464',
@@ -126,13 +117,6 @@ module.exports = {
         '2md': '41px',
         '3md': '48px',
       },
-    },
-    backgroundImage: {
-      "bg-gradient": "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
-      "bg_gradient": "linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #040403 100%)"
-    },
-    backgroundSize: {
-      "BgSize": "100% 100%"
     },
   },
   plugins: []
