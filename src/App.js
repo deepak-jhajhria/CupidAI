@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import TrustedCompany from './components/TrustedCompany';
 import Faq from './components/Faq';
@@ -9,10 +10,18 @@ import ServiceCard from './components/ServiceCard';
 import Pricing from './components/Pricing';
 import dashboardimage from './assets/images/dashboardimage.webp'
 import BackTop from './components/BackTop';
-
+import Preloader from './components/Preloader';
+document.body.classList.add("overflow-hidden")
 function App() {
+  const [preloder, setpreloder] = React.useState(true)
+  setTimeout(() => {
+    setpreloder(false)
+    document.body.classList.remove("overflow-hidden")
+
+  }, 4000);
   return (
     <div className=" bg-black-primary max-w-[1920px] mx-auto overflow-hidden">
+      {preloder && <Preloader />}
       <Header />
       <TrustedCompany />
       <Crm />

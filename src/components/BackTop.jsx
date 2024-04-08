@@ -26,12 +26,12 @@ const BackTop = () => {
         className="fixed hidden bottom-[8%] right-[1%] z-30 translate-y-[0%] animate-bounce"
         ref={scrollTop}
       >
-        <div className=" rounded-[50%] p-[6px] sm:p-2 cursor-pointer transform-[.3s] bg-bg-gradient  hover:bg-gradientTrailBtn ">
+        <div className=" rounded-[50%] p-1 sm:p-2 cursor-pointer transform-[.3s] bg-bg-gradient  hover:bg-gradientTrailBtn ">
           <img
             src={backtop}
             alt="backtop"
-            width={20}
-            height={20}
+            width={22}
+            height={22}
             className=" rounded-2 box-line "
           />
         </div>
