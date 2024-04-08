@@ -7,10 +7,10 @@ export const linkData = [
     { path: "#features", link: "how to use" },
 ]
 export const navLinkData = [
-    { path: "#features", link: "Home" },
-    { path: "#Services", link: "Why us" },
-    { path: "#pricing", link: "Services" },
-    { path: "#features", link: "FAQ" },
+    { path: "#home", link: "Home" },
+    { path: "#whyus", link: "Why us" },
+    { path: "#service", link: "Services" },
+    { path: "#faq", link: "FAQ" },
 ]
 export const accordionData = [
     { id: 1, title: "How do you handle my data?", content: "Artificial Intelligence refers to the development of computer systems that can perform tasks that typically require human intelligence." },
@@ -29,7 +29,7 @@ export const icons = [
 
 export const CommonBtn = (props) => {
     return (
-        <button className={`py-4.5 px-[25px] rounded-full text-white bg-gradient-to-tr from-orange-red from-30% to-blue font-medium text-xl leading-6 flex ${props.cstm}`}>{props.name}</button>
+        <button className={`py-3.5 px-[25px] rounded-full text-white bg-btngradient  font-medium text-xl leading-6 flex ${props.cstm}`}>{props.name}</button>
     )
 }
 export const serviceCardItems = [
