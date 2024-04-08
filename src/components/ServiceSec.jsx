@@ -1,5 +1,5 @@
 import Ourservice from './Ourservices'
-import { serviceCardItems } from '../common/Helper'
+import { serviceCardItems } from './common/Helper'
 
 
 const ServiceCard = () => {

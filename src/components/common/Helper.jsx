@@ -1,4 +1,4 @@
-import { FacebookIcon, GreenStar, GreenTick, InstaIcon, RedStar, ServiceSvg, ServiceSvg2, ServiceSvg3, ServiceSvg4, TelegramIcon, TwiterIcon, WhiteTick } from "./Icons";
+import { FacebookIcon, GreenStar, GreenTick, InstaIcon, RedStar, ServiceSvg, ServiceSvg2, ServiceSvg3, ServiceSvg4, TelegramIcon, TwiterIcon, WhiteTick } from "../common/Icons";
 
 export const linkData = [
     { path: "#features", link: "features" },

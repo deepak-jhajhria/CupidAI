@@ -1,6 +1,6 @@
 import clupiAiImage from "../assets/images/clupiai.webp";
-import { crmData } from "../common/TrustedHelper";
-import { YellowMan } from "../common/TrustedIcons";
+import { crmData } from "./common/TrustedHelper";
+import { YellowMan } from "./common/TrustedIcons";
 const Crm = () => {
   return (
     <div id="whyus" className=" bg-bodymain sm:pt-11 mt-[-2px] ">

@@ -10,7 +10,7 @@ import Pricing from './components/Pricing';
 import Preloader from './components/Preloader';
 import BackTop from './components/BackToTop';
 import ServiceCardNew from './components/ServiceCardNew';
-import { usePreloader } from './common/Hooks';
+import { usePreloader } from './components/common/Hooks';
 
 function App() {
   const isLoading = usePreloader();

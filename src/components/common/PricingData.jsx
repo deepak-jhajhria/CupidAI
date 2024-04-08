@@ -1,4 +1,4 @@
-import { Includedata, Enterpreneurdata, Business } from ""
+import { Includedata, Enterpreneurdata, Business } from "./Helper"
 import { RedStar, WhiteTick } from "./Icons"
 
 export const IndividualData = () => {

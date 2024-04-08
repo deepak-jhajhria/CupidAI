@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { WhiteArrow } from '../common/Icons'
+import { WhiteArrow } from './common/Icons'
 import { PricedataMonth, PricedataYear } from './common/PricingData'
 
 const Pricing = () => {

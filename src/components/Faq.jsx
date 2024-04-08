@@ -1,6 +1,6 @@
 import { Accordion, AccordionHeader, AccordionBody } from '@material-tailwind/react';
 import React, { useState } from 'react'
-import { Arrow } from '../common/Icons';
+import { Arrow } from './common/Icons';
 import { accordionData } from './common/Helper';
 
 const Faq = () => {
