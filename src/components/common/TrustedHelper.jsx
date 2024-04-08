@@ -1,6 +1,6 @@
 import blotshift from "../assets/images/boltshift.webp";
 import lighbox from "../assets/images/lightbox.webp";
-import featherdev from "../assets/images/featherdev.webp";
+import featherdev from "../../assets/images/featherdev.webp";
 import spherule from "../assets/images/spherule.webp";
 import globalbank from "../assets/images/globalbank.webp";
 import { GridlineBox } from "./TrustedIcons";
