@@ -8,6 +8,7 @@ import Header from './components/Header';
 import ServiceCard from './components/ServiceCard';
 import Pricing from './components/Pricing';
 import BackTop from './components/BackTop';
+
 function App() {
   return (
     <div className=" bg-black-primary max-w-[1920px] mx-auto overflow-hidden">

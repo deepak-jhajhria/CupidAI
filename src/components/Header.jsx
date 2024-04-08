@@ -1,29 +1,25 @@
-import React, { useState } from "react";
 import { FooterLogo } from "./Icons";
 import { CommonBtn, navLinkData } from "../common/Helper";
 import { Herobg } from "../common/Icons";
 import dashboardimg from '../assets/images/dashboardimage.webp'
+import { useOverflowHidden } from "../common/Hooks";
+import { Twirl as Hamburger } from 'hamburger-react';
 
 const Header = () => {
-    const [show, setShow] = useState(true);
-    if (show === false) {
-        document.body.classList.add("max-lg:overflow-hidden");
-    } else {
-        document.body.classList.remove("max-lg:overflow-hidden");
-    }
+    const [isOpen, setOpen] = useOverflowHidden(false);
     return (
         <>
-            <div className="relative overflow-hidden min-h-[667px] md:min-h-[810px]">
+            <div id="home" className="relative overflow-hidden min-h-[667px] md:min-h-[810px]">
                 <span className="absolute bottom-0 left-0 z-0 w-full h-full"><Herobg /></span>
-                <div className="lg:max-w-[1320px] px-3 container mx-auto pt-8 bg-[#01020f2e] relative z-[1]">
-                    <nav className="flex items-center justify-between rounded-[60px] p-2.5 border border-white border-solid sm:h-[71px] h-[60px]">
+                <div className="lg:max-w-[1320px] px-3 container mx-auto pt-4 sm:pt-5 md:pt-8 bg-[#01020f2e] relative">
+                    <nav className="flex items-center justify-between rounded-full p-3 lg:p-2.5 border border-white border-solid">
                         <a className="flex items-center gap-2 text-3xl font-bold text-white" href="/">
                             <span> <FooterLogo /> </span> CupidAI</a>
-                        <ul className={`${show ? "left-[-100%]" : "left-0"} flex max-lg:fixed max-lg:top-0 max-lg:bg-black md:bg-full bg-cover max-lg:h-full max-lg:w-full max-lg:z-[7] max-lg:transition-all max-lg:duration-300 max-lg:ease-linear max-lg:min-h-screen max-lg:flex-col gap-7 items-center justify-center`}>
+                        <ul className={`${isOpen ? "right-0" : "-right-full"} flex max-lg:fixed max-lg:top-0 max-lg:bg-black md:bg-full bg-cover max-lg:h-full max-lg:w-full max-md:max-w-full max-lg:max-w-[400px] max-lg:z-30 max-lg:duration-300 max-lg:flex-col gap-7 items-center justify-center`}>
                             {
                                 navLinkData.map((item, index) => (
                                     <li key={index}>
-                                        <a className="text-xl font-semibold leading-6 tracking-wide text-white uppercase navLinks" href={item.path}>{item.link}</a>
+                                        <a className="text-xl font-semibold leading-6 tracking-wide text-white uppercase navLinks" href={item.path} onClick={() => setOpen(false)}>{item.link}</a>
                                     </li>
                                 ))
                             }
@@ -37,27 +33,8 @@ const Header = () => {
                             </a>
                             <CommonBtn name="Sing up" />
                         </div>
-                        <div className="flex items-center gap-3 sm:gap-5 lg:hidden">
-                            <div onClick={() => setShow(!show)} className="lg:hidden w-[28px] h-[20px] relative z-[10] flex justify-between flex-col">
-                                <span
-                                    className={`${show
-                                        ? "bg-white h-[3px] w-full duration-300 rounded-[3px] ease-linear transition-all"
-                                        : "bg-white transition-all duration-300 rounded-[3px] ease-linear h-[4px] w-full rotate-[50deg] translate-y-[14px]"
-                                        }`}
-                                ></span>
-                                <span
-                                    className={`${show
-                                        ? "bg-white h-[3px] w-full duration-300 rounded-[3px] ease-linear transition-all"
-                                        : "duration-300 rounded-[3px] ease-linear transition-all hidden"
-                                        }`}
-                                ></span>
-                                <span
-                                    className={`${show
-                                        ? "bg-white h-[3px] w-full duration-300 rounded-[3px] ease-linear transition-all"
-                                        : "bg-white transition-all duration-300 rounded-[3px] ease-linear h-[4px] w-full rotate-[-50deg] translate-y-[-50%]"
-                                        }`}
-                                ></span>
-                            </div>
+                        <div className='relative z-[110] mx-2 sm:mx-3 lg:hidden'>
+                            <Hamburger toggled={isOpen} toggle={setOpen} size={30} rounded distance="sm" direction='right' duration={0.5} color='#FFF' />
                         </div>
                     </nav>
                 </div>
@@ -70,6 +47,10 @@ const Header = () => {
             <div className="container xl:max-w-[1320px]">
                 <img src={dashboardimg} alt="dashboardimg" className="mx-auto -translate-y-[42%] lg:w-[915px] md:w-[600px] max-h-[400px] md:max-h-[687px] relative z-10" />
             </div>
+            {isOpen && (
+                <div onClick={() => setOpen(false)} className='w-full bg-[rgba(0,0,0,0.78)] flex h-full fixed top-0 left-0 z-20'>
+                </div>
+            )}
         </>
     );
 };
