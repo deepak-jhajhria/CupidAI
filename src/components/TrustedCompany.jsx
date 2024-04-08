@@ -1,4 +1,3 @@
-import React from "react";
 import { companiesData } from "../common/TrustedHelper";
 const TrustedCompany = () => {
   return (
@@ -11,7 +10,7 @@ const TrustedCompany = () => {
           {companiesData.map((obj, i) => (
             <img
               key={i}
-              src={obj.img}
+              src={obj.companyLogo}
               alt={obj.alt}
               className={` xl:w-full lg:w-40 md:w-36  h-12 ${obj.none}`}
             />

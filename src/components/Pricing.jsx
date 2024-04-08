@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { GreenStar, GreenTick, RedStar, WhiteArrow, WhiteTick } from './Icons'
+import  { useState } from 'react'
+import { GreenStar, GreenTick, RedStar, WhiteArrow, WhiteTick } from '../common/Icons'
 
 const includedata = [
     {

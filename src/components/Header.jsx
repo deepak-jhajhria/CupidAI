@@ -1,6 +1,6 @@
-import { FooterLogo } from "./Icons";
+import { FooterLogo } from "../common/Icons";
 import { CommonBtn, navLinkData } from "../common/Helper";
-import { Herobg } from "../common/Icons";
+import { HeroBg } from "../common/Icons";
 import dashboardimg from '../assets/images/dashboardimage.webp'
 import { useOverflowHidden } from "../common/Hooks";
 import { Twirl as Hamburger } from 'hamburger-react';
@@ -9,8 +9,8 @@ const Header = () => {
     const [isOpen, setOpen] = useOverflowHidden(false);
     return (
         <>
-            <div id="home" className="relative overflow-hidden min-h-[667px] md:min-h-[810px]">
-                <span className="absolute bottom-0 left-0 z-0 w-full h-full"><Herobg /></span>
+            <div className="relative overflow-hidden min-h-[667px] md:min-h-[810px]">
+                <span className="absolute bottom-0 left-0 z-0 w-full h-full"><HeroBg /></span>
                 <div className="lg:max-w-[1320px] px-3 container mx-auto pt-4 sm:pt-5 md:pt-8 bg-[#01020f2e] relative">
                     <div className="rounded-full p-[1px] bg-gradient-to-l from-[#FBF0F02E] to-[#FFFFFF0A]">
                         <nav className="flex items-center justify-between bg-[#080806] rounded-full p-3 lg:p-2.5">
@@ -43,7 +43,7 @@ const Header = () => {
                 <div className="flex flex-col w-full justify-center items-center max-w-[691px] px-3 mx-auto relative z-10 mt-16 pt-1.5">
                     <h2 className="text-4xl font-semibold text-center text-white sm:text-5xl md:text-6xl lg:text-7xl md:leading-13">Unleash <span className="text-transparent bg-headerTextgradient bg-clip-text">Creativity</span>, Effortlessly</h2>
                     <p className="mt-3 text-base font-normal leading-8 text-center sm:text-lg md:text-xl text-gray-white-100 md:mt-4">Elevate your agency's output with state-of-the-art AI, engineered to innovate at the speed of thought.</p>
-                    <CommonBtn cstm="mt-5" name="Try Now" />
+                    <CommonBtn className="mt-5" name="Try Now" />
                 </div>
             </div>
             <div className="container xl:max-w-[1320px]">

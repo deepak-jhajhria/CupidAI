@@ -1,5 +1,5 @@
 import { icons, linkData } from "../common/Helper"
-import { FooterGradientMixup, FooterLogo } from "./Icons"
+import { FooterGradientMixup, FooterLogo } from "../common/Icons"
 
 const Footer = () => {
     return (
@@ -30,7 +30,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <span className="absolute bottom-0 animate-movelinner z-0"><FooterGradientMixup /></span>
+            <span className="absolute bottom-0 z-0 animate-movelinner"><FooterGradientMixup /></span>
         </div>
     )
 }
