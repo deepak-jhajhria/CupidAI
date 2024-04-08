@@ -15,21 +15,23 @@ import { usePreloader } from './components/common/Hooks';
 function App() {
   const isLoading = usePreloader();
   return (
-    <div className=" bg-black-primary max-w-[1920px] mx-auto overflow-hidden">
-      {
-        isLoading ? (<Preloader />) : (<>
-          <Header />
-          <TrustedCompany />
-          <Crm />
-          <div className='bg-[url(./assets/images/servicebg.webp)] bg-BgSize bg-center bg-no-repeat'>
-            <ServiceCardNew />
-          </div>
-          <Pricing />
-          <Faq />
-          <IdentityHub />
-          <Footer />
-          <BackTop /></>)
-      }
+    <div className="mx-auto overflow-hidden bg-black-primary">
+      <div className='max-w-[1920px] mx-auto'>
+        {
+          isLoading ? (<Preloader />) : (<>
+            <Header />
+            <TrustedCompany />
+            <Crm />
+            <div className='bg-[url(./assets/images/servicebg.webp)] bg-BgSize bg-center bg-no-repeat'>
+              <ServiceCardNew />
+            </div>
+            <Pricing />
+            <Faq />
+            <IdentityHub />
+            <Footer />
+            <BackTop /></>)
+        }
+      </div>
 
     </div >
   )

@@ -9,9 +9,9 @@ const Header = () => {
     const [isOpen, setOpen] = useOverflowHidden(false);
     return (
         <>
-            <div className="relative overflow-hidden min-h-[667px] md:min-h-[810px]">
+            <div id="home" className="relative overflow-hidden min-h-[667px] md:min-h-[810px]">
                 <span className="absolute bottom-0 left-0 z-0 w-full h-full"><HeroBg /></span>
-                <div className="lg:max-w-[1320px] px-3 container mx-auto pt-4 sm:pt-5 md:pt-8 bg-black-primary-100 relative">
+                <div className="lg:max-w-[1320px] px-3 container mx-auto pt-4 sm:pt-5 md:pt-10 relative">
                     <div className="rounded-full p-[1px] bg-gradient-to-l from-black-primary-200 to-gray-white-500">
                         <nav className="flex items-center justify-between bg-[#080806] rounded-full p-3 lg:p-2.5">
                             <a className="flex items-center gap-2 text-3xl font-bold text-white" href="/">
@@ -20,7 +20,7 @@ const Header = () => {
                                 {
                                     navLinkData.map((item, index) => (
                                         <li key={index}>
-                                            <a className="text-xl font-normal leading-6 tracking-wide text-white uppercase transition-all duration-300 ease-linear link navLinks" href={item.path} onClick={() => setOpen(false)}>{item.link}</a>
+                                            <a className="text-xl font-normal leading-6 tracking-wide text-white duration-300 navLinks" href={item.path} onClick={() => setOpen(false)}>{item.link}</a>
                                         </li>
                                     ))
                                 }
@@ -28,7 +28,7 @@ const Header = () => {
                             <div className="items-center hidden gap-5 lg:flex">
                                 <a
                                     href="#"
-                                    className="font-normal text-xl leading-[15px] text-white"
+                                    className="font-normal text-xl leading-[15px] duration-300 text-white hover:text-[#B302B1]"
                                 >
                                     Log in
                                 </a>
@@ -40,9 +40,9 @@ const Header = () => {
                         </nav>
                     </div>
                 </div>
-                <div id="home" className="flex flex-col w-full justify-center items-center max-w-[691px] px-3 mx-auto relative z-10 mt-16 pt-2">
+                <div className="flex flex-col w-full justify-center items-center max-w-[691px] px-3 mx-auto relative z-10 mt-16 pt-2">
                     <h2 className="text-4xl font-semibold text-center text-white sm:text-5xl md:text-6xl lg:text-7xl md:leading-13">Unleash <span className="text-transparent bg-headerTextgradient bg-clip-text">Creativity</span>, Effortlessly</h2>
-                    <p className="mt-3 text-base font-normal leading-8 text-center sm:text-lg md:text-xl text-gray-white-100 md:mt-4">Elevate your agency's output with state-of-the-art AI, engineered to innovate at the speed of thought.</p>
+                    <p className="mt-3 text-base font-normal leading-8 text-center text-white sm:text-lg md:text-xl md:mt-4">Elevate your agency's output with state-of-the-art AI, engineered to innovate at the speed of thought.</p>
                     <CommonBtn className="mt-5" name="Try Now" />
                 </div>
             </div>
