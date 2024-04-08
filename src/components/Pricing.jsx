@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { WhiteArrow } from '../common/Icons'
-import { pricedata, pricedata1 } from '../common/Helper'
+import { PricedataMonth, PricedataYear } from '../common/Helper'
 
 const Pricing = () => {
     const [toggle, setToggle] = useState(1)
@@ -16,7 +16,7 @@ const Pricing = () => {
                 <div className='flex items-center flex-wrap justify-center w-full md:pt-16 sm:pt-10 pt-6 lg:min-h-[826px]'>
                     {toggle === 2 && <>
                         {
-                            pricedata.map((item, index) => (
+                            PricedataMonth.map((item, index) => (
                                 <div key={index} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
                                     <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-[1.02] hover:z-10 group '>
                                         <div className='p-8 bg-gray-white-600 rounded-3xl'>
@@ -40,7 +40,7 @@ const Pricing = () => {
                             ))
                         }
                     </>}
-                    {toggle === 1 && (pricedata1.map((item, index) => {
+                    {toggle === 1 && (PricedataYear.map((item, index) => {
                         return (
                             <div key={index} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
                                 <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-[1.02] hover:z-10 group '>

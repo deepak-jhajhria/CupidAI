@@ -49,10 +49,12 @@ const Header = () => {
             <div className="container xl:max-w-[1320px]">
                 <img src={dashboardimg} alt="dashboardimg" className="mx-auto -translate-y-[42%] lg:w-[915px] md:w-[600px] max-h-[400px] md:max-h-[687px] relative z-10" />
             </div>
-            {isOpen && (
-                <div onClick={() => setOpen(false)} className='w-full bg-[rgba(0,0,0,0.78)] flex h-full fixed top-0 left-0 z-20'>
-                </div>
-            )}
+            {
+                isOpen && (
+                    <div onClick={() => setOpen(false)} className='w-full bg-[rgba(0,0,0,0.78)] flex h-full fixed top-0 left-0 z-20'>
+                    </div>
+                )
+            }
         </>
     );
 };
