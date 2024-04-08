@@ -62,7 +62,6 @@ export const serviceCardItems = [
         width: "md:w-7/12 md:max-w-[526px]",
     },
 ]
-import { GreenStar, GreenTick, RedStar, WhiteArrow, WhiteTick } from '../common/Icons'
 
 export const Includedata = [
     {

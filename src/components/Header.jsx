@@ -40,11 +40,7 @@ const Header = () => {
                         </nav>
                     </div>
                 </div>
-<<<<<<< HEAD
-                <div className="flex flex-col w-full justify-center items-center max-w-[691px] px-3 mx-auto relative z-10 mt-16 pt-1.5">
-=======
                 <div id="home" className="flex flex-col w-full justify-center items-center max-w-[691px] px-3 mx-auto relative z-10 mt-16 pt-2">
->>>>>>> 6c1d270e6ec9662469663018a87f9f71df19cc5f
                     <h2 className="text-4xl font-semibold text-center text-white sm:text-5xl md:text-6xl lg:text-7xl md:leading-13">Unleash <span className="text-transparent bg-headerTextgradient bg-clip-text">Creativity</span>, Effortlessly</h2>
                     <p className="mt-3 text-base font-normal leading-8 text-center sm:text-lg md:text-xl text-gray-white-100 md:mt-4">Elevate your agency's output with state-of-the-art AI, engineered to innovate at the speed of thought.</p>
                     <CommonBtn className="mt-5" name="Try Now" />
@@ -53,10 +49,12 @@ const Header = () => {
             <div className="container xl:max-w-[1320px]">
                 <img src={dashboardimg} alt="dashboardimg" className="mx-auto -translate-y-[42%] lg:w-[915px] md:w-[600px] max-h-[400px] md:max-h-[687px] relative z-10" />
             </div>
-            {isOpen && (
-                <div onClick={() => setOpen(false)} className='w-full bg-[rgba(0,0,0,0.78)] flex h-full fixed top-0 left-0 z-20'>
-                </div>
-            )}
+            {
+                isOpen && (
+                    <div onClick={() => setOpen(false)} className='w-full bg-[rgba(0,0,0,0.78)] flex h-full fixed top-0 left-0 z-20'>
+                    </div>
+                )
+            }
         </>
     );
 };
