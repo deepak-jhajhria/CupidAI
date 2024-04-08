@@ -17,7 +17,7 @@ const Faq = () => {
                     <Accordion key={index} onClick={() => toggleAccordion(index)} className={`cursor-pointer border-b border-white border-opacity-10 mt-5 sm:mt-6 md:mt-8 ${item.id === 6 ? "border-0" : ""}`} open={open === index} icon={<Arrow id={index} open={open} />}>
                         <AccordionHeader className={`font-semibold text-white text-2sm md:text-base text-start w-full justify-between gap-3 border-0 pb-8.5 pt-0 leading-6 ${open === index ? "pb-0" : ""}`}>{item.title}
                         </AccordionHeader>
-                        <AccordionBody className="py-2 text-sm font-semibold text-white opacity-70 md:text-sm sm:py-3"> {item.content}
+                        <AccordionBody className="py-2 text-sm font-semibold text-white opacity-70 md:text-sm sm:py-3"> {item.description}
                         </AccordionBody>
                     </Accordion>
                 ))

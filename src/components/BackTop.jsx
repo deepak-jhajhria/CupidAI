@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { BackToTop } from "../common/Icons";
 const BackTop = () => {
   const [isVisible, setIsVisible] = useState(false);

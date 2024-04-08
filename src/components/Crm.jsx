@@ -1,4 +1,3 @@
-import React from "react";
 import crmai from "../assets/images/clupiai.webp";
 import { crmData } from "../common/TrustedHelper";
 import { YellowMan } from "../common/TrustedIcons";

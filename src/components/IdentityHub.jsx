@@ -1,4 +1,4 @@
-import { CircleEllipseSvg, GradientLineSvg } from "./Icons"
+import { CircleEllipseSvg, GradientLineSvg } from "../common/Icons"
 const IdentityHub = () => {
     return (
         <div id="howtouse" className="relative py-10 mt-10 sm:py-24 md:py-32 lg:py-40 overflow-x-clip sm:mt-16 md:mt-24 lg:mt-48">

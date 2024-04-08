@@ -1,4 +1,3 @@
-import React from "react";
 import { companiesData } from "../common/TrustedHelper";
 const TrustedCompany = () => {
   return (
