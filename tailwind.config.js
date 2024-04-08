@@ -81,7 +81,6 @@ module.exports = {
         'orange-red': '#F800B9',
         'dark-black': '#1B1530',
         'bodymain': '#040403',
-        'dark-gray': '#FFFFFF99',
         'light-red': '#FF6363',
         'dark-black-300': '#110E19',
         'gray-white-500': '#FFFFFF1A',
