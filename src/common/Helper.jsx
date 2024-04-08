@@ -2,9 +2,9 @@ import { FacebookIcon, InstaIcon, ServiceSvg, ServiceSvg2, ServiceSvg3, ServiceS
 
 export const linkData = [
     { path: "#features", link: "features" },
-    { path: "#Services", link: "Services" },
+    { path: "#services", link: "Services" },
     { path: "#pricing", link: "pricing" },
-    { path: "#features", link: "how to use" },
+    { path: "#howtouse", link: "how to use" },
 ]
 export const navLinkData = [
     { path: "#home", link: "Home" },
