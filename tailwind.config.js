@@ -55,12 +55,6 @@ module.exports = {
         '2xl': '147%',
         '3xl': '156%'
       },
-      padding: {
-        '8.5': '34px',
-        '4.5': '18px',
-        '1.5': '6px',
-        '2.5': '10px'
-      },
       boxShadow: {
         'gradientRed': '0 0 20px 1px #F800B9',
       },
