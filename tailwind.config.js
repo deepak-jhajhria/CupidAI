@@ -16,11 +16,13 @@ module.exports = {
       '2xl': '24px',
       '9xl': '22px',
       '3xl': '30px',
+      '3xl1': '32px',
+      '3xl2': '36px',
       '4xl': '40px',
+      '4xl2': '42px',
       '5xl': '48px',
       '6xl': '50px',
       '7xl': '60px',
-      '8xl': '32px',
     },
     container: {
       padding: {
