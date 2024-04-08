@@ -60,6 +60,8 @@ module.exports = {
       },
       colors: {
         'black-primary': '#040403',
+        'black-primary-100': '#01020f2e',
+        'black-primary-200': '#FBF0F02E',
         'gray': '#646464',
         'gray-white': '#E4E2EE',
         'gray-white-200': '#EAECF0',
