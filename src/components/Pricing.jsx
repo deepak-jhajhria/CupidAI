@@ -280,10 +280,10 @@ const Pricing = () => {
                     <button onClick={() => setToggle(2)} className={`py-1.5 px-4.5 rounded-3md text-base font-medium text-white ${toggle === 2 ? "bg-gray-white-500" : ""}`}>Monthly</button>
                 </div>
                 <div className='flex items-center flex-wrap justify-center w-full md:pt-16 sm:pt-10 pt-6 lg:min-h-[870px]'>
-                    {toggle === 2 ? (pricedata.map((item, index) => {
+                    {toggle === 2 ? (pricedata.map((item, id) => {
                         return (
                             <>
-                                <div key={index} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
+                                <div key={item.id} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
                                     <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-105 hover:z-10 group '>
                                         <div className='p-8 bg-gray-white-600 rounded-3xl'>
                                             <h3 className='inline-block text-lg font-medium text-white transition-all duration-500 ease-linear group-hover:text-8xl leading-3xl group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent'>{item.heading}</h3>
@@ -306,10 +306,10 @@ const Pricing = () => {
                             </>
                         )
                     })) : ""}
-                    {toggle === 1 ? (pricedata1.map((item, index) => {
+                    {toggle === 1 ? (pricedata1.map((item, id) => {
                         return (
                             <>
-                                <div key={index} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
+                                <div key={item.id} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
                                     <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-105 hover:z-10 group '>
                                         <div className='p-8 bg-gray-white-600 rounded-3xl'>
                                             <h3 className=' group-hover:text-[32px] text-lg font-medium leading-3xl transition-all ease-linear duration-500 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>

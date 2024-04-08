@@ -8,6 +8,7 @@ import Header from './components/Header';
 import ServiceCard from './components/ServiceCard';
 import Pricing from './components/Pricing';
 import dashboardimage from './assets/images/dashboardimage.webp'
+
 function App() {
   return (
     <div className=" bg-black-primary max-w-[1920px] mx-auto overflow-hidden">
