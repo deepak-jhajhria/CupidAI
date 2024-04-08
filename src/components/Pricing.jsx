@@ -271,8 +271,8 @@ const pricedata = [
 const Pricing = () => {
     const [toggle, setToggle] = useState(1)
     return (
-        <div className='relative lg:mt-40 sm:mt-20 mt-10'>
-            <div id='pricing' className="xl:max-w-[1219px] lg:mt-20 md:mt-14 mt-10 container">
+        <div className='relative mt-10 lg:mt-40 sm:mt-20'>
+            <div id='pricing' className="xl:max-w-[1219px] lg:pt-24 md:pt-14 pt-10 container">
                 <h2 className='font-bold lg:text-4xl sm:text-3xl2 tracking-tighter text-3xl1 text-white text-center leading-2.5xl'>Pricing</h2>
                 <p className=' text-dark-gray font-medium text-xxl text-center sm:pt-5 pt-4.5'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
                 <div className='bg-gray-white-500 rounded-2md p-1 max-w-[192px] mx-auto w-full flex justify-between md:mt-[44.5px] mt-6'>
@@ -289,7 +289,7 @@ const Pricing = () => {
                                             <h3 className='inline-block text-lg font-medium text-white transition-all duration-500 ease-linear group-hover:text-3xl1 leading-3xl group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent'>{item.heading}</h3>
                                             <p className='my-6 text-base font-medium leading-xl text-dark-gray'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
-                                                <h3 className='sm:text-4xl2 text-3xl2 font-semibold text-white lg:text-5xl leading-sm'>{item.price}</h3>
+                                                <h3 className='font-semibold text-white sm:text-4xl2 text-3xl2 lg:text-5xl leading-sm'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
                                                     <p className='font-medium text-2sm text-dark-gray leading-2xl'>/ month</p>
                                                     <p className='font-medium text-2sm text-dark-gray leading-2xl'>{item.user}</p>
@@ -315,7 +315,7 @@ const Pricing = () => {
                                             <h3 className=' group-hover:text-[32px] text-lg font-medium leading-3xl transition-all ease-linear duration-500 bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
                                             <p className='my-6 text-base font-medium leading-xl text-dark-gray'>{item.para}</p>
                                             <div className='flex items-center gap-2'>
-                                                <h3 className='sm:text-4xl2 text-3xl2 font-semibold text-white lg:text-5xl leading-sm'>{item.price}</h3>
+                                                <h3 className='font-semibold text-white sm:text-4xl2 text-3xl2 lg:text-5xl leading-sm'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
                                                     <p className='font-medium text-2sm text-dark-gray leading-2xl'>/ year</p>
                                                     <p className='font-medium text-2sm text-dark-gray leading-2xl'>{item.user}</p>
