@@ -10,7 +10,7 @@ const Crm = () => {
           A CRM created <br />
           to be your own.
         </h2>
-        <p className="  font-medium text-2xl text-gray-white-700 pt-[22px] tracking-[0.2px]">
+        <p className="  font-medium text-xxl text-dark-gray mt-[22px] tracking-[0.2px]">
           Tweak anything and everything to ensure fits
           <br />
           your business, not the other way around.
@@ -48,7 +48,7 @@ const Crm = () => {
           “My team loves cupid reporting system because it’s so dynamic. We can
           splice our data in so many different ways and combinations.”
         </p>
-        <p className=" pt-7 pb-12 text-gray-white-700  font-medium text-sm leading-5 tracking-[-0.1px] text-center">
+        <p className=" pt-7 pb-12 text-dark-gray  font-medium text-sm leading-5 tracking-[-0.1px] text-center">
           Davio White <br />
           Chief of Staff, Pallet
         </p>

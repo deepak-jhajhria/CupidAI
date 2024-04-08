@@ -4,7 +4,7 @@ const Preloader = () => {
   return (
     <div>
       <div className=" min-h-screen fixed top-0 left-0 bg-black z-[100] w-full flex flex-col gap-5 justify-center items-center">
-        <h1 className=" font-medium text-white text-8xl  text-center ">
+        <h1 className=" font-medium text-white text-5xl  text-center ">
           C
           <span className=" d-block  text-transparent bg-headerTextgradient bg-clip-text">
             U
