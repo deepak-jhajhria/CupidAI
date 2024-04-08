@@ -1,4 +1,4 @@
-import { icons, linkData } from "../common/Helper"
+import { icons, linkData } from "./common/Helper"
 import { FooterGradientMixup, FooterLogo } from "../common/Icons"
 
 const Footer = () => {
