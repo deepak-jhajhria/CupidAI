@@ -1,8 +1,8 @@
-import { FooterLogo } from "../common/Icons";
+import { FooterLogo } from "./common/Icons";
 import { CommonBtn, navLinkData } from "./common/Helper";
-import { HeroBg } from "../common/Icons";
+import { HeroBg } from "./common/Icons";
 import dashboardimg from '../assets/images/dashboardimage.webp'
-import { useOverflowHidden } from "../common/Hooks";
+import { useOverflowHidden } from "./common/Hooks";
 import { Twirl as Hamburger } from 'hamburger-react';
 
 const Header = () => {
