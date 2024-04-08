@@ -9,7 +9,7 @@ import Header from './components/Header';
 import Pricing from './components/Pricing';
 import Preloader from './components/Preloader';
 import BackTop from './components/BackTop';
-import ServiceCardNew from './components/ServiceCardNew';
+document.body.classList.add("overflow-hidden")
 
 function App() {
   const [preloder, setpreloder] = React.useState(true)
