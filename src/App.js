@@ -10,28 +10,28 @@ import Pricing from './components/Pricing';
 import Preloader from './components/Preloader';
 import BackTop from './components/BackTop';
 import ServiceCardNew from './components/ServiceCardNew';
+import { usePreloader } from './common/Hooks';
 
 function App() {
-  const [preloder, setpreloder] = React.useState(true)
-  setTimeout(() => {
-    setpreloder(false)
-    document.body.classList.remove("overflow-hidden")
-  }, 4000);
+  const isLoading = usePreloader();
   return (
     <div className=" bg-black-primary max-w-[1920px] mx-auto overflow-hidden">
-      {preloder && <Preloader />}
-      <Header />
-      <TrustedCompany />
-      <Crm />
-      <div className='bg-[url(./assets/images/servicebg.webp)] bg-BgSize bg-center bg-no-repeat'>
-        <ServiceCardNew />
-      </div>
-      <Pricing />
-      <Faq />
-      <IdentityHub />
-      <Footer />
-      <BackTop />
-    </div>
+      {
+        isLoading ? (<Preloader />) : (<>
+          <Header />
+          <TrustedCompany />
+          <Crm />
+          <div className='bg-[url(./assets/images/servicebg.webp)] bg-BgSize bg-center bg-no-repeat'>
+            <ServiceCardNew />
+          </div>
+          <Pricing />
+          <Faq />
+          <IdentityHub />
+          <Footer />
+          <BackTop /></>)
+      }
+
+    </div >
   )
 
 }
