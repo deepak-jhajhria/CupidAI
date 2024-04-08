@@ -29,7 +29,7 @@ export const icons = [
 
 export const CommonBtn = (props) => {
     return (
-        <button className={`py-4.5 px-[25px] rounded-full text-white bg-gradient-to-tr from-orange-red from-30% to-blue font-medium text-xl leading-6 flex ${props.cstm}`}>{props.name}</button>
+        <button className={`py-3.5 px-[25px] rounded-full text-white bg-btngradient  font-medium text-xl leading-6 flex ${props.cstm}`}>{props.name}</button>
     )
 }
 export const serviceCardItems = [
