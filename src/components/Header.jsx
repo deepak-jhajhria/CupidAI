@@ -19,7 +19,7 @@ const Header = () => {
                             {
                                 navLinkData.map((item, index) => (
                                     <li key={index}>
-                                        <a className="text-xl font-semibold leading-6 tracking-wide text-white uppercase navLinks" href={item.path} onClick={() => setOpen(false)}>{item.link}</a>
+                                        <a className="text-xl link font-normal transition-all duration-300 ease-linear leading-6 tracking-wide text-white uppercase navLinks" href={item.path} onClick={() => setOpen(false)}>{item.link}</a>
                                     </li>
                                 ))
                             }
