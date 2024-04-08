@@ -1,7 +1,7 @@
 import { CircleEllipseSvg, GradientLineSvg } from "./Icons"
 const IdentityHub = () => {
     return (
-        <div className="relative py-10 mt-10 sm:py-24 md:py-32 lg:py-40 overflow-x-clip sm:mt-16 md:mt-24 lg:mt-48">
+        <div id="howtouse" className="relative py-10 mt-10 sm:py-24 md:py-32 lg:py-40 overflow-x-clip sm:mt-16 md:mt-24 lg:mt-48">
             <div className="flex flex-col w-full justify-center items-center max-w-[691px] px-3 pt-1 mx-auto relative z-10">
                 <h2 className="text-4xl font-semibold text-center text-white sm:text-6xl lg:text-7xl md:leading-13">Be part of the future of <br /> IdentityHub</h2>
                 <span className="-mt-1"><GradientLineSvg /></span>

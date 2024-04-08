@@ -1,43 +1,31 @@
-import React from "react";
-import backtop from "../assets/images/BackTo.png";
+import React, { useEffect, useState } from "react";
+import { BackToTop } from "../common/Icons";
 const BackTop = () => {
-  const [position, setPosition] = React.useState({ top: 0, left: 0 });
-  React.useEffect(() => {
-    window.scroll({
-      top: position.top,
-      left: position.left,
-      behavior: "smooth",
+  const [isVisible, setIsVisible] = useState(false);
+  const toggleVisibility = () => {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
     });
-  });
-  const scrollTop = React.useRef();
-  React.useEffect(() => {
-    window.addEventListener("scroll", (e) => {
-      window.scrollY > 1000
-        ? (scrollTop.current.style.display = "inline-block")
-        : (scrollTop.current.style.display = "none");
-    });
-  });
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+  }, []);
   return (
-    <div>
-      <div
-        onClick={() =>
-          setPosition({ ...position, position: { top: 0, left: 0 } })
-        }
-        className="fixed hidden bottom-[8%] right-[1%] z-30 translate-y-[0%] animate-bounce"
-        ref={scrollTop}
-      >
-        <div className=" rounded-[50%] p-[6px] sm:p-2 cursor-pointer transform-[.3s] bg-bg-gradient  hover:bg-gradientTrailBtn ">
-          <img
-            src={backtop}
-            alt="backtop"
-            width={20}
-            height={20}
-            className=" rounded-2 box-line "
-          />
-        </div>
-      </div>
+    isVisible &&
+    <div onClick={scrollToTop} className='fixed z-30 bottom-5 right-3 sm:right-5'>
+      <button className="rounded-full hover:shadow-[0_0_20px_1px_#8F61E7] group z-50 w-10 sm:w-12 h-10 sm:h-12 bg-bg-gradient  flex items-center justify-center shadow-[0_0_0_4px_rgba(180,160,255,0.253)]">
+        <BackToTop />
+      </button>
     </div>
-  );
+  )
 };
 
 export default BackTop;

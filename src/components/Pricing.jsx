@@ -275,6 +275,7 @@ const Pricing = () => {
             <div id='pricing' className="xl:max-w-[1219px] lg:mt-20 md:mt-14 mt-10 container">
                 <h2 className='font-bold lg:text-4xl sm:text-3xl2 tracking-tighter text-3xl1 text-white text-center leading-2.5xl'>Pricing</h2>
                 <p className=' text-dark-gray font-inter text-xxl text-center sm:pt-6 pt-4.5'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
+
                 <div className='bg-gray-white-500 rounded-2md p-1 max-w-[192px] mx-auto w-full flex justify-between md:mt-[44.5px] mt-6'>
                     <button onClick={() => setToggle(1)} className={`py-1.5 px-4.5 rounded-3md text-base font-medium text-white ${toggle === 1 ? "bg-gray-white-500" : ""}`}>Yearly</button>
                     <button onClick={() => setToggle(2)} className={`py-1.5 px-4.5 rounded-3md text-base font-medium text-white ${toggle === 2 ? "bg-gray-white-500" : ""}`}>Monthly</button>
