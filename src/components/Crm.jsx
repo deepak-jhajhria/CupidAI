@@ -6,11 +6,11 @@ const Crm = () => {
   return (
     <div className=" bg-bodymain sm:pt-11 mt-[-2px] ">
       <div className="max-w-[1320px] mx-auto px-3">
-        <h2 className="  font-bold sm:text-6xl text-4xl text-white leading-[56px]  tracking-[-1.2px]">
+        <h2 className="  font-bold lg:text-6xl sm:text-4xl text-3xl2 text-white leading-[56px]  tracking-[-1.2px]">
           A CRM created <br />
           to be your own.
         </h2>
-        <p className="  font-medium text-2xl text-dark-gray pt-[22px] tracking-[0.2px]">
+        <p className="  font-medium text-xxl text-dark-gray mt-[22px] tracking-[0.2px]">
           Tweak anything and everything to ensure fits
           <br />
           your business, not the other way around.
@@ -38,7 +38,7 @@ const Crm = () => {
             src={crmai}
             alt="crmai"
             height={397}
-            className=" min-h-[184px] w-full h-full rounded-t-[20px]"
+            className=" min-h-[184px] w-full object-cover h-full rounded-t-[20px]"
           />
         </div>
         <sapn className=" rounded-full text-center  flex  justify-center ">

@@ -89,20 +89,25 @@ module.exports = {
       },
       animation: {
         'moveX': 'translateX 19s linear infinite forwards',
+        'movelinner': 'move_ellipes 2s linear infinite alternate',
       },
       keyframes: {
         translateX: {
           '0%': { transform: 'translateX(80%)' },
           '100%': { transform: 'translateX(-80%)' },
         },
-        translateX2: {
-          '0%': { transform: 'translateX(183px)' },
-          '100%': { transform: ' translateX(calc(-340px))' },
-        }
+        move_ellipes: {
+          '0%': {
+            transform: 'scale(1)'
+          },
+          '100%': {
+            transform: 'scale(1.5)'
+          },
+        },
       },
       backgroundImage: {
         "bg-gradient": "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
-        "bg_gradient": "linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #040403 100%)",
+        "bg_gradient": "linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #040403 100%);",
         'whitegradient': "linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%)",
         'whiteborder': "linear-gradient(106.78deg, rgba(255, 255, 255, 0.23) 6.02 %, rgba(255, 255, 255, 0.0759) 104.65 %)",
         'textgradient': "linear-gradient(97.84deg, #FF4141 0.52%, #FFA6B0 23.61%, #FFB6E6 50%, #FFD8D8 75%, #BF8DFF 100%)",

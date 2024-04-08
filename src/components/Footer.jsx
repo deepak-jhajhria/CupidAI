@@ -30,7 +30,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <span className="absolute bottom-0 z-0"><FooterGradientMixup /></span>
+            <span className="absolute bottom-0 animate-movelinner z-0"><FooterGradientMixup /></span>
         </div>
     )
 }
