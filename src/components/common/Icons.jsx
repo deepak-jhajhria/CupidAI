@@ -46,6 +46,7 @@ export const BackToTopIcon = () => {
 export const GradientLineSvg = () => {
     return (
         <svg
+        className="w-[200px] sm:w-[313px]"
             width="313"
             height="14"
             viewBox="0 0 313 14"
@@ -985,8 +986,8 @@ export const FacebookIcon = () => {
 export const FooterGradientMixup = () => {
     return (
         <svg
-            className="w-full min-[510px] lg:min-h-[809px]"
-            width="1920"
+            className="w-full min-h-[510px] lg:min-h-[809px]"
+            width="1320"
             viewBox="0 0 1440 802"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -1114,7 +1115,7 @@ export const RedStar = () => {
 
 export const WhiteArrow = () => {
     return (
-        <svg className="group-hover:translate-x-1 transition-transform duration-300 ease-linear" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="transition-transform duration-300 ease-linear group-hover:translate-x-1" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10.6055 4.75L14.1055 8M14.1055 8L10.6055 11.25M14.1055 8H3.60547" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
     )

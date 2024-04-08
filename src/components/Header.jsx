@@ -47,7 +47,7 @@ const Header = () => {
                 </div>
             </div>
             <div className="container xl:max-w-[1320px]">
-                <img src={dashboardimg} alt="dashboardimg" className="mx-auto -translate-y-[43%] lg:w-[915px] md:w-[600px] max-h-[400px] md:max-h-[687px] relative z-10" />
+                <img src={dashboardimg} alt="dashboardimg" className="mx-auto -translate-y-[43%] pl-12 lg:w-[1015px] md:w-[600px] max-h-[400px] md:max-h-[687px] relative z-10" />
             </div>
             {
                 isOpen && (
