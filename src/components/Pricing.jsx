@@ -129,7 +129,7 @@ const PricedataYear = [
         includedata: (<IndividualData />),
         price: "£240",
         user: "",
-        disbtn: '(<></>)',
+        disbtn: '',
         billed: (
             <>
                 <div className='bg-whitegradient w-full h-[1px] md:my-12 my-7'>
