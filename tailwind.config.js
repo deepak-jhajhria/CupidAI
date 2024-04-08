@@ -14,7 +14,7 @@ module.exports = {
       xl: '20px',
       xxl: '22px',
       '2xl': '24px',
-      '9xl':'22px',
+      '9xl': '22px',
       '3xl': '30px',
       '4xl': '40px',
       '5xl': '48px',
@@ -77,6 +77,11 @@ module.exports = {
         'gray-white-700': '#646464',
         'gray-dark-200': '#57606A',
         'gray-light-300': '#99A2AF',
+        'dark-gray': '#646464',
+        'mid-white': '#E4E4E7',
+        'off-white': '#A1A1AA',
+        'off-black': '#0E0D0D',
+        'mid-gray': '#212121',
         'blue': '#7F04E2',
         'orange-red': '#F800B9',
         'dark-black': '#1B1530',
@@ -87,8 +92,7 @@ module.exports = {
         'gray-white-600': '#FFFFFF0D',
         'gray-black-200': '#858585',
       },
-      animation:
-      {
+      animation:{
         'moveX': 'translateX 19s linear infinite forwards',
       },
       keyframes: {
@@ -104,22 +108,19 @@ module.exports = {
       backgroundImage: {
         "bg-gradient": "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
         "bg_gradient": "linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #040403 100%)",
-        'whitegradient':"linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%)",
+        'whitegradient': "linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%)",
         'whiteborder': "linear-gradient(106.78deg, rgba(255, 255, 255, 0.23) 6.02 %, rgba(255, 255, 255, 0.0759) 104.65 %)",
         'textgradient': "linear-gradient(97.84deg, #FF4141 0.52%, #FFA6B0 23.61%, #FFB6E6 50%, #FFD8D8 75%, #BF8DFF 100%)",
         'btngradient': "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
+        'gradientTrailBtn':"linear-gradient(96.17deg, #7F04E3 6%, #FF006B 98.41%)",
       },
       backgroundSize: {
         "BgSize": "100% 100%"
       },
-    },
-    colors: {
-      'dark-gray': '#646464',
-      'mid-white': '#E4E4E7',
-      'off-white': '#A1A1AA',
-      'off-black': '#0E0D0D',
-      'mid-gray': '#212121',
-
+      borderRadius: {
+        '2md': '41px',
+        '3md': '48px',
+      },
     },
     backgroundImage: {
       "bg-gradient": "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
