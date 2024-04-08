@@ -1,4 +1,4 @@
-import { companiesData } from "../common/TrustedHelper";
+import { companiesData } from "./common/TrustedHelper";
 const TrustedCompany = () => {
   return (
     <div className="sm:pb-10 pb-6 -mt-24 overflow-hidden sm:-mt-40 md:-mt-64 bg-bodymain sm:pt-5">
