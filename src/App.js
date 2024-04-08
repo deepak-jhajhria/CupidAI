@@ -14,7 +14,7 @@ function App() {
       <Header />
       <TrustedCompany />
       <Crm />
-      <div className='bg-[url(./assets/images/servicebg.webp)] bg-black bg-BgSize bg-top bg-no-repeat'>
+      <div className='bg-[url(./assets/images/servicebg.webp)] bg-black bg-BgSize bg-center bg-no-repeat'>
         < ServiceCard />
       </div>
       <Pricing />
