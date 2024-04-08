@@ -12,7 +12,7 @@ const TrustedCompany = () => {
               key={i}
               src={obj.companyLogo}
               alt={obj.alt}
-              className={` cursor-pointer xl:w-full md:w-36 lg:w-44  h-12 ${obj.none}`}
+              className={` cursor-pointer xl:w-full md:w-40 lg:w-44  h-12 ${obj.none}`}
             />
           ))}
         </div>
