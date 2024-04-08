@@ -13,7 +13,7 @@ const Header = () => {
     }
     return (
         <>
-            <div className="relative overflow-hidden min-h-[667px] md:min-h-[810px] xl:min-h-[1080px]">
+            <div className="relative overflow-hidden min-h-[667px] md:min-h-[810px]">
                 <span className="absolute bottom-0 left-0 z-0 w-full h-full"><Herobg /></span>
                 <div className="lg:max-w-[1320px] px-3 container mx-auto pt-8 bg-[#01020f2e] relative z-[1]">
                     <nav className="flex items-center justify-between rounded-[60px] p-2.5 border border-white border-solid sm:h-[71px] h-[60px]">
