@@ -21,22 +21,6 @@
     background: #ffff;
 }
 
-.services:hover p {
-    color: white;
-    z-index: 1;
-}
-
-.sevices-svg g path {
-    transition: .4s;
-}
-
-.services:hover svg g .smile {
-    fill-opacity: 0.5 !important;
-}
-
-.services:hover svg g .round {
-    fill-opacity: 0.26 !important;
-}
 
 .blur_box_border {
     backdrop-filter: blur(39.5px);
