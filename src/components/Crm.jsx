@@ -5,7 +5,7 @@ const Crm = () => {
   return (
     <div id="whyus" className=" bg-bodymain sm:pt-11 mt-[-2px] ">
       <div className="max-w-[1320px] mx-auto px-3">
-        <h2 className="  font-bold lg:text-6xl sm:text-4xl text-3xl2 text-white leading-[56px]  tracking-[-1.2px]">
+        <h2 className="  font-bold lg:text-6xl sm:text-4xl text-3xl2 text-white sm:leading-[56px] leading-[42px]  tracking-[-1.2px]">
           A CRM created <br />
           to be your own.
         </h2>
@@ -37,13 +37,13 @@ const Crm = () => {
             src={clupiAiImage}
             alt="crmai"
             height={387}
-            className=" min-h-[184px] h-full lg:h-96 w-full object-cover rounded-t-[20px]"
+            className=" min-h-[184px] h-full lg:h-96 w-full rounded-t-[20px]"
           />
         </div>
-        <div  className="flex justify-center ">
+        <div className="flex justify-center ">
           <YellowMan />
         </div>
-        <p className="  font-normal pt-6 text-2xl leading-[30px] tracking-wide text-center max-w-[590px] mx-auto text-gray-light-300">
+        <p className="  font-normal mt-6 text-xxl leading-[30px] tracking-wide text-center max-w-[579px] mx-auto text-gray-light-300">
           “My team loves cupid reporting system because it’s so dynamic. We can
           splice our data in so many different ways and combinations.”
         </p>

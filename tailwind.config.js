@@ -85,12 +85,17 @@ module.exports = {
       },
       animation: {
         'moveX': 'translateX 19s linear infinite forwards',
+        'moveSmX': 'translateSmX 39s linear infinite forwards',
         'movelinner': 'move_ellipes 2s linear infinite alternate',
       },
       keyframes: {
         translateX: {
           '0%': { transform: 'translateX(80%)' },
           '100%': { transform: 'translateX(-80%)' },
+        },
+        translateSmX: {
+          '0%': { transform: 'translateX(300%)' },
+          '100%': { transform: 'translateX(-300%)' },
         },
         move_ellipes: {
           '0%': {
