@@ -13,7 +13,7 @@ const Header = () => {
                 <span className="absolute bottom-0 left-0 z-0 w-full h-full"><HeroBg /></span>
                 <div className="lg:max-w-[1320px] px-3 container mx-auto pt-4 sm:pt-5 md:pt-10 relative">
                     <div className="rounded-full p-[1px] bg-gradient-to-l from-black-primary-200 to-gray-white-500">
-                        <nav className="flex items-center justify-between bg-[#080806] rounded-full p-3 lg:p-2.5">
+                        <nav className="flex items-center justify-between bg-[#06050D] rounded-full p-3 lg:p-2.5">
                             <a className="flex items-center gap-2 text-3xl font-bold text-white" href="/">
                                 <span> <FooterLogo /> </span> CupidAI</a>
                             <ul className={`${isOpen ? "right-0" : "-right-full"} flex max-lg:fixed max-lg:top-0 max-lg:bg-black md:bg-full bg-cover max-lg:h-full max-lg:w-full max-md:max-w-full max-lg:max-w-[400px] max-lg:z-30 max-lg:duration-300 max-lg:flex-col gap-7 items-center justify-center`}>
@@ -47,7 +47,7 @@ const Header = () => {
                 </div>
             </div>
             <div className="container xl:max-w-[1320px]">
-                <img src={dashboardimg} alt="dashboardimg" className="mx-auto -translate-y-[42%] lg:w-[915px] md:w-[600px] max-h-[400px] md:max-h-[687px] relative z-10" />
+                <img src={dashboardimg} alt="dashboardimg" className="mx-auto -translate-y-[43%] pl-12 lg:w-[1015px] md:w-[600px] max-h-[400px] md:max-h-[687px] relative z-10" />
             </div>
             {
                 isOpen && (
