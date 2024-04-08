@@ -86,7 +86,7 @@ const pricedata1 = [
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
         includedata: (<>
-            <div className='flex flex-col gap-4 pb-1 lg:mb-24 mb-14'>
+            <div className='flex flex-col gap-4 lg:mb-24 pb-1 mb-14'>
                 {enterpreneurdata.map((line, index) => {
                     return (
                         <div key={index} className='flex gap-3'>
@@ -147,7 +147,7 @@ const pricedata1 = [
         </>),
         price: "£1200",
         user: "/ user",
-        disbtn: (<button className='px-2 py-1 text-xs font-semibold bg-light-red text-dark-black-300 rounded-3xl' >-20%</button>),
+        disbtn: (<button className='py-1 px-2 bg-light-red text-dark-black-300 font-semibold text-xs rounded-3xl' >-20%</button>),
         billed: (
             <>
                 <div className='relative flex items-center justify-center md:mt-8 md:mb-9 my-7'>
@@ -194,10 +194,10 @@ const pricedata = [
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
         includedata: (<>
-            <div className='flex flex-col gap-4 pb-1 lg:mb-24 mb-14'>
+            <div className='flex flex-col gap-4 lg:mb-24 pb-1 mb-14'>
                 {enterpreneurdata.map((line, index) => {
                     return (
-                        <div key={index} className='flex gap-3'>
+                        <div id={index} className='flex gap-3'>
                             <div>
                                 <GreenTick />
                             </div>
@@ -236,7 +236,7 @@ const pricedata = [
                 <div className='flex flex-col gap-4'>
                     {business.map((line, index) => {
                         return (
-                            <div key={index} className='flex gap-3 '>
+                            <div id={index} className='flex gap-3 '>
                                 <div>
                                     <WhiteTick />
                                 </div>
@@ -282,26 +282,28 @@ const Pricing = () => {
                 <div className='flex items-center flex-wrap justify-center w-full md:pt-16 sm:pt-10 pt-6 lg:min-h-[826px]'>
                     {toggle === 2 ? (pricedata.map((item, index) => {
                         return (
-                            <div key={index} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
-                                <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-[1.02] hover:z-10 group '>
-                                    <div className='p-8 bg-gray-white-600 rounded-3xl'>
-                                        <h3 className='inline-block text-lg font-medium text-white transition-all duration-500 ease-linear group-hover:text-3xl1 leading-3xl group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent'>{item.heading}</h3>
-                                        <p className='my-6 text-base font-medium leading-xl text-dark-gray'>{item.para}</p>
-                                        <div className='flex items-center gap-2'>
-                                            <h3 className='font-semibold text-white sm:text-4xl2 text-3xl2 lg:text-5xl leading-sm'>{item.price}</h3>
-                                            <div className='flex flex-col h-full'>
-                                                <p className='font-medium text-2sm text-dark-gray leading-2xl'>/ month</p>
-                                                <p className='font-medium text-2sm text-dark-gray leading-2xl'>{item.user}</p>
+                            <>
+                                <div key={index} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
+                                    <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-[1.02] hover:z-10 group '>
+                                        <div className='p-8 bg-gray-white-600 rounded-3xl'>
+                                            <h3 className='inline-block text-lg font-medium text-white transition-all duration-500 ease-linear group-hover:text-3xl1 leading-3xl group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent'>{item.heading}</h3>
+                                            <p className='my-6 text-base font-medium leading-xl text-dark-gray'>{item.para}</p>
+                                            <div className='flex items-center gap-2'>
+                                                <h3 className='font-semibold text-white sm:text-4xl2 text-3xl2 lg:text-5xl leading-sm'>{item.price}</h3>
+                                                <div className='flex flex-col h-full'>
+                                                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>/ month</p>
+                                                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>{item.user}</p>
+                                                </div>
+                                                {item.disbtn}
                                             </div>
-                                            {item.disbtn}
+                                            {item.billed}
+                                            <p className='mb-4 font-medium text-2sm text-dark-gray leading-2xl'>What’s included</p>
+                                            {item.includedata}
+                                            <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-transparent transition-all duration-500 ease-linear text-white text-base font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
                                         </div>
-                                        {item.billed}
-                                        <p className='mb-4 font-medium text-2sm text-dark-gray leading-2xl'>What’s included</p>
-                                        {item.includedata}
-                                        <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-transparent transition-all duration-500 ease-linear text-white text-base font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
                                     </div>
-                                </div>
-                            </div >
+                                </div >
+                            </>
                         )
                     })) : ""}
                     {toggle === 1 ? (pricedata1.map((item, index) => {
