@@ -1,79 +1,135 @@
-import  { useState } from 'react'
+import { useState } from 'react'
 import { GreenStar, GreenTick, RedStar, WhiteArrow, WhiteTick } from '../common/Icons'
 
-const includedata = [
+const Includedata = [
     {
-        includedata1: "Calculator, Quicklinks, Snippets, Window Management, and many more core features",
+        description: "Calculator, Quicklinks, Snippets, Window Management, and many more core features",
     },
     {
-        includedata1: "More than 1000 Extensions",
+        description: "More than 1000 Extensions",
     },
     {
-        includedata1: "Custom Extensions",
+        description: "Custom Extensions",
     },
     {
-        includedata1: "Developer Tools",
-    },
-]
-
-const enterpreneurdata = [
-    {
-        includedata1: "Everything in Free"
-    },
-    {
-        includedata1: "Raycast AI"
-    },
-    {
-        includedata1: "Cloud Sync"
-    },
-    {
-        includedata1: "Custom Themes"
-    },
-    {
-        includedata1: "Unlimited Clipboard History"
+        description: "Developer Tools",
     },
 ]
 
-const business = [
+const Enterpreneurdata = [
     {
-        includedata1: "Everything in Pro"
+        description: "Everything in Free"
     },
     {
-        includedata1: "Unlimited Shared Commands"
+        description: "Raycast AI"
     },
     {
-        includedata1: "Unlimited Shared Quicklinks"
+        description: "Cloud Sync"
     },
     {
-        includedata1: "Unlimited Shared Snippets"
+        description: "Custom Themes"
     },
     {
-        includedata1: "Unlimited Team Members"
+        description: "Unlimited Clipboard History"
     },
 ]
+
+const Business = [
+    {
+        Description: "Everything in Pro"
+    },
+    {
+        Description: "Unlimited Shared Commands"
+    },
+    {
+        Description: "Unlimited Shared Quicklinks"
+    },
+    {
+        Description: "Unlimited Shared Snippets"
+    },
+    {
+        Description: "Unlimited Team Members"
+    },
+]
+
+export const IndividualData = () => {
+    return (
+        (<>
+            <div className='flex flex-col gap-4 lg:mb-20 mb-14'>
+                {Includedata.map((line, index) => {
+                    return (
+                        <div key={index} className='flex gap-3 '>
+                            <div>
+                                <WhiteTick />
+                            </div>
+                            <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.description}</p>
+                        </div>
+                    )
+                })}
+            </div>
+        </>)
+    )
+}
+
+export const Entrepreneurcontent = () => {
+    return (<>
+        <div className='flex flex-col gap-4 pb-1 lg:mb-24 mb-14'>
+            {Enterpreneurdata.map((line, index) => {
+                return (
+                    <div key={index} className='flex gap-3'>
+                        <div>
+                            <GreenTick />
+                        </div>
+                        <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
+                    </div>
+                )
+            })}
+            <div className='flex gap-3'>
+                <div>
+                    <GreenStar />
+                </div>
+                <p className='font-medium text-2sm text-dark-gray leading-2xl'>More Coming Soon</p>
+            </div>
+        </div>
+    </>)
+}
+
+export const BusinessData = () => {
+    return (
+        <>
+            <div className='flex flex-col gap-4 lg:mb-24 mb-14'>
+                <div className='flex flex-col gap-4'>
+                    {Business.map((line, index) => {
+                        return (
+                            <div key={index} className='flex gap-3 '>
+                                <div>
+                                    <WhiteTick />
+                                </div>
+                                <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className='flex gap-3'>
+                    <div>
+                        <RedStar />
+                    </div>
+                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>More Coming Soon</p>
+                </div>
+            </div>
+        </>
+    )
+}
 
 const pricedata1 = [
     {
         id: 1,
         heading: "Indivisual",
         para: "Everything you need to supercharge your productivity.",
-        includedata: (<>
-            <div className='flex flex-col gap-4 lg:mb-20 mb-14'>
-                {includedata.map((line, index) => {
-                    return (
-                        <div key={index} className='flex gap-3 '>
-                            <div>
-                                <WhiteTick />
-                            </div>
-                            <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
-                        </div>
-                    )
-                })}
-            </div>
-        </>),
+        includedata: (<IndividualData />),
         price: "£240",
         user: "",
-        disbtn: (<></>),
+        disbtn: '(<></>)',
         billed: (
             <>
                 <div className='bg-whitegradient w-full h-[1px] md:my-12 my-7'>
@@ -85,26 +141,7 @@ const pricedata1 = [
         id: 2,
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
-        includedata: (<>
-            <div className='flex flex-col gap-4 pb-1 lg:mb-24 mb-14'>
-                {enterpreneurdata.map((line, index) => {
-                    return (
-                        <div key={index} className='flex gap-3'>
-                            <div>
-                                <GreenTick />
-                            </div>
-                            <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
-                        </div>
-                    )
-                })}
-                <div className='flex gap-3'>
-                    <div>
-                        <GreenStar />
-                    </div>
-                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>More Coming Soon</p>
-                </div>
-            </div>
-        </>),
+        includedata: (<Entrepreneurcontent />),
         price: "£360",
         user: "",
         disbtn: (<button className='px-2 py-1 text-xs font-semibold bg-light-red text-dark-black-300 rounded-3xl' >-20%</button>),
@@ -123,28 +160,7 @@ const pricedata1 = [
         id: 3,
         heading: "Business",
         para: "Supercharge your team and maximize productivity.",
-        includedata: (<>
-            <div className='flex flex-col gap-4 lg:mb-24 mb-14'>
-                <div className='flex flex-col gap-4'>
-                    {business.map((line, index) => {
-                        return (
-                            <div key={index} className='flex gap-3 '>
-                                <div>
-                                    <WhiteTick />
-                                </div>
-                                <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
-                            </div>
-                        )
-                    })}
-                </div>
-                <div className='flex gap-3'>
-                    <div>
-                        <RedStar />
-                    </div>
-                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>More Coming Soon</p>
-                </div>
-            </div>
-        </>),
+        includedata: (<BusinessData />),
         price: "£1200",
         user: "/ user",
         disbtn: (<button className='px-2 py-1 text-xs font-semibold bg-light-red text-dark-black-300 rounded-3xl' >-20%</button>),
@@ -165,20 +181,7 @@ const pricedata = [
         id: 1,
         heading: "Indivisual",
         para: "Everything you need to supercharge your productivity.",
-        includedata: (<>
-            <div className='flex flex-col gap-4 lg:mb-20 mb-14'>
-                {includedata.map((line, index) => {
-                    return (
-                        <div key={index} className='flex gap-3 '>
-                            <div>
-                                <WhiteTick />
-                            </div>
-                            <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
-                        </div>
-                    )
-                })}
-            </div>
-        </>),
+        includedata: (<IndividualData />),
         price: "£24",
         user: "",
         disbtn: (<></>),
@@ -193,26 +196,7 @@ const pricedata = [
         id: 2,
         heading: "Entrepreneur",
         para: "Unlock a new level of your personal productivity.",
-        includedata: (<>
-            <div className='flex flex-col gap-4 pb-1 lg:mb-24 mb-14'>
-                {enterpreneurdata.map((line, index) => {
-                    return (
-                        <div key={index} className='flex gap-3'>
-                            <div>
-                                <GreenTick />
-                            </div>
-                            <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
-                        </div>
-                    )
-                })}
-                <div className='flex gap-3'>
-                    <div>
-                        <GreenStar />
-                    </div>
-                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>More Coming Soon</p>
-                </div>
-            </div>
-        </>),
+        includedata: (<Entrepreneurcontent />),
         price: "£34",
         user: "",
         disbtn: (<button className='py-[4px] px-[8px] bg-light-red text-dark-black-300 font-semibold text-xs rounded-3xl' >-20%</button>),
@@ -231,28 +215,7 @@ const pricedata = [
         id: 3,
         heading: "Business",
         para: "Supercharge your team and maximize productivity.",
-        includedata: (<>
-            <div className='flex flex-col gap-4 lg:mb-24 mb-14'>
-                <div className='flex flex-col gap-4'>
-                    {business.map((line, index) => {
-                        return (
-                            <div key={index} className='flex gap-3 '>
-                                <div>
-                                    <WhiteTick />
-                                </div>
-                                <p className='font-medium text-2sm text-dark-gray leading-2xl'>{line.includedata1}</p>
-                            </div>
-                        )
-                    })}
-                </div>
-                <div className='flex gap-3'>
-                    <div>
-                        <RedStar />
-                    </div>
-                    <p className='font-medium text-2sm text-dark-gray leading-2xl'>More Coming Soon</p>
-                </div>
-            </div>
-        </>),
+        includedata: (<BusinessData />),
         price: "£120",
         user: "/ user",
         disbtn: (<button className='px-2 py-1 text-xs font-semibold bg-light-red text-dark-black-300 rounded-3xl' >-20%</button>),
