@@ -49,23 +49,19 @@ module.exports = {
         '11': '48.41px',
         '12': '56px',
         '13': '72px',
-        'sm': '81%',
-        'xl': '125%',
-        '2.5xl': '140%',
-        '2xl': '147%',
-        '3xl': '156%'
-      },
-      padding: {
-        '8.5': '34px',
-        '4.5': '18px',
-        '1.5': '6px',
-        '2.5': '10px'
+        '14': '81%',
+        '15': '125%',
+        '16': '140%',
+        '17': '147%',
+        '18': '156%'
       },
       boxShadow: {
         'gradientRed': '0 0 20px 1px #F800B9',
       },
       colors: {
         'black-primary': '#040403',
+        'black-primary-100': '#01020f2e',
+        'black-primary-200': '#FBF0F02E',
         'gray': '#646464',
         'gray-white': '#E4E2EE',
         'gray-white-200': '#EAECF0',
