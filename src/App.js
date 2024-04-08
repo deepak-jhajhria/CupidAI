@@ -9,7 +9,7 @@ import Header from './components/Header';
 import Pricing from './components/Pricing';
 import Preloader from './components/Preloader';
 import BackTop from './components/BackTop';
-document.body.classList.add("overflow-hidden")
+import ServiceCardNew from './components/ServiceCardNew';
 
 function App() {
   const [preloder, setpreloder] = React.useState(true)
@@ -24,7 +24,7 @@ function App() {
       <TrustedCompany />
       <Crm />
       <div className='bg-[url(./assets/images/servicebg.webp)] bg-BgSize bg-center bg-no-repeat'>
-        <ServiceCardNew/>
+        <ServiceCardNew />
       </div>
       <Pricing />
       <Faq />
