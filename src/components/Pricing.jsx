@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { WhiteArrow } from '../common/Icons'
-import { PricedataMonth, PricedataYear } from '../common/Helper'
+import { PricedataMonth, PricedataYear } from '../common/PricingData'
 
 const Pricing = () => {
     const [toggle, setToggle] = useState(1)
@@ -13,7 +13,7 @@ const Pricing = () => {
                     <button onClick={() => setToggle(1)} className={`py-[6px] px-[18px] rounded-3md text-base font-medium text-white ${toggle === 1 ? "bg-gray-white-500" : ""}`}>Yearly</button>
                     <button onClick={() => setToggle(2)} className={`py-[6px] px-[18px] rounded-3md text-base font-medium text-white ${toggle === 2 ? "bg-gray-white-500" : ""}`}>Monthly</button>
                 </div>
-                <div className='flex items-center flex-wrap justify-center w-full md:pt-16 sm:pt-10 pt-6 lg:min-h-[826px]'>
+                <div className='flex items-center flex-wrap justify-center w-full md:mt-16 sm:mt-10 mt-6'>
                     {toggle === 2 && <>
                         {
                             PricedataMonth.map((item, index) => (
@@ -22,7 +22,6 @@ const Pricing = () => {
                                         <div className='p-8 bg-gray-white-600 rounded-3xl'>
                                             <h3 className='inline-block text-lg font-medium text-white transition-all duration-500 ease-linear group-hover:text-3xl1 leading-18 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent'>{item.heading}</h3>
                                             <p className='my-6 text-base font-medium leading-15 text-dark-gray'>{item.para}</p>
-                                            {/* background: #FFFFFF99;*/}
                                             <div className='flex items-center gap-2'>
                                                 <h3 className='font-semibold text-white sm:text-4xl2 text-3xl2 lg:text-5xl leading-14'>{item.price}</h3>
                                                 <div className='flex flex-col h-full'>
@@ -34,40 +33,16 @@ const Pricing = () => {
                                             {item.billed}
                                             <p className='mb-4 font-medium text-2sm text-dark-gray leading-17'>What’s included</p>
                                             {item.includedata}
-                                            <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-transparent transition-all duration-300 ease-linear text-white text-base font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
+                                            <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-none transition-all duration-300 ease-linear text-white text-base font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
                                         </div>
                                     </div>
                                 </div >
                             ))
                         }
                     </>}
-                    {toggle === 1 && (PricedataYear.map((item, index) => {
-                        return (
-                            <div key={index} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
-                                <div className='relative transition-all duration-300 ease-linear cursor-pointer blur_box_border hover:scale-[1.02] hover:z-10 group '>
-                                    <div className='p-8 bg-gray-white-600 rounded-3xl'>
-                                        <h3 className=' group-hover:text-[32px] text-lg font-medium leading-18 transition-all ease-linear duration-500 bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
-                                        <p className='my-6 text-base font-medium leading-15 text-dark-gray'>{item.para}</p>
-                                        <div className='flex items-center gap-2'>
-                                            <h3 className='font-semibold text-white sm:text-4xl2 text-3xl2 lg:text-5xl leading-14'>{item.price}</h3>
-                                            <div className='flex flex-col h-full'>
-                                                <p className='font-medium text-2sm text-dark-gray leading-17'>/ year</p>
-                                                <p className='font-medium text-2sm text-dark-gray leading-17'>{item.user}</p>
-                                            </div>
-                                            {item.disbtn}
-                                        </div>
-                                        {item.billed}
-                                        <p className='mb-4 font-medium text-2sm text-dark-gray leading-17'>What’s included</p>
-                                        {item.includedata}
-                                        <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-transparent transition-all duration-300 ease-linear text-white text-base  font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
-                                    </div>
-                                </div>
-                            </div >
-                        )
-                    }))}
                 </div>
                 <div className='flex items-center justify-center'>
-                    <a href='#' className='bg-gray-white-500 inline-flex items-center justify-center sm:flex-row flex-col text-white px-4 py-1.5 sm:rounded-2md rounded-3xl sm:gap-2 gap-1 mt-12'><p className='font-medium text-2sm leading-17 opacity-60 tracking-tightest'>Want enterprise features?</p><p className='flex items-center gap-1 font-bold text-2sm tracking-tightest leading-17'>Tell us more <WhiteArrow /></p></a>
+                    <a href='#' className='bg-gray-white-500 inline-flex items-center justify-center sm:flex-row flex-col text-white px-4 py-1.5 sm:rounded-2md rounded-3xl sm:gap-2 gap-1 mt-16 group'><p className='font-medium text-2sm leading-17 opacity-60 tracking-tightest'>Want enterprise features?</p><p className='flex items-center gap-1 font-bold text-2sm tracking-tightest leading-17'>Tell us more <WhiteArrow /></p></a>
                 </div>
             </div>
             <div className='bg-[#2980D6] w-[778px] h-[778px] blur-[1000px] absolute top-[25%] left-[-50%]'></div>
@@ -76,3 +51,14 @@ const Pricing = () => {
 }
 
 export default Pricing
+
+// border: 1px solid;
+
+// border - image - source: linear-gradient(106.78deg, rgba(255,255,255,0.23) 6.02 %, rgba(255,255,255,0.0759) 104.65 %);
+
+// #FFFFFF0D
+
+// border: 3px solid;
+
+// border - image - source: linear-gradient(235.8deg, #7F04E3 - 12.6 %, #FF006B 106.18 %);
+

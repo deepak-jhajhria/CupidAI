@@ -1089,7 +1089,7 @@ export const FooterGradientMixup = () => {
 export const WhiteTick = () => {
     return (
         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path className="group-hover:stroke-[#2BE295] transition-all duration-300 ease-linear" d="M15.875 8.625C15.875 8.625 12.2975 12.435 11.375 15.375L9.125 13.125M21.875 12C21.875 14.4864 20.8873 16.871 19.1291 18.6291C17.371 20.3873 14.9864 21.375 12.5 21.375C10.0136 21.375 7.62903 20.3873 5.87087 18.6291C4.11272 16.871 3.125 14.4864 3.125 12C3.125 9.5136 4.11272 7.12903 5.87087 5.37087C7.62903 3.61272 10.0136 2.625 12.5 2.625C14.9864 2.625 17.371 3.61272 19.1291 5.37087C20.8873 7.12903 21.875 9.5136 21.875 12Z" stroke="white" strokeOpacity="0.6" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" />
+            <path className="group-hover:stroke-[#2BE295] transition-colors duration-300 ease-linear" d="M15.875 8.625C15.875 8.625 12.2975 12.435 11.375 15.375L9.125 13.125M21.875 12C21.875 14.4864 20.8873 16.871 19.1291 18.6291C17.371 20.3873 14.9864 21.375 12.5 21.375C10.0136 21.375 7.62903 20.3873 5.87087 18.6291C4.11272 16.871 3.125 14.4864 3.125 12C3.125 9.5136 4.11272 7.12903 5.87087 5.37087C7.62903 3.61272 10.0136 2.625 12.5 2.625C14.9864 2.625 17.371 3.61272 19.1291 5.37087C20.8873 7.12903 21.875 9.5136 21.875 12Z" stroke="white" strokeOpacity="0.6" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
     )
 }
@@ -1102,20 +1102,11 @@ export const GreenTick = () => {
     )
 }
 
-export const GreenStar = () => {
-    return (
-        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8.79688 15.3906C15.1719 15.3906 15.1719 9.01562 15.1719 9.01562C15.1719 9.01562 15.1719 15.3906 21.5469 15.3906C15.1719 15.3906 15.1719 21.7656 15.1719 21.7656C15.1719 21.7656 15.1719 15.3906 8.79688 15.3906ZM6.17188 3.01562C6.17188 3.01562 6.17188 6.39062 2.79688 6.39062C6.17188 6.39062 6.17188 9.76562 6.17188 9.76562C6.17188 9.76562 6.17188 6.39062 9.54688 6.39062C6.17188 6.39062 6.17188 3.01562 6.17188 3.01562Z" fill="#2BE295" />
-            <path d="M8.79688 15.3906C15.1719 15.3906 15.1719 9.01562 15.1719 9.01562C15.1719 9.01562 15.1719 15.3906 21.5469 15.3906C15.1719 15.3906 15.1719 21.7656 15.1719 21.7656C15.1719 21.7656 15.1719 15.3906 8.79688 15.3906ZM6.17188 3.01562C6.17188 3.01562 6.17188 6.39062 2.79688 6.39062C6.17188 6.39062 6.17188 9.76562 6.17188 9.76562C6.17188 9.76562 6.17188 6.39062 9.54688 6.39062C6.17188 6.39062 6.17188 3.01562 6.17188 3.01562Z" stroke="#2BE295" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-    )
-}
-
 export const RedStar = () => {
     return (
         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.125 15C15.5 15 15.5 8.625 15.5 8.625C15.5 8.625 15.5 15 21.875 15C15.5 15 15.5 21.375 15.5 21.375C15.5 21.375 15.5 15 9.125 15ZM6.5 2.625C6.5 2.625 6.5 6 3.125 6C6.5 6 6.5 9.375 6.5 9.375C6.5 9.375 6.5 6 9.875 6C6.5 6 6.5 2.625 6.5 2.625Z" fill="#FF6363" />
-            <path d="M9.125 15C15.5 15 15.5 8.625 15.5 8.625C15.5 8.625 15.5 15 21.875 15C15.5 15 15.5 21.375 15.5 21.375C15.5 21.375 15.5 15 9.125 15ZM6.5 2.625C6.5 2.625 6.5 6 3.125 6C6.5 6 6.5 9.375 6.5 9.375C6.5 9.375 6.5 6 9.875 6C6.5 6 6.5 2.625 6.5 2.625Z" stroke="#FF6363" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" />
+            <path className="group-hover:fill-[#2BE295] transition-colors duration-300 ease-linear" d="M9.125 15C15.5 15 15.5 8.625 15.5 8.625C15.5 8.625 15.5 15 21.875 15C15.5 15 15.5 21.375 15.5 21.375C15.5 21.375 15.5 15 9.125 15ZM6.5 2.625C6.5 2.625 6.5 6 3.125 6C6.5 6 6.5 9.375 6.5 9.375C6.5 9.375 6.5 6 9.875 6C6.5 6 6.5 2.625 6.5 2.625Z" fill="#FF6363" />
+            <path className="group-hover:stroke-[#2BE295] transition-colors duration-300 ease-linear" d="M9.125 15C15.5 15 15.5 8.625 15.5 8.625C15.5 8.625 15.5 15 21.875 15C15.5 15 15.5 21.375 15.5 21.375C15.5 21.375 15.5 15 9.125 15ZM6.5 2.625C6.5 2.625 6.5 6 3.125 6C6.5 6 6.5 9.375 6.5 9.375C6.5 9.375 6.5 6 9.875 6C6.5 6 6.5 2.625 6.5 2.625Z" stroke="#FF6363" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
 
     )
@@ -1123,7 +1114,7 @@ export const RedStar = () => {
 
 export const WhiteArrow = () => {
     return (
-        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="group-hover:translate-x-1 transition-transform duration-300 ease-linear" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10.6055 4.75L14.1055 8M14.1055 8L10.6055 11.25M14.1055 8H3.60547" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
     )
