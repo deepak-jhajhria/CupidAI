@@ -2,7 +2,7 @@ import { FacebookIcon, GreenStar, GreenTick, InstaIcon, RedStar, ServiceSvg, Ser
 
 export const linkData = [
     { path: "#features", link: "features" },
-    { path: "#services", link: "Services" },
+    { path: "#service", link: "Services" },
     { path: "#pricing", link: "pricing" },
     { path: "#howtouse", link: "how to use" },
 ]
