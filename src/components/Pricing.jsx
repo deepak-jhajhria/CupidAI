@@ -283,8 +283,8 @@ const Pricing = () => {
                     {toggle === 2 ? (pricedata.map((item, index) => {
                         return (
                             <>
-                                <div key={index.toString()} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
-                                    <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-105 hover:z-10 group '>
+                                <div key={index} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
+                                    <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-[1.02] hover:z-10 group '>
                                         <div className='p-8 bg-gray-white-600 rounded-3xl'>
                                             <h3 className='inline-block text-lg font-medium text-white transition-all duration-500 ease-linear group-hover:text-3xl1 leading-3xl group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent'>{item.heading}</h3>
                                             <p className='my-6 text-base font-medium leading-xl text-dark-gray'>{item.para}</p>
@@ -309,7 +309,7 @@ const Pricing = () => {
                     {toggle === 1 ? (pricedata1.map((item, index) => {
                         return (
                             <>
-                                <div key={index.toString()} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
+                                <div key={index} className='w-11/12 mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
                                     <div className='relative transition-all duration-500 ease-linear cursor-pointer blur_box_border hover:scale-[1.02] hover:z-10 group '>
                                         <div className='p-8 bg-gray-white-600 rounded-3xl'>
                                             <h3 className=' group-hover:text-[32px] text-lg font-medium leading-3xl transition-all ease-linear duration-500 bg-clip-text group-hover:bg-textgradient group-hover:text-transparent text-white inline-block'>{item.heading}</h3>
