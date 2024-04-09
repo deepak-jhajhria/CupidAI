@@ -834,6 +834,7 @@ export const CircleEllipseSvg = () => {
 export const FooterLogo = () => {
     return (
         <svg
+        className="w-8 h-8 sm:w-10 sm:h-10"
             width="39"
             height="38"
             viewBox="0 0 39 38"
@@ -987,7 +988,7 @@ export const FooterGradientMixup = () => {
     return (
         <svg
             className="w-full min-h-[510px] lg:min-h-[809px]"
-            width="1320"
+            width="1920"
             viewBox="0 0 1440 802"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
