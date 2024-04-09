@@ -7,9 +7,9 @@ export const linkData = [
     { path: "#howtouse", link: "how to use" },
 ]
 export const navLinkData = [
-    { path: "#home", link: "Home" },
-    { path: "#whyus", link: "Why us" },
-    { path: "#service", link: "Services" },
+    { path: "#home", link: "HOME" },
+    { path: "#whyus", link: "WHY US" },
+    { path: "#service", link: "SERVICES" },
     { path: "#faq", link: "FAQ" },
 ]
 export const accordionData = [
