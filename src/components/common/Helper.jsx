@@ -51,7 +51,7 @@ export const serviceCardItems = [
         id: 3,
         svges: <ServiceSvg3 />,
         heading: "Content Utilities",
-        paragraph: "Consolidate your resources with our comprehensive description utilities. Access everything you need from a single dashboard.",
+        paragraph: "Consolidate your resources with our comprehensive   description utilities. Access everything you need from a single dashboard.",
         width: "sm:w-5/12 md:max-w-[416px]",
     },
     {
