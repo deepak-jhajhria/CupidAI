@@ -99,10 +99,10 @@ module.exports = {
         },
         move_ellipes: {
           '0%': {
-            transform: 'scale(1)'
+            transform: 'scaleY(1)'
           },
           '100%': {
-            transform: 'scale(1.5)'
+            transform: 'scaleY(1.5)'
           },
         },
       },
