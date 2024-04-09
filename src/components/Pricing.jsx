@@ -5,8 +5,8 @@ import { PricedataMonth, PricedataYear } from './common/PricingData'
 const Pricing = () => {
     const [toggle, setToggle] = useState(1)
     return (
-        <div className='relative mt-10 lg:mt-20 sm:mt-20 overflow-x-clip'>
-            <div id='pricing' className="xl:max-w-[1219px] lg:pt-24 md:pt-14 pt-10 container">
+        <div className='relative mt-5 lg:mt-20 sm:mt-20 overflow-x-clip'>
+            <div id='pricing' className="xl:max-w-[1219px] lg:pt-24 md:pt-14 container">
                 <h2 className='font-bold tracking-tighter text-center text-white lg:text-4xl sm:text-3xl2 text-3xl1 leading-16'>Pricing</h2>
                 <p className='pt-4 font-medium text-center text-dark-gray text-xxl sm:pt-5'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
                 <div className='bg-gray-white-500 rounded-2md p-1 max-w-[192px] mx-auto w-full flex justify-between md:mt-[44.5px] mt-6'>
@@ -35,7 +35,7 @@ const Pricing = () => {
                                                 <p className='mb-4 font-medium text-2sm text-dark-gray leading-17'>What’s included</p>
                                                 {item.includedata}
                                             </div>
-                                            <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-none transition-all duration-300 ease-linear text-white text-base font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
+                                            <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-none transition-all duration-300 ease-linear text-white bg-transparent text-base font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
                                         </div>
                                     </div>
                                 </div >
@@ -63,7 +63,7 @@ const Pricing = () => {
                                                 <p className='mb-4 font-medium text-2sm text-dark-gray leading-17'>What’s included</p>
                                                 {item.includedata}
                                             </div>
-                                            <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-none transition-all duration-300 ease-linear text-white text-base font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
+                                            <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-none transition-all  bg-transparent duration-300 ease-linear text-white text-base font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
                                         </div>
                                     </div>
                                 </div >
