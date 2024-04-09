@@ -24,7 +24,7 @@ const Footer = () => {
                     <div className="flex items-center gap-4 sm:gap-5 md:gap-8">
                         {
                             icons.map((items, index) => (
-                                <a key={index} href={items.link} target="_blank"><span className="flex items-center justify-center duration-300 rounded-full w-9 h-9 sm:w-10 sm:h-10 bg-dark-black group hover:bg-white hover:-translate-y-2">{items.logo}</span></a>
+                                <a key={index} href={items.link} target="_blank" rel="noopener noreferrer"><span className="flex items-center justify-center duration-300 rounded-full w-9 h-9 sm:w-10 sm:h-10 bg-dark-black group hover:bg-white hover:-translate-y-2">{items.logo}</span></a>
                             ))
                         }
                     </div>
