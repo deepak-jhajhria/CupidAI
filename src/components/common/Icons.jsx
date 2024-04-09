@@ -988,7 +988,7 @@ export const FooterGradientMixup = () => {
     return (
         <svg
             className="w-full min-h-[510px] lg:min-h-[809px]"
-            width="1320"
+            width="1920"
             viewBox="0 0 1440 802"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
