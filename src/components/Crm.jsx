@@ -37,7 +37,7 @@ const Crm = () => {
             src={clupiAiImage}
             alt="crmai"
             height={387}
-            className=" min-h-[184px] h-full lg:h-96 w-full rounded-t-[20px]"
+            className="  max-sm:object-contain  h-full lg:h-96 w-full rounded-t-[20px]"
           />
         </div>
         <div className="flex justify-center ">
