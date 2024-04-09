@@ -35,7 +35,7 @@ const Pricing = () => {
                                                 <p className='mb-4 font-medium text-2sm text-dark-gray leading-17'>What’s included</p>
                                                 {item.includedata}
                                             </div>
-                                            <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-none transition-all duration-300 ease-linear text-white bg-transparent text-base font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
+                                            <button className='py-2.5 px-3 border border-solid border-gray-black-200 after:bg-btngradient group-hover:border-none transition-all  bg-transparent duration-300 ease-linear text-white text-base font-medium text-nowrap rounded-xl w-full after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:transition-all after:duration-300 after:ease-linear after:rounded-xl after:opacity-0 group-hover:after:opacity-100 relative'><p className='text-white text-base font-medium text-nowrap relative z-10'>Select Plan</p></button>
                                         </div>
                                     </div>
                                 </div >
@@ -63,7 +63,7 @@ const Pricing = () => {
                                                 <p className='mb-4 font-medium text-2sm text-dark-gray leading-17'>What’s included</p>
                                                 {item.includedata}
                                             </div>
-                                            <button className='py-2.5 px-3 border border-solid border-gray-black-200 group-hover:bg-btngradient group-hover:border-none transition-all  bg-transparent duration-300 ease-linear text-white text-base font-medium text-nowrap rounded-xl w-full'>Select Plan</button>
+                                            <button className='py-2.5 px-3 border border-solid border-gray-black-200 after:bg-btngradient group-hover:border-none transition-all  bg-transparent duration-300 ease-linear text-white text-base font-medium text-nowrap rounded-xl w-full after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:transition-all after:duration-300 after:ease-linear after:rounded-xl after:opacity-0 group-hover:after:opacity-100 relative'><p className='text-white text-base font-medium text-nowrap relative z-10'>Select Plan</p></button>
                                         </div>
                                     </div>
                                 </div >
